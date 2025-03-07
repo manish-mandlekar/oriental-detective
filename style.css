@@ -96,7 +96,7 @@ html,body{
 }
         
 #elem {
-    width: 200%;
+   
     height: 150px;
     display: inline-flex;
     background-color: white;
@@ -109,12 +109,12 @@ html,body{
   #elem1 {
     width: 100%;
     height: 100%;
-    gap: 2vmax;
+    gap: 3vmax;
     align-items: center;
     overflow-x: scroll;
     /* overflow-y: hidden; */
     white-space: nowrap;
-    animation: anim 10s linear infinite;
+    animation: anim 15s linear infinite;
     display: inline-flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -364,3 +364,263 @@ html,body{
   .testi{
     box-shadow: 2px 3px 3px 4px #dadada;
   }
+
+/* Add/modify these responsive styles */
+@media screen and (max-width: 414px) {
+  /* Navbar fixes */
+  .navbar {
+    position: relative;
+    z-index: 1000; /* Ensure navbar is above other content */
+  }
+.bottomBtn{
+  bottom: 5px;
+}
+.orientalMain{
+  overflow: hidden;
+}
+.wtparrow{
+  margin-top:-14vh;
+}
+.sndpage{
+  flex-direction: column;
+  width: 100%;
+  margin-top: -10vh;
+}
+.mission{
+  padding: 0;
+  width: 100%;
+  line-height: 10px;
+  border-right: 0;
+}
+.vision{
+  padding: 0;
+  width: 100%;
+  line-height: 10px;
+}
+.abtus{
+  flex-direction: column;
+  width: 100%;
+}
+.abtuspta{
+  width: 100%;
+}
+.opa{
+  text-align: center;
+}
+
+.servicefift{
+padding-top: 50vh;
+position: relative;
+}
+.servicebtnscr{
+  position: absolute;
+  bottom: -350px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sixthscr{
+  margin-top: 40vmax;
+}
+.paraofsix{
+  width: 100%;
+  padding: 3px;
+}
+.sevenscr{
+  flex-direction: column;
+  width: 100%;
+}
+.eightscr{
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.eightscrfirst{
+  width: 100%;
+}
+.blendlast{
+  display: none;
+}
+.cardscr{
+  margin-top: -30vh;
+}
+.testiscr{
+  width: 100%;
+  flex-direction: column;
+  padding: 1vmax;
+}
+.testi{
+  width: 100%;
+}
+.headingm{
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.thrdscr{
+  height: fit-content;
+}
+.btnscr{
+  justify-content: center;
+}
+.btnsc{
+  justify-content: center;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+
+}
+.div1{
+  width: 100%;
+  padding: 0;
+}
+.div3{
+  width: 100%;
+}
+.enquiry{
+  right: -35px;
+}
+  #menu.active {
+    position: fixed;
+    top: 80px;
+    left: 200px;
+    width: 100%;
+    height: auto;
+    background: white;
+    z-index: 999;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+.marqueeeee{
+  margin-top: 16vh;
+}
+
+  /* Slider responsiveness */
+  .imgcnt {
+    height: 60vh !important;
+  }
+
+  .firstimg h2 {
+    font-size: 1.5rem !important;
+    padding: 0 15px;
+  }
+
+  .firstimg p {
+    font-size: 1rem !important;
+  }
+
+  /* Services section */
+  #services-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Testimonial slider */
+  .slider-container {
+    height: 500px;
+  }
+
+  .slider-card {
+    width: 300px;
+  }
+
+  .slider-card.left {
+    transform: translate(-110%, -50%) scale(0.8);
+    opacity: 0;
+    display: none;
+  }
+
+  .slider-card.right {
+    transform: translate(10%, -50%) scale(0.8);
+    opacity: 0;
+    display: none;
+  }
+
+  .slider-card.center {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* Counter section */
+  /* .bg-[#009FCF].flex {
+    flex-direction: column;
+    padding: 20px !important;
+  }
+
+  .bg-[#009FCF].flex > div {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 10px 0;
+  }
+
+  /* Work process section */
+  /* .w-[80%].px-5.flex {
+    flex-direction: column;
+    gap: 30px; */
+  } */
+
+  .specialWork {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer .grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* General text adjustments */
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  /* .w-[60%] {
+    width: 90% !important;
+  } */
+/* } */
+
+/* Add general responsive utilities */
+@media screen and (max-width: 768px) {
+  /* .w-[80%] {
+    width: 95% !important;
+  } */
+
+  .px-20 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* Add this to your existing CSS */
+.secondNavbar {
+    position: relative;
+    z-index: 100;
+}
+
+#dropdownMenu {
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    margin-top: 0.5rem;
+}
+
+/* Update slider z-index */
+.imgcnt {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure dropdown button maintains proper stacking */
+.relative.inline-block {
+    position: relative;
+    z-index: 100;
+}

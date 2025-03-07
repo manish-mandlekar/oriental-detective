@@ -3,23 +3,60 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-document.getElementById('menu-btn').addEventListener('click', function () {
-    document.getElementById('menu').classList.toggle('active');
+document.getElementById('menu-btn').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    const navbar = document.querySelector('.navbar');
+    
+    menu.classList.toggle('active');
     this.classList.toggle('active');
-});
-
-document.getElementById("dropdownButton").addEventListener("click", function () {
-    let menu = document.getElementById("dropdownMenu");
-    menu.classList.toggle("hidden");
-});
-
-// Close dropdown if clicked outside
-document.addEventListener("click", function (event) {
-    let dropdown = document.getElementById("dropdownMenu");
-    let button = document.getElementById("dropdownButton");
-    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.classList.add("hidden");
+    
+    // Prevent body scroll when menu is open
+    if(menu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
     }
+});
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('menu');
+    const menuBtn = document.getElementById('menu-btn');
+    
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target) && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        menuBtn.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownButtons = document.querySelectorAll('[id^="dropdownButton"]');
+    const dropdownMenus = document.querySelectorAll('[id^="dropdownMenu"]');
+
+    // Handle button clicks
+    dropdownButtons.forEach((button, index) => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            
+            // Close all other dropdowns
+            dropdownMenus.forEach((menu, menuIndex) => {
+                if (menuIndex !== index) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // Toggle current dropdown
+            dropdownMenus[index].classList.toggle('hidden');
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.relative.inline-block')) {
+            dropdownMenus.forEach(menu => {
+                menu.classList.add('hidden');
+            });
+        }
+    });
 });
 
 
