@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+
 document.getElementById('menu-btn').addEventListener('click', function () {
     document.getElementById('menu').classList.toggle('active');
     this.classList.toggle('active');
@@ -104,11 +109,22 @@ function animateCounters() {
 animateCounters();
 
 function initializeSlider() {
-  const images = [
-    'https://images.unsplash.com/photo-1739188366834-1281a22a1ac5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1620672194875-b34776eeb185?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D',
-    'https://images.unsplash.com/photo-1556941229-9ca9b2d431aa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8'
-    // Add your image URLs here
+  const testimonials = [
+    {
+      content: "The investigation services provided were thorough and professional. Highly recommended for anyone needing discrete and reliable detective services.",
+      name: "John Smith",
+      designation: "Corporate Client"
+    },
+    {
+      content: "Outstanding attention to detail and complete confidentiality. The team went above and beyond to help resolve our case.",
+      name: "Sarah Johnson",
+      designation: "Private Client"
+    },
+    {
+      content: "Exceptional service with regular updates throughout the investigation process. The results exceeded our expectations.",
+      name: "Michael Brown",
+      designation: "Business Owner"
+    }
   ];
 
   let currentIndex = 1;
@@ -117,23 +133,43 @@ function initializeSlider() {
   function updateSlider() {
     sliderContent.innerHTML = '';
     
-    // Previous image
-    const prevImg = document.createElement('img');
-    prevImg.src = images[(currentIndex - 1 + images.length) % images.length];
-    prevImg.className = 'slider-image left';
-    sliderContent.appendChild(prevImg);
+    // Previous card
+    const prevCard = createTestimonialCard(
+      testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length],
+      'slider-card left'
+    );
+    sliderContent.appendChild(prevCard);
     
-    // Current image
-    const currentImg = document.createElement('img');
-    currentImg.src = images[currentIndex];
-    currentImg.className = 'slider-image center';
-    sliderContent.appendChild(currentImg);
+    // Current card
+    const currentCard = createTestimonialCard(
+      testimonials[currentIndex],
+      'slider-card center'
+    );
+    sliderContent.appendChild(currentCard);
     
-    // Next image
-    const nextImg = document.createElement('img');
-    nextImg.src = images[(currentIndex + 1) % images.length];
-    nextImg.className = 'slider-image right';
-    sliderContent.appendChild(nextImg);
+    // Next card
+    const nextCard = createTestimonialCard(
+      testimonials[(currentIndex + 1) % testimonials.length],
+      'slider-card right'
+    );
+    sliderContent.appendChild(nextCard);
+  }
+
+  function createTestimonialCard(testimonial, className) {
+    const card = document.createElement('div');
+    card.className = className;
+    card.innerHTML = `
+      <div class="bg-white rounded-lg p-6 shadow-lg">
+        <div class="min-h-[150px] mb-6 text-gray-600">
+          "${testimonial.content}"
+        </div>
+        <div class="mt-auto">
+          <h3 class="font-bold text-xl text-[#515854]">${testimonial.name}</h3>
+          <p class="text-[#009FCF] mt-1">${testimonial.designation}</p>
+        </div>
+      </div>
+    `;
+    return card;
   }
 
   // Initialize slider
@@ -141,17 +177,68 @@ function initializeSlider() {
 
   // Add event listeners for arrows
   document.querySelector('.next-arrow').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
+    currentIndex = (currentIndex + 1) % testimonials.length;
     updateSlider();
   });
 
   document.querySelector('.prev-arrow').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
     updateSlider();
   });
 }
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', initializeSlider);
+
+
+const services = [
+    {
+        title: "Private Investigator",
+        image: "./images/private investigator.png",
+        description: "Our investigations are built for thoroughness, accuracy, and confidentiality.",
+        link: "service.html#private"
+    },
+    {
+        title: "Corporate Investigator",
+        image: "./images/corporate.png",
+        description: "Our investigations are built for thoroughness, accuracy, and confidentiality.",
+        link: "service.html#corporate"
+    },
+    {
+        title: "Marital Investigator",
+        image: "./images/marital.png",
+        description: "Our investigations are built for thoroughness, accuracy, and confidentiality.",
+        link: "service.html#marital"
+    }
+];
+
+function renderServices() {
+    const container = document.getElementById("services-container");
+    container.innerHTML = ""; // Clear previous content
+
+    services.forEach(service => {
+        const card = `
+            <div class="card">
+                <div class="image">
+                    <img class="object-top w-full" src="${service.image}" alt="${service.title}">
+                </div>
+                <div class="content">
+                    <a href="${service.link}">
+                        <span class="title">${service.title}</span>
+                    </a>
+                    <p class="desc">${service.description}</p>
+                    <a class="action" href="${service.link}">
+                        Know More
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        `;
+        container.innerHTML += card;
+    });
+}
+
+// Call function on page load
+document.addEventListener("DOMContentLoaded", renderServices);
 
 

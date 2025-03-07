@@ -7,13 +7,15 @@
     <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <div class="w-full h-fit">
+    <div class="enquiry">Enquiry Now</div>
+    <div class="w-full h-fit" data-scroll-container>
         <div class="w-full h-screen white">
             <nav
                 class="navbar w-full  px-6 py-4 bg-white  rounded-lg flex flex-col md:flex-row items-center justify-center">
@@ -56,9 +58,12 @@
                 </div>
             </nav>
             <div class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4  gap-4 secondNavbar">
-                <div class="btw px-2 py-0">
-                    <button class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium">All Services</button>
-                </div>
+                <a class="cursor-pointer" href="Service.html">
+                    <div class="btw px-2 py-0 ">
+                        <button class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium">All
+                            Services</button>
+                    </div>
+                </a>
                 <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
                     <!-- Dropdown Button -->
                     <button id="dropdownButton"
@@ -130,10 +135,10 @@
             </div>
             <div class="px-3">
                 <div
-                    class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center  mt-10 rounded-2xl bg-red-400">
+                    class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center  mt-10 rounded-2xl ">
                     <div class="relative w-full h-fit  overflow-hidden rounded-lg shadow-lg">
                         <!--enquiry button-->
-                        <div class="enquiry">Enquiry Now</div>
+
                         <!-- Image Container -->
                         <div id="slider"
                             class="flex w-full h-fit transition-transform duration-500 ease-in-out rounded-lg ">
@@ -192,9 +197,10 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full h-[5vmax]  flex justify-between items-center px-3">
+            <div data-scroll="" data-scroll-speed="2" data-scroll-delay="1" data-scroll-direction="vertical"
+                class="w-full h-[5vmax]  flex justify-between items-center px-3">
                 <img src="./images/whatsap.png" class="w-16" alt="">
-                <img src="./images/arrow.png" class="w-16" alt="">
+                <img src="./images/arrow-removebg-preview.png" class="w-16" alt="">
             </div>
         </div>
         <!--second screen-->
@@ -395,81 +401,15 @@
         <div class="w-full h-screen bg-[#F7F7F7] pt-15">
             <h1 class="text-center text-3xl font-semibold text-[#515854]">Our <span
                     class="text-[#009FCF]">Services</span></h1>
-            <div class="w-full h-[80%] flex items-center gap-14 justify-center">
+            <div class="w-full h-[80%] flex items-center gap-14 justify-center" id="services-container">
 
-                <div class="card">
-                    <div class="image">
-                        <img class="object-top w-full" src="./images/private investigator.png" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#">
-                            <span class="title">
-                                Private Investigator
-                            </span>
-                        </a>
 
-                        <p class="desc">
-                            Our investigations are built for thoroughness, accuracy, and confidentiality.
-                        </p>
-
-                        <a class="action" href="#">
-                            Know More
-                            <span aria-hidden="true">
-                                →
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img class="object-top w-full" src="./images/corporate.png" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#">
-                            <span class="title">
-                                Corporate Investigator
-                            </span>
-                        </a>
-
-                        <p class="desc">
-                            Our investigations are built for thoroughness, accuracy, and confidentiality.
-                        </p>
-
-                        <a class="action" href="#">
-                            Know More
-                            <span aria-hidden="true">
-                                →
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img class="object-top w-full" src="./images/marital.png" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#">
-                            <span class="title">
-                                Marital Investigator
-                            </span>
-                        </a>
-
-                        <p class="desc">
-                            Our investigations are built for thoroughness, accuracy, and confidentiality.
-                        </p>
-
-                        <a class="action" href="#">
-                            Know More
-                            <span aria-hidden="true">
-                                →
-                            </span>
-                        </a>
-                    </div>
-                </div>
             </div>
             <div class="flex items-center justify-center w-full  px-2 py-0">
-                <button class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium text-center">View All
-                    Services</button>
+                <a href="Service.html">
+                    <button class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium text-center">View All
+                        Services</button>
+                </a>
             </div>
         </div>
         <!--Sixth Screen-->
@@ -500,10 +440,48 @@
             </div>
         </div>
         <!--Seventh Screen-->
-        <div class="w-full h-screen bg-[#F7F7F7] py-10">
+        <div class="w-full h-fit bg-[#F7F7F7] py-10">
             <h1 class="text-center text-3xl font-semibold text-[#515854]">How We <span class="text-[#009FCF]">Work
                     ?</span></h1>
+           <div class="w-full flex justify-center">
+            <div class="w-[80%] px-5 flex justify-center items-center gap-10 mt-10">
+                <div class="specialWork w-fit h-fit flex flex-col gap-6 items-center">
+                    <div class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md">
+                        <img src="./images/search.png" alt="">
+                    </div>
+                    <h3 class="text-[#009FCF] font-semibold">Connect</h3>
+                    <div class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3">
+                        <p class="text-black text-sm font-light text-center">
+                            Search on your needs whatever service you want from your helping hand
+                        </p>
+                    </div>
+                </div>
+                <div class="specialWork w-fit h-fit flex flex-col gap-6 items-center">
+                    <div class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md">
+                        <img src="./images/oriental.png" alt="">
+                    </div>
+                    <h3 class="text-[#009FCF] font-semibold">Discussion</h3>
+                    <div class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3">
+                        <p class="text-black text-sm font-light text-center">
+                            Booking after you searched your requirement and confirm there availability with a chat.
+                        </p>
+                    </div>
+                </div>
+                <div class="specialWork w-fit h-fit flex flex-col gap-6 items-center">
+                    <div class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md">
+                        <img src="./images/result.png" alt="">
+                    </div>
+                    <h3 class="text-[#009FCF] font-semibold">Results</h3>
+                    <div class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3">
+                        <p class="text-black text-sm font-light text-center">
+                            After completion of work and getting satisfaction rate your helping hand on the platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+           </div>
         </div>
+
         <!--Eight screen-->
         <div class="w-full py-20">
             <div class="bg-[#009FCF] flex py-10 px-20">
@@ -554,9 +532,10 @@
                     <div class=" mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
                         <div>
                             <h2 class="text-lg font-bold  flex justify-center">
-                               <img src="./images/Logo-removebg-preview.png" alt="">
+                                <img src="./images/Logo-removebg-preview.png" alt="">
                             </h2>
-                            <p class="font-light text-sm text-[#515854] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id consectetur in integer ullamcorper.</p>
+                            <p class="font-light text-sm text-[#515854] mt-2">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Ut id consectetur in integer ullamcorper.</p>
                             <div class="flex space-x-3 mt-4">
                                 <a href="#" class="text-[#009FCF] text-xl"><i class="ri-twitter-fill"></i></a>
                                 <a href="#" class="text-[#009FCF] text-xl"><i class="ri-linkedin-fill"></i></a>
@@ -585,14 +564,18 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-bold">Contact Info</h3>
-                            <p class="font-light text-sm text-[#515854] mt-2"><strong>Email:</strong> orientaldetective@gmail.com</p>
+                            <p class="font-light text-sm text-[#515854] mt-2"><strong>Email:</strong>
+                                orientaldetective@gmail.com</p>
                             <p class="font-light text-sm text-[#515854]"><strong>Phone:</strong> +910000000000</p>
-                            <p class="font-light text-sm text-[#515854]"><strong>Address:</strong> Shanti Nagar Mira Road, Mumbai</p>
+                            <p class="font-light text-sm text-[#515854]"><strong>Address:</strong> Shanti Nagar Mira
+                                Road, Mumbai</p>
                             <button class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded">Contact us</button>
                         </div>
                     </div>
-                    <div class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 ">
-                        2025 @All rights reserved Oriental Detective | <a href="#" class="">Terms and Conditions</a> | <a href="#" class="">Privacy Policy</a> | <a href="#" class="">Legal Notice</a>
+                    <div
+                        class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 ">
+                        2025 @All rights reserved Oriental Detective | <a href="#" class="">Terms and Conditions</a> |
+                        <a href="#" class="">Privacy Policy</a> | <a href="#" class="">Legal Notice</a>
                     </div>
                 </footer>
             </div>
@@ -602,7 +585,13 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+        integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
 
 
