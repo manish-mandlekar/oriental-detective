@@ -148,17 +148,17 @@ animateCounters();
 function initializeSlider() {
   const testimonials = [
     {
-      content: "The investigation services provided were thorough and professional. Highly recommended for anyone needing discrete and reliable detective services.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
       name: "John Smith",
       designation: "Corporate Client"
     },
     {
-      content: "Outstanding attention to detail and complete confidentiality. The team went above and beyond to help resolve our case.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
       name: "Sarah Johnson",
       designation: "Private Client"
     },
     {
-      content: "Exceptional service with regular updates throughout the investigation process. The results exceeded our expectations.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
       name: "Michael Brown",
       designation: "Business Owner"
     }
@@ -201,8 +201,8 @@ function initializeSlider() {
           "${testimonial.content}"
         </div>
         <div class="mt-auto">
-          <h3 class="font-bold text-xl text-[#515854]">${testimonial.name}</h3>
-          <p class="text-[#009FCF] mt-1">${testimonial.designation}</p>
+          <h3 class="font-bold text-xl text-center text-[#515854]">${testimonial.name}</h3>
+          <p class="text-[#009FCF] text-center mt-1">${testimonial.designation}</p>
         </div>
       </div>
     `;

@@ -330,7 +330,7 @@ html,body{
   }
   
   .slider-card.left {
-    transform: translate(-150%, -50%) scale(0.8);
+    transform: translate(-110%, -50%) scale(0.8);
     opacity: 0.5;
     filter: blur(3px);
   }
@@ -343,7 +343,7 @@ html,body{
   }
   
   .slider-card.right {
-    transform: translate(50%, -50%) scale(0.8);
+    transform: translate(20%, -50%) scale(0.8);
     opacity: 0.5;
     filter: blur(3px);
   }
