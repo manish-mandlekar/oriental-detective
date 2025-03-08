@@ -3,23 +3,60 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-document.getElementById('menu-btn').addEventListener('click', function () {
-    document.getElementById('menu').classList.toggle('active');
+document.getElementById('menu-btn').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    const navbar = document.querySelector('.navbar');
+    
+    menu.classList.toggle('active');
     this.classList.toggle('active');
-});
-
-document.getElementById("dropdownButton").addEventListener("click", function () {
-    let menu = document.getElementById("dropdownMenu");
-    menu.classList.toggle("hidden");
-});
-
-// Close dropdown if clicked outside
-document.addEventListener("click", function (event) {
-    let dropdown = document.getElementById("dropdownMenu");
-    let button = document.getElementById("dropdownButton");
-    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.classList.add("hidden");
+    
+    // Prevent body scroll when menu is open
+    if(menu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
     }
+});
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('menu');
+    const menuBtn = document.getElementById('menu-btn');
+    
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target) && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        menuBtn.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownButtons = document.querySelectorAll('[id^="dropdownButton"]');
+    const dropdownMenus = document.querySelectorAll('[id^="dropdownMenu"]');
+
+    // Handle button clicks
+    dropdownButtons.forEach((button, index) => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            
+            // Close all other dropdowns
+            dropdownMenus.forEach((menu, menuIndex) => {
+                if (menuIndex !== index) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // Toggle current dropdown
+            dropdownMenus[index].classList.toggle('hidden');
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.relative.inline-block')) {
+            dropdownMenus.forEach(menu => {
+                menu.classList.add('hidden');
+            });
+        }
+    });
 });
 
 
@@ -111,17 +148,17 @@ animateCounters();
 function initializeSlider() {
   const testimonials = [
     {
-      content: "The investigation services provided were thorough and professional. Highly recommended for anyone needing discrete and reliable detective services.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
       name: "John Smith",
       designation: "Corporate Client"
     },
     {
-      content: "Outstanding attention to detail and complete confidentiality. The team went above and beyond to help resolve our case.",
+      content: "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
       name: "Sarah Johnson",
       designation: "Private Client"
     },
     {
-      content: "Exceptional service with regular updates throughout the investigation process. The results exceeded our expectations.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
       name: "Michael Brown",
       designation: "Business Owner"
     }
@@ -164,8 +201,8 @@ function initializeSlider() {
           "${testimonial.content}"
         </div>
         <div class="mt-auto">
-          <h3 class="font-bold text-xl text-[#515854]">${testimonial.name}</h3>
-          <p class="text-[#009FCF] mt-1">${testimonial.designation}</p>
+          <h3 class="font-bold text-xl text-center text-[#515854]">${testimonial.name}</h3>
+          <p class="text-[#009FCF] text-center mt-1">${testimonial.designation}</p>
         </div>
       </div>
     `;
