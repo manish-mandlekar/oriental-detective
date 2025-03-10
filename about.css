@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 html,body{
@@ -15,11 +13,11 @@ html,body{
     margin: 20px;
     height: 60%;
     width: 97%;
-    object-fit:cover;
 }
 .picture img{
+    object-fit:cover;
     border-radius: 20px;
-    height: 100%;
+    max-height: 400px;
     width: 100%;
 }
 .about h2{
