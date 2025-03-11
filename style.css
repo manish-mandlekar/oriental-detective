@@ -65,8 +65,8 @@ body {
 /* Button css */
 /* From Uiverse.io by nikk7007 */
 .btnxui {
-  --color: #009FCF;
-  padding: 0.8em 1.7em;
+  --color: white;
+  padding: 0.8em 1.3em;
   background-color: transparent;
   border-radius: 0.3em;
   position: relative;
@@ -79,6 +79,7 @@ body {
   font-family: inherit;
   text-transform: uppercase;
   color: var(--color);
+  background-color: #0084ac;
   z-index: 1;
 }
 
@@ -113,7 +114,7 @@ body {
 }
 
 .btnxui:hover {
-  color: rgb(255, 255, 255);
+  color: #009FCF;
 }
 
 .btnxui:active {
