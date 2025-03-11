@@ -242,6 +242,9 @@ function initializeSlider() {
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", initializeSlider);
 
+
+
+
 // Call function on page load
 
 // Add to your existing code
