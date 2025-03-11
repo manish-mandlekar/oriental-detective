@@ -25,12 +25,12 @@
       <img src="./images/whatsap.png" class="w-16" alt="" />
       <img
         src="./images/arrow-removebg-preview.png"
-        class="w-16 scrollontop"
+        class="w-14 scrollontop"
         alt=""
       />
     </div>
     <div class="w-full h-fit orientalMain" data-scroll-container>
-      <div class="w-full h-screen white">
+      <div class="w-full white">
         <!-- qwertyui -->
         <nav
           class="navbar w-full px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
@@ -38,7 +38,7 @@
           <div class="subNav w-fit flex items-center justify-center">
             <!-- Logo (Left Side) -->
             <img
-              class="w-[180px] sm:w-[180px]"
+              class="w-[210px] sm:w-[180px]"
               src="./images/Logo.jpg"
               alt="Logo"
             />
@@ -49,9 +49,9 @@
               class="block md:hidden text-black focus:outline-none"
             >
               <svg
-                class="w-6 h-6 open"
+                class="w-8 h-8 open"
                 fill="none"
-                stroke="currentColor"
+                stroke="#1a9dce"
                 stroke-width="2"
                 viewBox="0 0 24 24"
               >
@@ -61,7 +61,7 @@
                   d="M4 6h16M4 12h16m-7 6h7"
                 ></path>
               </svg>
-              <svg
+              <!-- <svg
                 class="w-6 h-6 close"
                 fill="none"
                 stroke="currentColor"
@@ -73,7 +73,7 @@
                   stroke-linejoin="round"
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
-              </svg>
+              </svg> -->
             </button>
           </div>
 
@@ -245,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="px-3">
+        <div class="lg:px-3">
           <div
             class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center mt-10 rounded-2xl"
           >
@@ -331,7 +331,7 @@
               </button>
 
               <!-- Bottom Buttons -->
-              <div
+              <!-- <div
                 class="absolute bottom-49 left-1/2 transform -translate-x-1/2 flex space-x-2 bottomBtn"
               >
                 <button
@@ -346,7 +346,7 @@
                   onclick="goToSlide(2)"
                   class="slide-btn w-12 h-1 bg-gray-400 rounded-full"
                 ></button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -355,17 +355,17 @@
       <div class="w-full min-h-screen flex justify-center py-20">
         <div class="w-[80%] h-full flex items-center sndpage">
           <div
-            class="w-[50%] mission flex flex-col grid place-items-center gap-8 px-20 border-r-1 border-[#009FCF]"
+            class="w-[50%] mission flex flex-col grid place-items-center gap-1 px-20 border-r-1 border-[#009FCF]"
           >
             <img
               src="./images/mission.png"
-              class="w-18 text-center"
+              class="w-12 text-center lg:w-18"
               alt="Centered Image"
             />
             <h1 class="text-center text-3xl font-semibold text-[#515854]">
               Our <span class="text-[#009FCF]">Mission</span>
             </h1>
-            <p class="text-medium font-light leading-8">
+            <p class="text-medium font-light leading-8 mt-4">
               Delivering customized solutions for your investigative needs. Our
               investigations are built for thoroughness, accuracy, and
               confidentiality. With meticulous attention to detail, we uncover
@@ -382,17 +382,17 @@
             </p>
           </div>
           <div
-            class="w-[50%] vision flex flex-col grid place-items-center gap-8 px-20"
+            class="w-[50%] vision flex flex-col grid place-items-center gap-1 px-20 mt-10"
           >
             <img
               src="./images/vision.png"
-              class="w-18 text-center"
+              class="w-12 text-center lg:w-18"
               alt="Centered Image"
             />
             <h1 class="text-center text-3xl font-semibold text-[#515854]">
               Our <span class="text-[#009FCF]">Vision</span>
             </h1>
-            <p class="text-medium font-light leading-8">
+            <p class="text-medium font-light leading-8 mt-4">
               Delivering customized solutions for your investigative needs. Our
               investigations are built for thoroughness, accuracy, and
               confidentiality. With meticulous attention to detail, we uncover
@@ -411,8 +411,8 @@
         </div>
       </div>
       <!--Third Screen-->
-      <div class="w-full min-h-[60vh] bg-[#F7F7F7] flex justify-center thrdscr">
-        <div class="parent w-[80%]">
+      <div class="w-full lg:min-h-[60vh] min-h-screen py-4 bg-[#F7F7F7] flex justify-center thrdscr">
+        <div class="parent lg:w-[80%] w-full">
           <div class="div1 py-5 w-[50%] flex flex-col gap-6">
             <div class="w-[80%] ml-5 text-left">
               <h1
@@ -435,7 +435,7 @@
             </div>
             <div class="flex btnscr justify-end mt-10">
               <button
-                class="bg-[#009FCF] w-fit text-white px-3 py-4 rounded text-xs font-medium"
+                class="bg-[#009FCF] w-fit text-white px-3 py-4 rounded text-s font-bold"
               >
                 Get your Investigation TODAY!
               </button>
@@ -447,7 +447,7 @@
               <img
                 src="https://images.unsplash.com/photo-1541359927273-d76820fc43f9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Investigation Board"
-                class="w-[23vmax] h-[23vmax] object-cover absolute top-[100px] right-[-10px] rounded-xl shadow-lg"
+                class="w-[23vmax] h-[23vmax] object-cover absolute top-[100px] lg:right-[-10px] rounded-xl shadow-lg right-[20px]"
               />
 
               <!-- Overlay Image (Smaller) -->
@@ -546,7 +546,7 @@
         <div class="w-full h-fit flex justify-center mt-20">
           <div class="w-[80%] h-full flex justify-center abtus">
             <div class="w-[50%] h-full flex items-start justify-end abtuspta">
-              <img src="./images/about.png" class="w-[40vmax] object-cover" />
+              <img src="./images/about.png" class="lg:w-[35vmax] w-full object-cover" />
             </div>
             <div class="py-5 w-[50%] flex flex-col gap-6 abtuspta">
               <div class="w-[80%] ml-5 text-left">
@@ -557,7 +557,7 @@
                   <span class="text-[#515854]">Us</span>
                 </h1>
               </div>
-              <div class="ml-5">
+              <div class="lg:ml-5 px-4">
                 <p class="text-medium font-light leading-8">
                   Our investigations are built for thoroughness, accuracy, and
                   confidentiality. With meticulous attention to detail, we
@@ -572,7 +572,7 @@
               </div>
               <div class="flex justify-end mt-10 btnsc">
                 <button
-                  class="bg-[#009FCF] w-fit text-white px-3 py-4 rounded text-xs font-medium"
+                  class="bg-[#009FCF] w-fit text-white px-3 py-4 rounded text-s font-bold"
                 >
                   Know more about oriental detective
                 </button>
@@ -581,13 +581,14 @@
           </div>
         </div>
       </div>
+
       <!--Fifth Screen-->
-      <div class="w-full h-screen bg-[#F7F7F7] pt-15 servicefift">
+      <div class="w-full flex flex-col gap-10 bg-[#F7F7F7] pt-15 servicefift py-4">
         <h1 class="text-center text-3xl font-semibold text-[#515854] headingm">
           Our <span class="text-[#009FCF]">Services</span>
         </h1>
         <div
-          class="w-full h-[80%] flex items-center gap-14 justify-center"
+          class="w-full flex items-center gap-14 justify-center"
           id="services-container"
         ></div>
         <div
@@ -595,7 +596,7 @@
         >
           <a href="Service.html">
             <button
-              class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium text-center"
+              class="bg-[#009FCF] text-white px-3 py-2 rounded text-s font-bold text-center"
             >
               View All Services
             </button>
@@ -607,7 +608,7 @@
         <h1 class="text-center text-3xl font-semibold text-[#515854]">
           Why Choose <span class="text-[#009FCF]">Oriental Detective ?</span>
         </h1>
-        <div class="w-full flex justify-center">
+        <div class="w-full flex justify-center px-4">
           <p class="w-[60%] text-medium font-light leading-8 paraofsix">
             Our investigations are built for thoroughness, accuracy, and
             confidentiality. With meticulous attention to detail, we uncover the
@@ -648,7 +649,7 @@
               </div>
               <h3 class="text-[#009FCF] font-semibold">Connect</h3>
               <div
-                class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3"
+                class="lg:w-[18vmax] w-[24vmax] h-fit to-white p-3"
               >
                 <p class="text-black text-sm font-light text-center">
                   Search on your needs whatever service you want from your
@@ -666,7 +667,7 @@
               </div>
               <h3 class="text-[#009FCF] font-semibold">Discussion</h3>
               <div
-                class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3"
+                class="lg:w-[18vmax] w-[24vmax] h-fit to-white p-3"
               >
                 <p class="text-black text-sm font-light text-center">
                   Booking after you searched your requirement and confirm there
@@ -684,7 +685,7 @@
               </div>
               <h3 class="text-[#009FCF] font-semibold">Results</h3>
               <div
-                class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3"
+                class="lg:w-[18vmax] w-[24vmax] h-fit to-white p-3"
               >
                 <p class="text-black text-sm font-light text-center">
                   After completion of work and getting satisfaction rate your
@@ -705,7 +706,7 @@
               we are happy
             </h3>
             <button
-              class="bg-white mt-8 text-[#009FCF] px-3 py-2 rounded text-xs font-medium"
+              class="bg-white mt-8 text-[#009FCF] px-3 py-2 rounded text-s font-bold"
             >
               Get In Touch
             </button>
@@ -811,7 +812,7 @@
                   <li>Testimonials</li>
                 </ul>
               </div>
-              <div>
+              <div class="flex flex-col gap-2">
                 <h3 class="text-lg font-bold">Contact Info</h3>
                 <p class="font-light text-sm text-[#515854] mt-2">
                   <strong>Email:</strong> orientaldetective@gmail.com
