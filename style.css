@@ -447,7 +447,7 @@ body {
     transform: translate(-50%, -50%);
   } */
   .thrdscr {
-    height: fit-content;
+    height: 117vh;
   }
   .btnscr {
     justify-content: center;
