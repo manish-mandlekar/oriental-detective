@@ -150,6 +150,7 @@ const scroll = new LocomotiveScroll({
   
     counters.forEach((counter) => observer.observe(counter));
   }
+
   
   // Remove the DOMContentLoaded event listener since we'll use Intersection Observer
   animateCounters();
