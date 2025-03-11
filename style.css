@@ -61,11 +61,77 @@ body {
     display: block;
   }
 }
+
+/* Button css */
+/* From Uiverse.io by nikk7007 */
+.btnxui {
+  --color: #009FCF;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+
+.btnxui::before,
+.btnxui::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+}
+
+.btnxui::before {
+  top: -1em;
+  left: -1em;
+}
+
+.btnxui::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.btnxui:hover::before,
+.btnxui:hover::after {
+  height: 510px;
+  width: 510px;
+}
+
+.btnxui:hover {
+  color: rgb(255, 255, 255);
+}
+
+.btnxui:active {
+  filter: brightness(0.8);
+}
+.btnxui2{
+  --color: #ffffff;
+}
+
+.btnxui2:hover {
+  color: #009FCF;
+}
+
 .btw {
   border-right: 1px solid #109ec9;
 }
-.bg-gradient{
-  background: linear-gradient( transparent, #0E79B2 100%);
+.bg-gradient {
+  background: linear-gradient(transparent, #0e79b2 100%);
 }
 
 .firstimg {
@@ -559,8 +625,8 @@ body {
 */ .specialWork {
   width: 100%;
 }
-.specialWork{
-  background: linear-gradient(transparent ,transparent, #69b9e469);
+.specialWork {
+  background: linear-gradient(transparent, transparent, #69b9e469);
 }
 
 /* Footer */
@@ -572,11 +638,6 @@ footer .grid-cols-4 {
 .text-3xl {
   font-size: 1.875rem;
 }
-
-/* .w-[60%] {
-    width: 90% !important;
-  } */
-/* } */
 
 /* Add general responsive utilities */
 @media screen and (max-width: 768px) {
