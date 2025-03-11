@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 html,body{
+  scroll-behavior: smooth;
     width: 100%;
     height: 100%;
 }
@@ -623,4 +624,20 @@ position: relative;
 .relative.inline-block {
     position: relative;
     z-index: 100;
+}
+
+.scrollontop {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    pointer-events: all;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.wtparrow {
+    pointer-events: none; /* Allow clicks only on the image */
+}
+
+.scrollontop {
+    transform: translateY(0px);
 }
