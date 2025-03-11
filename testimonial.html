@@ -1,276 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div
-    class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow">
-    <img src="./images/whatsap.png" class="w-16" alt="">
-    <img  src="./images/arrow-removebg-preview.png" class="w-16 scrollontop" alt="">
-</div>
+      class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow"
+    >
+      <img src="./images/whatsap.png" class="w-16" alt="" />
+      <img
+        src="./images/arrow-removebg-preview.png"
+        class="w-16 scrollontop"
+        alt=""
+      />
+    </div>
     <div class="w-full h-fit" data-scroll-container>
-        <div class="w-full h-screen">
-            <nav
-                class="navbar w-full  px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center">
-                <div class="subNav w-fit flex items-center justify-center">
-                    <!-- Logo (Left Side) -->
-                    <img class="w-[180px] sm:w-[180px]" src="./images/Logo.jpg" alt="Logo">
+      <div class="w-full h-screen">
+        <nav
+          class="navbar w-full px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
+        >
+          <div class="subNav w-fit flex items-center justify-center">
+            <!-- Logo (Left Side) -->
+            <img
+              class="w-[180px] sm:w-[180px]"
+              src="./images/Logo.jpg"
+              alt="Logo"
+            />
 
-                    <!-- Hamburger Menu Button (Right Side) -->
-                    <button id="menu-btn" class="block md:hidden text-black focus:outline-none">
-                        <svg class="w-6 h-6 open" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                        <svg class="w-6 h-6 close" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
+            <!-- Hamburger Menu Button (Right Side) -->
+            <button
+              id="menu-btn"
+              class="block md:hidden text-black focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6 open"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+              <svg
+                class="w-6 h-6 close"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
 
-                <!-- Navigation Links -->
-                <div id="menu" class="hidden md:flex items-center gap-6 w-fit ">
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute  after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="index.html">Home</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="about.html">About us</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="Service.html">Services</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="testimonial.html">Testimonials</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="">Contact us</a>
-                </div>
+          <!-- Navigation Links -->
+          <div id="menu" class="hidden md:flex items-center gap-6 w-fit">
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="about.html"
+              >About us</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="Service.html"
+              >Services</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="testimonial.html"
+              >Testimonials</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="contact.html"
+              >Contact us</a
+            >
+          </div>
 
-                <!-- Contact Info -->
-                <div
-                    class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit">
-                    <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
-                    <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
-                </div>
-            </nav>
-            <div class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4  gap-4 secondNavbar">
-                <div class="btw px-2 py-0">
-                    <a href="Service.html"> <button
-                            class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium">All
-                            Services</button></a>
-                </div>
-                <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-[#009FCF] text-xs  hover:text-[#009FCF] focus:outline-none">
-                        Personal Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
+          <!-- Contact Info -->
+          <div
+            class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit"
+          >
+            <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
+            <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
+          </div>
+        </nav>
+        <div
+          class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar"
+        >
+          <div class="btw px-2 py-0">
+            <a href="Service.html">
+              <button
+                class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium"
+              >
+                All Services
+              </button></a
+            >
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Personal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
 
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none">
-                        Corporate & Business Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
-
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none">
-                        Legal & Criminal Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
-
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none">
-                        Specialized & High Profile Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
-
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-           <div class="px-3">
+            <!-- Dropdown Menu -->
             <div
-            class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center  mt-10 rounded-2xl">
-            <div class="relative w-full h-fit  overflow-hidden rounded-lg shadow-lg">
-                <div class="relative w-full flex-shrink-0 rounded-lg overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        class="w-full h-full object-cover">
-                    <div
-                        class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg">
-                        <h2 class="text-[5vmax] font-bold">Testimonial</h2>
-                        
-                    </div>
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Corporate & Business Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none"
+            >
+              Legal & Criminal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Specialized & High Profile Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="px-3">
+          <div
+            class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center mt-10 rounded-2xl"
+          >
+            <div
+              class="relative w-full h-fit overflow-hidden rounded-lg shadow-lg"
+            >
+              <div
+                class="relative w-full flex-shrink-0 rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg"
+                >
+                  <h2 class="text-[5vmax] font-bold">Testimonial</h2>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-           </div>
-          
+      </div>
+      <!--cards-->
+      <div class="w-full h-fit py-10 flex justify-center cardscr">
+        <div class="w-full h-fit flex items-center gap-20 justify-center">
+          <div class="w-full">
+            <div
+              class="testimonial-slider flex items-center justify-center gap-14 testiscr"
+            >
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+            </div>
+            <div
+              class="testimonial-slider flex items-center justify-center gap-14 testiscr"
+            >
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+            </div>
+            <div
+              class="testimonial-slider flex items-center justify-center gap-14 testiscr"
+            >
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+              <div
+                class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi"
+              >
+                <p class="text-[#515854] font-light text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam labore provident libero, quos atque hic itaque magni
+                  ad, illo quasi ex quam facere? Corporis, mollitia, fugiat
+                  veritatis dignissimos officiis eaque laborum ullam facere
+                  maiores reprehenderit placeat perferendis, deleniti totam
+                  aliquam sed beatae! Earum omnis alias error expedita neque ab
+                  et?
+                </p>
+                <h1 class="text-2xl font-semibold text-center mt-3">
+                  Yash Mandlekar
+                </h1>
+                <h3 class="font-light text-[#515854] text-xs text-center">
+                  Human Resources
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--cards-->
-        <div class="w-full h-fit py-10 flex justify-center cardscr">
-            <div class="w-full h-fit flex items-center gap-20 justify-center">
-                <div class="w-full ">
-                    <div class="testimonial-slider flex items-center justify-center gap-14 testiscr">
-                        <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                          <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                          <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                          <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                        </div>
-                        <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                            <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                            <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                            <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                          </div>
-                          <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                            <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                            <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                            <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                          </div>
-                    </div>
-                    <div class="testimonial-slider flex items-center justify-center gap-14 testiscr">
-                        <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                          <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                          <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                          <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                        </div>
-                        <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                            <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                            <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                            <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                          </div>
-                          <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                            <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                            <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                            <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                          </div>
-                    </div>
-                    <div class="testimonial-slider flex items-center justify-center gap-14 testiscr">
-                        <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                          <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                          <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                          <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                        </div>
-                        <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                            <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                            <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                            <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                          </div>
-                          <div class="w-[19vmax] h-fit bg-white rounded-lg shadow-md p-5 testi">
-                            <p class="text-[#515854] font-light text-sm" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore provident libero, quos atque hic itaque magni ad, illo quasi ex quam facere? Corporis, mollitia, fugiat veritatis dignissimos officiis eaque laborum ullam facere maiores reprehenderit placeat perferendis, deleniti totam aliquam sed beatae! Earum omnis alias error expedita neque ab et?</p>
-                            <h1 class="text-2xl font-semibold text-center mt-3">Yash Mandlekar</h1>
-                            <h3 class="font-light text-[#515854] text-xs text-center">Human Resources</h3>
-                          </div>
-                    </div>
+      </div>
+
+      <!--footer-->
+      <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
+        <div class="w-[80%]">
+          <footer class="pt-10 w-full mt-10">
+            <div class="mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div>
+                <h2 class="text-lg font-bold flex justify-center">
+                  <img src="./images/Logo-removebg-preview.png" alt="" />
+                </h2>
+                <p class="font-light text-sm text-[#515854] mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id
+                  consectetur in integer ullamcorper.
+                </p>
+                <div class="flex space-x-3 mt-4">
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-twitter-fill"></i
+                  ></a>
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-linkedin-fill"></i
+                  ></a>
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-instagram-fill"></i
+                  ></a>
                 </div>
-                
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Services</h3>
+                <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
+                  <li>Private Investigation</li>
+                  <li>Corporate Investigation</li>
+                  <li>Marital Investigation</li>
+                  <li>Legal Investigation</li>
+                  <li>Criminal Investigation</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Quick Links</h3>
+                <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>Blogs</li>
+                  <li>Contact Us</li>
+                  <li>Testimonials</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Contact Info</h3>
+                <p class="font-light text-sm text-[#515854] mt-2">
+                  <strong>Email:</strong> orientaldetective@gmail.com
+                </p>
+                <p class="font-light text-sm text-[#515854]">
+                  <strong>Phone:</strong> +910000000000
+                </p>
+                <p class="font-light text-sm text-[#515854]">
+                  <strong>Address:</strong> Shanti Nagar Mira Road, Mumbai
+                </p>
+                <button class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded">
+                  Contact us
+                </button>
+              </div>
             </div>
-        </div>
-        
-       
-        <!--footer-->
-        <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
-            <div class="w-[80%]">
-                <footer class=" pt-10 w-full mt-10">
-                    <div class=" mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div>
-                            <h2 class="text-lg font-bold  flex justify-center">
-                               <img src="./images/Logo-removebg-preview.png" alt="">
-                            </h2>
-                            <p class="font-light text-sm text-[#515854] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id consectetur in integer ullamcorper.</p>
-                            <div class="flex space-x-3 mt-4">
-                                <a href="#" class="text-[#009FCF] text-xl"><i class="ri-twitter-fill"></i></a>
-                                <a href="#" class="text-[#009FCF] text-xl"><i class="ri-linkedin-fill"></i></a>
-                                <a href="#" class="text-[#009FCF] text-xl"><i class="ri-instagram-fill"></i></a>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Services</h3>
-                            <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
-                                <li>Private Investigation</li>
-                                <li>Corporate Investigation</li>
-                                <li>Marital Investigation</li>
-                                <li>Legal Investigation</li>
-                                <li>Criminal Investigation</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Quick Links</h3>
-                            <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
-                                <li>About Us</li>
-                                <li>Services</li>
-                                <li>Blogs</li>
-                                <li>Contact Us</li>
-                                <li>Testimonials</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Contact Info</h3>
-                            <p class="font-light text-sm text-[#515854] mt-2"><strong>Email:</strong> orientaldetective@gmail.com</p>
-                            <p class="font-light text-sm text-[#515854]"><strong>Phone:</strong> +910000000000</p>
-                            <p class="font-light text-sm text-[#515854]"><strong>Address:</strong> Shanti Nagar Mira Road, Mumbai</p>
-                            <button class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded">Contact us</button>
-                        </div>
-                    </div>
-                    <div class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 blendlast">
-                        2025 @All rights reserved Oriental Detective | <a href="#" class="">Terms and Conditions</a> | <a href="#" class="">Privacy Policy</a> | <a href="#" class="">Legal Notice</a>
-                    </div>
-                </footer>
+            <div
+              class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 blendlast"
+            >
+              2025 @All rights reserved Oriental Detective |
+              <a href="#" class="">Terms and Conditions</a> |
+              <a href="#" class="">Privacy Policy</a> |
+              <a href="#" class="">Legal Notice</a>
             </div>
+          </footer>
         </div>
+      </div>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
-    integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-<script src="script.js"></script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

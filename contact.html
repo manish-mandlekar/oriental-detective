@@ -1,269 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact us</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="spouse.css" />
-    <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-    <div class="w-full h-fit orientalMain" data-scroll-container>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow"
+    >
+      <img src="./images/whatsap.png" class="w-16" alt="" />
+      <img
+        src="./images/arrow-removebg-preview.png"
+        class="w-16 scrollontop"
+        alt=""
+      />
+    </div>
+    <div class="w-full h-fit" data-scroll-container>
+      <div class="w-full h-screen">
         <nav
-        class="navbar w-full px-6 py-4 bg-white rounded-lg flex flex-col md:flex-row items-center justify-center"
-      >
-        <div class="subNav w-full flex items-center justify-center">
-          <!-- Logo (Left Side) -->
-          <img
-            class="w-[180px] sm:w-[180px]"
-            src="./images/Logo.jpg"
-            alt="Logo"
-          />
-
-          <!-- Hamburger Menu Button (Right Side) -->
-          <button
-            id="menu-btn"
-            class="block md:hidden text-black focus:outline-none"
-          >
-            <svg
-              class="w-6 h-6 open"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-            <svg
-              class="w-6 h-6 close"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Navigation Links -->
-        <div id="menu" class="hidden md:flex items-center gap-6 w-full">
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href=""
-            >Home</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href=""
-            >About us</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href=""
-            >Services</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href=""
-            >Testimonials</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href=""
-            >Contact us</a
-          >
-        </div>
-
-        <!-- Contact Info -->
-        <div
-          class="hidden md:flex flex-col md:flex-row md:items-center gap-4 text-[#009FCF] text-sm font-semibold w-full"
+          class="navbar w-full px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
         >
-          <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
-          <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
-        </div>
-      </nav>
-      <div
-        class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar"
-      >
-        <a class="cursor-pointer" href="Service.html">
-          <div class="btw px-2 py-0">
+          <div class="subNav w-fit flex items-center justify-center">
+            <!-- Logo (Left Side) -->
+            <img
+              class="w-[180px] sm:w-[180px]"
+              src="./images/Logo.jpg"
+              alt="Logo"
+            />
+
+            <!-- Hamburger Menu Button (Right Side) -->
             <button
-              class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium"
+              id="menu-btn"
+              class="block md:hidden text-black focus:outline-none"
             >
-              All Services
+              <svg
+                class="w-6 h-6 open"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+              <svg
+                class="w-6 h-6 close"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
             </button>
           </div>
-        </a>
-        <div
-          class="relative inline-block border-r-1 border-[#109ec9] text-left"
-        >
-          <!-- Dropdown Button -->
-          <button
-            id="dropdownButton"
-            class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
-          >
-            Personal Investigation
-            <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-          </button>
 
-          <!-- Dropdown Menu -->
+          <!-- Navigation Links -->
+          <div id="menu" class="hidden md:flex items-center gap-6 w-fit">
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="about.html"
+              >About us</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="Service.html"
+              >Services</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="testimonial.html"
+              >Testimonials</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="contact.html"
+              >Contact us</a
+            >
+          </div>
+
+          <!-- Contact Info -->
           <div
-            id="dropdownMenu"
-            class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit"
           >
-            <ul class="py-2">
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Background Check
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Surveillance
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Missing Person
-              </li>
-            </ul>
+            <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
+            <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
+          </div>
+        </nav>
+        <div
+          class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar"
+        >
+          <div class="btw px-2 py-0">
+            <a href="Service.html">
+              <button
+                class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium"
+              >
+                All Services
+              </button></a
+            >
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Personal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Corporate & Business Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none"
+            >
+              Legal & Criminal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Specialized & High Profile Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div
-          class="relative inline-block border-r-1 border-[#109ec9] text-left"
-        >
-          <!-- Dropdown Button -->
-          <button
-            id="dropdownButton"
-            class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
-          >
-            Corporate & Business Investigation
-            <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-          </button>
-
-          <!-- Dropdown Menu -->
+        <div class="px-3">
           <div
-            id="dropdownMenu"
-            class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center mt-10 rounded-2xl"
           >
-            <ul class="py-2">
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Background Check
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Surveillance
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Missing Person
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="relative inline-block border-r-1 border-[#109ec9] text-left"
-        >
-          <!-- Dropdown Button -->
-          <button
-            id="dropdownButton"
-            class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none"
-          >
-            Legal & Criminal Investigation
-            <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-          </button>
-
-          <!-- Dropdown Menu -->
-          <div
-            id="dropdownMenu"
-            class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
-          >
-            <ul class="py-2">
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Background Check
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Surveillance
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Missing Person
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="relative inline-block border-r-1 border-[#109ec9] text-left"
-        >
-          <!-- Dropdown Button -->
-          <button
-            id="dropdownButton"
-            class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
-          >
-            Specialized & High Profile Investigation
-            <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-          </button>
-
-          <!-- Dropdown Menu -->
-          <div
-            id="dropdownMenu"
-            class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
-          >
-            <ul class="py-2">
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Background Check
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Surveillance
-              </li>
-              <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                Missing Person
-              </li>
-            </ul>
+            <div
+              class="relative w-full h-fit overflow-hidden rounded-lg shadow-lg"
+            >
+              <div
+                class="relative w-full flex-shrink-0 rounded-lg overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg"
+                >
+                  <h2 class="text-[5vmax] font-bold">Contact Us</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="picturess">
-        <img
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          class="w-full h-full object-cover"
-        />
-        <div class="contact"><h2>Contact us</h2></div>
-      </div>
-<div class="con-box1">
-    <div class=" con-sub">
 
-        <div class="con-sub1">
-            <div class="sub-top">
-                <h1>Contact Information</h1>
-                <span>Say something to start a live chat!</span>
+      <div class="w-full flex flex-col items-center my-5 gap-8">
+        <div class="w-2/3 bg-white rounded-lg shadow-md flex">
+          <!-- Left Section -->
+          <div class="w-2/5 bg-[#009FCF] p-6 text-white rounded-l-lg">
+            <h2 class="text-xl font-bold">Contact Information</h2>
+            <p class="text-sm mt-2">Say something to start a live chat!</p>
+            <div class="mt-4">
+              <p class="flex items-center gap-2">
+                <span>&#9742;</span> +1012 3456 789
+              </p>
+              <p class="flex items-center gap-2 mt-2">
+                <span>&#9993;</span> demo@gmail.com
+              </p>
+              <p class="flex items-center gap-2 mt-2">
+                <span>&#x1F4CD;</span> 132 Dartmouth Street, Boston, MA 02156,
+                USA
+              </p>
             </div>
-            <div class="sub-mid">
-                <div class="s-mid">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"></path></svg><span>+1012 3456 789</span>
-                </div>
-                <div class="s-mid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg>
-                <span>demo@gmail.com</span>
-                </div>
-                <div class="s-mid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z"></path></svg>
-                <span>132 Dartmouth Street Boston, Massachusetts 02156 United States</span>
-                </div>
+            <div class="mt-6 flex space-x-4">
+              <a href="#" class="text-white text-2xl">&#x1F426;</a>
+              <a href="#" class="text-white text-2xl">&#x1F4F7;</a>
+              <a href="#" class="text-white text-2xl">&#x1F47E;</a>
             </div>
-            <div class="sub-bottom"></div>
+          </div>
+          <!-- Right Section -->
+          <div class="w-3/5 p-6">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="text-gray-600">First Name</label>
+                <input
+                  type="text"
+                  class="w-full border-b-2 p-2 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label class="text-[#009FCF] font-semibold">Last Name</label>
+                <input
+                  type="text"
+                  class="w-full border-b-2 p-2 focus:outline-none"
+                  value="Doe"
+                />
+              </div>
+              <div>
+                <label class="text-gray-600">Email</label>
+                <input
+                  type="email"
+                  class="w-full border-b-2 p-2 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label class="text-[#009FCF] font-semibold">Phone Number</label>
+                <input
+                  type="text"
+                  class="w-full border-b-2 p-2 focus:outline-none"
+                  value="+1 012 3456 789"
+                />
+              </div>
+            </div>
+            <div class="mt-6">
+              <p class="text-[#009FCF] font-semibold">Select Subject?</p>
+              <div class="flex gap-4 mt-2">
+                <label class="flex items-center space-x-2">
+                  <input type="radio" name="subject" checked />
+                  <span>General Inquiry</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input type="radio" name="subject" />
+                  <span>Consultation</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input type="radio" name="subject" />
+                  <span>Need a Detective</span>
+                </label>
+              </div>
+            </div>
+            <div class="mt-6">
+              <label class="text-gray-600">Message</label>
+              <textarea
+                class="w-full border-b-2 p-2 focus:outline-none"
+                placeholder="Write your message.."
+              ></textarea>
+            </div>
+            <button class="mt-6 bg-[#009FCF] text-white py-2 px-4 rounded-lg">
+              Send Message
+            </button>
+          </div>
         </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.0228145029287!2d72.8555240753308!3d19.281374045492818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b04e603b8b0d%3A0xa18dc22491387!2sMira%20Road%20Station%20(E)!5e0!3m2!1sen!2sin!4v1741692973205!5m2!1sen!2sin"
+          width="980"
+          height="450"
+          style="border: 0;border-radius: 10px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
 
-
-        <div class="con-sub2">bj</div>
+      <!--footer-->
+      <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
+        <div class="w-[80%]">
+          <footer class="pt-10 w-full mt-10">
+            <div class="mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div>
+                <h2 class="text-lg font-bold flex justify-center">
+                  <img src="./images/Logo-removebg-preview.png" alt="" />
+                </h2>
+                <p class="font-light text-sm text-[#515854] mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id
+                  consectetur in integer ullamcorper.
+                </p>
+                <div class="flex space-x-3 mt-4">
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-twitter-fill"></i
+                  ></a>
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-linkedin-fill"></i
+                  ></a>
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-instagram-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Services</h3>
+                <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
+                  <li>Private Investigation</li>
+                  <li>Corporate Investigation</li>
+                  <li>Marital Investigation</li>
+                  <li>Legal Investigation</li>
+                  <li>Criminal Investigation</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Quick Links</h3>
+                <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>Blogs</li>
+                  <li>Contact Us</li>
+                  <li>Testimonials</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Contact Info</h3>
+                <p class="font-light text-sm text-[#515854] mt-2">
+                  <strong>Email:</strong> orientaldetective@gmail.com
+                </p>
+                <p class="font-light text-sm text-[#515854]">
+                  <strong>Phone:</strong> +910000000000
+                </p>
+                <p class="font-light text-sm text-[#515854]">
+                  <strong>Address:</strong> Shanti Nagar Mira Road, Mumbai
+                </p>
+                <button class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded">
+                  Contact us
+                </button>
+              </div>
+            </div>
+            <div
+              class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 blendlast"
+            >
+              2025 @All rights reserved Oriental Detective |
+              <a href="#" class="">Terms and Conditions</a> |
+              <a href="#" class="">Privacy Policy</a> |
+              <a href="#" class="">Legal Notice</a>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
-</div>
 
-
-</div>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

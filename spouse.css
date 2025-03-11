@@ -69,7 +69,7 @@ html,body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 .ser h1{
     font-size: 25px;
@@ -118,6 +118,9 @@ html,body{
     gap: 20px;
     /* padding: 20px 80px; */
     margin: 20px 40px;
+}
+.our-services p{
+    margin: 0 10px;
 }
 
 .our-services h1{

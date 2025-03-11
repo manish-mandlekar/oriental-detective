@@ -1,600 +1,858 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="enquiry">Enquiry Now</div>
     <div
-    class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow">
-    <img src="./images/whatsap.png" class="w-16" alt="">
-    <img  src="./images/arrow-removebg-preview.png" class="w-16 scrollontop" alt="">
-</div>
+      class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow"
+    >
+      <img src="./images/whatsap.png" class="w-16" alt="" />
+      <img
+        src="./images/arrow-removebg-preview.png"
+        class="w-16 scrollontop"
+        alt=""
+      />
+    </div>
     <div class="w-full h-fit orientalMain" data-scroll-container>
-        <div class="w-full h-screen white">
-            <!-- qwertyui -->
-            <nav
-                class="navbar w-full  px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center">
-                <div class="subNav w-fit flex items-center justify-center">
-                    <!-- Logo (Left Side) -->
-                    <img class="w-[180px] sm:w-[180px]" src="./images/Logo.jpg" alt="Logo">
+      <div class="w-full h-screen white">
+        <!-- qwertyui -->
+        <nav
+          class="navbar w-full px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
+        >
+          <div class="subNav w-fit flex items-center justify-center">
+            <!-- Logo (Left Side) -->
+            <img
+              class="w-[180px] sm:w-[180px]"
+              src="./images/Logo.jpg"
+              alt="Logo"
+            />
 
-                    <!-- Hamburger Menu Button (Right Side) -->
-                    <button id="menu-btn" class="block md:hidden text-black focus:outline-none">
-                        <svg class="w-6 h-6 open" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                        <svg class="w-6 h-6 close" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
+            <!-- Hamburger Menu Button (Right Side) -->
+            <button
+              id="menu-btn"
+              class="block md:hidden text-black focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6 open"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+              <svg
+                class="w-6 h-6 close"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
 
-                <!-- Navigation Links -->
-                <div id="menu" class="hidden md:flex items-center gap-6 w-fit ">
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute  after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="index.html">Home</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="about.html">About us</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="Service.html">Services</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="testimonial.html">Testimonials</a>
-                    <a class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 "
-                        href="">Contact us</a>
-                </div>
+          <!-- Navigation Links -->
+          <div id="menu" class="hidden md:flex items-center gap-6 w-fit">
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="about.html"
+              >About us</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="Service.html"
+              >Services</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="testimonial.html"
+              >Testimonials</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="contact.html"
+              >Contact us</a
+            >
+          </div>
 
-                <!-- Contact Info -->
+          <!-- Contact Info -->
+          <div
+            class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit"
+          >
+            <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
+            <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
+          </div>
+        </nav>
+        <div
+          class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar"
+        >
+          <a class="cursor-pointer" href="Service.html">
+            <div class="btw px-2 py-0">
+              <button
+                class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium"
+              >
+                All Services
+              </button>
+            </div>
+          </a>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Personal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Corporate & Business Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative inline-block border-r-1 border-[#109ec9] text-left"
+          >
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none"
+            >
+              Legal & Criminal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative inline-block text-left">
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
+            >
+              Specialized & High Profile Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <ul class="py-2">
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Background Check
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Surveillance
+                </li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
+                  Missing Person
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="px-3">
+          <div
+            class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center mt-10 rounded-2xl"
+          >
+            <div
+              class="relative w-full h-fit overflow-hidden rounded-lg shadow-lg"
+            >
+              <!--enquiry button-->
+
+              <!-- Image Container -->
+              <div
+                id="slider"
+                class="flex w-full h-fit transition-transform duration-500 ease-in-out rounded-lg"
+              >
+                <!-- Slide 1 -->
                 <div
-                    class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit">
-                    <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
-                    <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
-                </div>
-            </nav>
-            <div class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4  gap-4 secondNavbar">
-                <a class="cursor-pointer" href="Service.html">
-                    <div class="btw px-2 py-0 ">
-                        <button class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium">All
-                            Services</button>
-                    </div>
-                </a>
-                <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-[#009FCF] text-xs  hover:text-[#009FCF] focus:outline-none">
-                        Personal Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
-
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none">
-                        Corporate & Business Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
-
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative inline-block border-r-1 border-[#109ec9] text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none">
-                        Legal & Criminal Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
-
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative inline-block  text-left">
-                    <!-- Dropdown Button -->
-                    <button id="dropdownButton"
-                        class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none">
-                        Specialized & High Profile Investigation <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-                    </button>
-
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu"
-                        class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                        <ul class="py-2">
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Background Check</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Surveillance</li>
-                            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Missing Person</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="px-3">
-                <div
-                    class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center  mt-10 rounded-2xl ">
-                    <div class="relative w-full h-fit  overflow-hidden rounded-lg shadow-lg">
-                        <!--enquiry button-->
-
-                        <!-- Image Container -->
-                        <div id="slider"
-                            class="flex w-full h-fit transition-transform duration-500 ease-in-out rounded-lg ">
-                            <!-- Slide 1 -->
-                            <div class="relative w-full flex-shrink-0 rounded-lg overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="w-full h-full object-cover">
-                                <div
-                                    class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg">
-                                    <h2 class="text-3xl font-bold">Personal & Corporate Business Investigation</h2>
-                                    <p class="text-lg mt-2 text-blue-300 font-semibold">Immediate Results & Daily
-                                        Updates</p>
-                                </div>
-                            </div>
-                            <!-- Slide 2 -->
-                            <div class="relative w-full flex-shrink-0">
-                                <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="w-full h-full object-cover">
-                                <div
-                                    class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg">
-                                    <h2 class="text-3xl font-bold">Advanced Forensic Investigations</h2>
-                                    <p class="text-lg mt-2 text-blue-300 font-semibold">Accuracy & Confidentiality
-                                        Assured</p>
-                                </div>
-                            </div>
-                            <!-- Slide 3 -->
-                            <div class="relative w-full flex-shrink-0">
-                                <img src="https://images.unsplash.com/photo-1714974528737-3e6c7e4d11af?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    class="w-full h-full object-cover">
-                                <div
-                                    class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg">
-                                    <h2 class="text-3xl font-bold">Legal & Criminal Case Solutions</h2>
-                                    <p class="text-lg mt-2 text-blue-300 font-semibold">Trusted by Professionals</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Left Arrow -->
-                        <button id="prev"
-                            class="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-white text-4xl  bg-opacity-50 px-2 py-1 rounded-full hover:bg-opacity-80">
-                            <i class="ri-arrow-drop-left-line"></i>
-                        </button>
-
-                        <!-- Right Arrow -->
-                        <button id="next"
-                            class="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-white text-4xl  bg-opacity-50 px-2 py-1 rounded-full hover:bg-opacity-80">
-                            <i class="ri-arrow-drop-right-line"></i>
-                        </button>
-
-                        <!-- Bottom Buttons -->
-                        <div class="absolute bottom-49 left-1/2 transform -translate-x-1/2 flex space-x-2 bottomBtn">
-                            <button onclick="goToSlide(0)" class="slide-btn w-12 h-1 bg-white rounded-full"></button>
-                            <button onclick="goToSlide(1)" class="slide-btn w-12 h-1 bg-gray-400 rounded-full"></button>
-                            <button onclick="goToSlide(2)" class="slide-btn w-12 h-1 bg-gray-400 rounded-full"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-        <!--second screen-->
-        <div class="w-full min-h-screen flex  justify-center py-20">
-            <div class="w-[80%] h-full flex items-center sndpage">
-                <div class="w-[50%] mission  flex flex-col grid place-items-center gap-8 px-20  border-r-1 border-[#009FCF]">
-                    <img src="./images/mission.png" class="w-18 text-center" alt="Centered Image">
-                    <h1 class="text-center text-3xl font-semibold text-[#515854]">Our <span
-                            class="text-[#009FCF]">Mission</span></h1>
-                    <p class="text-medium font-light leading-8">
-                        Delivering customized solutions for your investigative needs. Our investigations are built for
-                        thoroughness, accuracy, and confidentiality. With meticulous attention to detail, we uncover the
-                        truth and provide you with the answers you seek.
-                        Start with the case - understand the details and solve the mystery. Delivering customized
-                        solutions for your investigative needs. Our investigations are built for thoroughness, accuracy,
-                        and confidentiality. With meticulous attention to detail, we uncover the truth and provide you
-                        with the answers you seek.
-                        Start with the case - understand the details and solve the mystery. With meticulous attention to
-                        detail, we uncover the truth and provide you with the answers you seek. Start with the case –
-                        understand the details and solve the mystery.
+                  class="relative w-full flex-shrink-0 rounded-lg overflow-hidden"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg"
+                  >
+                    <h2 class="text-3xl font-bold">
+                      Personal & Corporate Business Investigation
+                    </h2>
+                    <p class="text-lg mt-2 text-blue-300 font-semibold">
+                      Immediate Results & Daily Updates
                     </p>
+                  </div>
                 </div>
-                <div class="w-[50%] vision  flex flex-col grid place-items-center gap-8 px-20 ">
-                    <img src="./images/vision.png" class="w-18 text-center" alt="Centered Image">
-                    <h1 class="text-center text-3xl font-semibold text-[#515854]">Our <span
-                            class="text-[#009FCF]">Vision</span></h1>
-                    <p class="text-medium font-light leading-8">
-                        Delivering customized solutions for your investigative needs. Our investigations are built for
-                        thoroughness, accuracy, and confidentiality. With meticulous attention to detail, we uncover the
-                        truth and provide you with the answers you seek.
-                        Start with the case - understand the details and solve the mystery. Delivering customized
-                        solutions for your investigative needs. Our investigations are built for thoroughness, accuracy,
-                        and confidentiality. With meticulous attention to detail, we uncover the truth and provide you
-                        with the answers you seek.
-                        Start with the case - understand the details and solve the mystery. With meticulous attention to
-                        detail, we uncover the truth and provide you with the answers you seek. Start with the case -
-                        understand the details and solve the mystery.
+                <!-- Slide 2 -->
+                <div class="relative w-full flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg"
+                  >
+                    <h2 class="text-3xl font-bold">
+                      Advanced Forensic Investigations
+                    </h2>
+                    <p class="text-lg mt-2 text-blue-300 font-semibold">
+                      Accuracy & Confidentiality Assured
                     </p>
+                  </div>
                 </div>
+                <!-- Slide 3 -->
+                <div class="relative w-full flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1714974528737-3e6c7e4d11af?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg"
+                  >
+                    <h2 class="text-3xl font-bold">
+                      Legal & Criminal Case Solutions
+                    </h2>
+                    <p class="text-lg mt-2 text-blue-300 font-semibold">
+                      Trusted by Professionals
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left Arrow -->
+              <button
+                id="prev"
+                class="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-white text-4xl bg-opacity-50 px-2 py-1 rounded-full hover:bg-opacity-80"
+              >
+                <i class="ri-arrow-drop-left-line"></i>
+              </button>
+
+              <!-- Right Arrow -->
+              <button
+                id="next"
+                class="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-white text-4xl bg-opacity-50 px-2 py-1 rounded-full hover:bg-opacity-80"
+              >
+                <i class="ri-arrow-drop-right-line"></i>
+              </button>
+
+              <!-- Bottom Buttons -->
+              <div
+                class="absolute bottom-49 left-1/2 transform -translate-x-1/2 flex space-x-2 bottomBtn"
+              >
+                <button
+                  onclick="goToSlide(0)"
+                  class="slide-btn w-12 h-1 bg-white rounded-full"
+                ></button>
+                <button
+                  onclick="goToSlide(1)"
+                  class="slide-btn w-12 h-1 bg-gray-400 rounded-full"
+                ></button>
+                <button
+                  onclick="goToSlide(2)"
+                  class="slide-btn w-12 h-1 bg-gray-400 rounded-full"
+                ></button>
+              </div>
             </div>
+          </div>
         </div>
-        <!--Third Screen-->
-        <div class="w-full min-h-[60vh] bg-[#F7F7F7] flex justify-center thrdscr">
-
-            <div class="parent w-[80%]  ">
-                <div class="div1 py-5  w-[50%] flex flex-col gap-6">
-                    <div class="w-[80%] ml-5 text-left">
-                        <h1 class="text-center text-3xl font-semibold text-[#009FCF] text-left tracking-wide"> Plan,
-                            Investigate, <span class="text-[#515854]">Deliver Results</span></h1>
-                    </div>
-                    <div class="ml-5">
-                        <p class="text-medium font-light leading-8">
-                            Delivering customized solutions for your investigative needs. Our investigations are built
-                            for thoroughness, accuracy, and confidentiality. With meticulous attention to detail, we
-                            uncover the truth and provide you with the answers you seek.
-                            Start with the case - understand the details and solve the mystery. With meticulous
-                            attention to detail, we uncover the truth and provide you with the answers you seek.
-                        </p>
-                    </div>
-                    <div class="flex btnscr justify-end mt-10">
-                        <button class="bg-[#009FCF] w-fit text-white px-3 py-4 rounded text-xs font-medium">Get
-                            your Investigation TODAY!</button>
-                    </div>
-                </div>
-                <div class="div3 w-[50%]">
-                    <div class="relative w-full max-w-lg px-20 py-5">
-                        <!-- Background Image (Bigger) -->
-                        <img src="https://images.unsplash.com/photo-1541359927273-d76820fc43f9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Investigation Board"
-                            class="w-[23vmax] h-[23vmax] object-cover absolute top-[100px] right-[-10px] rounded-xl shadow-lg">
-
-                        <!-- Overlay Image (Smaller) -->
-                        <img src="https://images.unsplash.com/photo-1543958892-44b098374a87?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Magnifying Glass" class="w-1/2 h-[11vmax] object-cover rounded-lg shadow-md">
-                    </div>
-                </div>
-            </div>
-
+      </div>
+      <!--second screen-->
+      <div class="w-full min-h-screen flex justify-center py-20">
+        <div class="w-[80%] h-full flex items-center sndpage">
+          <div
+            class="w-[50%] mission flex flex-col grid place-items-center gap-8 px-20 border-r-1 border-[#009FCF]"
+          >
+            <img
+              src="./images/mission.png"
+              class="w-18 text-center"
+              alt="Centered Image"
+            />
+            <h1 class="text-center text-3xl font-semibold text-[#515854]">
+              Our <span class="text-[#009FCF]">Mission</span>
+            </h1>
+            <p class="text-medium font-light leading-8">
+              Delivering customized solutions for your investigative needs. Our
+              investigations are built for thoroughness, accuracy, and
+              confidentiality. With meticulous attention to detail, we uncover
+              the truth and provide you with the answers you seek. Start with
+              the case - understand the details and solve the mystery.
+              Delivering customized solutions for your investigative needs. Our
+              investigations are built for thoroughness, accuracy, and
+              confidentiality. With meticulous attention to detail, we uncover
+              the truth and provide you with the answers you seek. Start with
+              the case - understand the details and solve the mystery. With
+              meticulous attention to detail, we uncover the truth and provide
+              you with the answers you seek. Start with the case – understand
+              the details and solve the mystery.
+            </p>
+          </div>
+          <div
+            class="w-[50%] vision flex flex-col grid place-items-center gap-8 px-20"
+          >
+            <img
+              src="./images/vision.png"
+              class="w-18 text-center"
+              alt="Centered Image"
+            />
+            <h1 class="text-center text-3xl font-semibold text-[#515854]">
+              Our <span class="text-[#009FCF]">Vision</span>
+            </h1>
+            <p class="text-medium font-light leading-8">
+              Delivering customized solutions for your investigative needs. Our
+              investigations are built for thoroughness, accuracy, and
+              confidentiality. With meticulous attention to detail, we uncover
+              the truth and provide you with the answers you seek. Start with
+              the case - understand the details and solve the mystery.
+              Delivering customized solutions for your investigative needs. Our
+              investigations are built for thoroughness, accuracy, and
+              confidentiality. With meticulous attention to detail, we uncover
+              the truth and provide you with the answers you seek. Start with
+              the case - understand the details and solve the mystery. With
+              meticulous attention to detail, we uncover the truth and provide
+              you with the answers you seek. Start with the case - understand
+              the details and solve the mystery.
+            </p>
+          </div>
         </div>
-        <!--fourth Screen-->
-        <div class="w-full min-h-screen overflow-hidden marqueeeee">
-            <div id="elem">
-                <div id="elem1">
-                    
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                </div>
-                <div id="elem1">
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                    <div class="circ">
-                        <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
-                    </div>
-                </div>
+      </div>
+      <!--Third Screen-->
+      <div class="w-full min-h-[60vh] bg-[#F7F7F7] flex justify-center thrdscr">
+        <div class="parent w-[80%]">
+          <div class="div1 py-5 w-[50%] flex flex-col gap-6">
+            <div class="w-[80%] ml-5 text-left">
+              <h1
+                class="text-center text-3xl font-semibold text-[#009FCF] text-left tracking-wide"
+              >
+                Plan, Investigate,
+                <span class="text-[#515854]">Deliver Results</span>
+              </h1>
+            </div>
+            <div class="ml-5">
+              <p class="text-medium font-light leading-8">
+                Delivering customized solutions for your investigative needs.
+                Our investigations are built for thoroughness, accuracy, and
+                confidentiality. With meticulous attention to detail, we uncover
+                the truth and provide you with the answers you seek. Start with
+                the case - understand the details and solve the mystery. With
+                meticulous attention to detail, we uncover the truth and provide
+                you with the answers you seek.
+              </p>
+            </div>
+            <div class="flex btnscr justify-end mt-10">
+              <button
+                class="bg-[#009FCF] w-fit text-white px-3 py-4 rounded text-xs font-medium"
+              >
+                Get your Investigation TODAY!
+              </button>
+            </div>
+          </div>
+          <div class="div3 w-[50%]">
+            <div class="relative w-full max-w-lg px-20 py-5">
+              <!-- Background Image (Bigger) -->
+              <img
+                src="https://images.unsplash.com/photo-1541359927273-d76820fc43f9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Investigation Board"
+                class="w-[23vmax] h-[23vmax] object-cover absolute top-[100px] right-[-10px] rounded-xl shadow-lg"
+              />
 
+              <!-- Overlay Image (Smaller) -->
+              <img
+                src="https://images.unsplash.com/photo-1543958892-44b098374a87?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Magnifying Glass"
+                class="w-1/2 h-[11vmax] object-cover rounded-lg shadow-md"
+              />
             </div>
-            <div class="w-full h-fit flex justify-center mt-20">
-                <div class="w-[80%] h-full flex justify-center abtus">
-                    <div class="w-[50%] h-full flex items-start justify-end abtuspta">
-                        <img src="./images/about.png" class="w-[40vmax] object-cover">
-                    </div>
-                    <div class="py-5  w-[50%] flex flex-col gap-6 abtuspta ">
-                        <div class="w-[80%] ml-5 text-left ">
-                            <h1 class="text-center text-3xl font-semibold text-[#009FCF] text-left tracking-wide opa"> About
-                                <span class="text-[#515854]">Us</span>
-                            </h1>
-                        </div>
-                        <div class="ml-5">
-                            <p class="text-medium font-light leading-8">
-                                Our investigations are built for thoroughness, accuracy, and confidentiality. With
-                                meticulous attention to detail, we uncover the truth and provide you with the answers
-                                you seek.
-                                Start with the case - understand the details and solve the mystery. Our investigations
-                                are built for thoroughness, accuracy, and confidentiality. With meticulous attention to
-                                detail, we uncover the truth and provide you with the answers you seek.
-                                Start with the case - understand the details and solve the mystery.
-                            </p>
-                        </div>
-                        <div class="flex justify-end mt-10 btnsc">
-                            <button class="bg-[#009FCF]  w-fit text-white px-3 py-4 rounded text-xs font-medium">
-                                Know more about oriental detective</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!--Fifth Screen-->
-        <div class="w-full h-screen bg-[#F7F7F7] pt-15 servicefift ">
-            <h1 class="text-center text-3xl font-semibold text-[#515854] headingm">Our <span
-                    class="text-[#009FCF]">Services</span></h1>
-            <div class="w-full h-[80%] flex items-center gap-14 justify-center" id="services-container">
-
-
+      </div>
+      <!--fourth Screen-->
+      <div class="w-full min-h-screen overflow-hidden marqueeeee">
+        <div id="elem">
+          <div id="elem1">
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
             </div>
-            <div class="flex items-center justify-center w-full  px-2 py-0 servicebtnscr">
-                <a href="Service.html">
-                    <button class="bg-[#009FCF]  text-white px-3 py-2 rounded text-xs font-medium text-center">View All
-                        Services</button>
-                </a>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
             </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+          </div>
+          <div id="elem1">
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+            <div class="circ">
+              <h1 class="text-3xl font-semibold text-[#515854]">LOGO</h1>
+            </div>
+          </div>
         </div>
-        <!--Sixth Screen-->
-        <div class="w-full h-fit py-10 flex flex-col gap-10 sixthscr">
-            <h1 class="text-center text-3xl font-semibold text-[#515854]">Why Choose <span
-                    class="text-[#009FCF]">Oriental Detective ?</span></h1>
-            <div class="w-full flex justify-center ">
-                <p class="w-[60%] text-medium font-light leading-8 paraofsix">
-                    Our investigations are built for thoroughness, accuracy, and confidentiality. With meticulous
-                    attention
-                    to detail, we uncover the truth and provide you with the answers you seek. Start with the case -
-                    understand the details and solve the mystery. Our investigations are built for thoroughness,
-                    accuracy,
-                    and confidentiality. With meticulous attention to detail, we uncover the truth and provide you with
-                    the
-                    answers you seek. Start with the case - understand the details and solve the mystery. understand the
-                    details and solve the mystery. Our investigations are built for thoroughness, accuracy, and
-                    confidentiality. With meticulous attention to detail, we uncover the truth and provide you with the
-                    answers you seek. Start with the case - understand the details and solve the mystery. With
-                    meticulous
-                    attention to detail, we uncover the truth and provide you with the answers you seek. Start with the
-                    case
-                    - understand the details and solve the mystery. With meticulous attention to detail, we uncover the
-                    truth and provide you with the answers you seek. Start with the case - understand the details and
-                    solve
-                    the mystery.
+        <div class="w-full h-fit flex justify-center mt-20">
+          <div class="w-[80%] h-full flex justify-center abtus">
+            <div class="w-[50%] h-full flex items-start justify-end abtuspta">
+              <img src="./images/about.png" class="w-[40vmax] object-cover" />
+            </div>
+            <div class="py-5 w-[50%] flex flex-col gap-6 abtuspta">
+              <div class="w-[80%] ml-5 text-left">
+                <h1
+                  class="text-center text-3xl font-semibold text-[#009FCF] text-left tracking-wide opa"
+                >
+                  About
+                  <span class="text-[#515854]">Us</span>
+                </h1>
+              </div>
+              <div class="ml-5">
+                <p class="text-medium font-light leading-8">
+                  Our investigations are built for thoroughness, accuracy, and
+                  confidentiality. With meticulous attention to detail, we
+                  uncover the truth and provide you with the answers you seek.
+                  Start with the case - understand the details and solve the
+                  mystery. Our investigations are built for thoroughness,
+                  accuracy, and confidentiality. With meticulous attention to
+                  detail, we uncover the truth and provide you with the answers
+                  you seek. Start with the case - understand the details and
+                  solve the mystery.
                 </p>
+              </div>
+              <div class="flex justify-end mt-10 btnsc">
+                <button
+                  class="bg-[#009FCF] w-fit text-white px-3 py-4 rounded text-xs font-medium"
+                >
+                  Know more about oriental detective
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-        <!--Seventh Screen-->
-        <div class="w-full h-fit bg-[#F7F7F7] py-10">
-            <h1 class="text-center text-3xl font-semibold text-[#515854]">How We <span class="text-[#009FCF]">Work
-                    ?</span></h1>
-           <div class="w-full flex justify-center ">
-            <div class="w-[80%] px-5 flex justify-center items-center gap-10 mt-10 sevenscr">
-                <div class="specialWork w-fit h-fit flex flex-col gap-6 items-center">
-                    <div class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md">
-                        <img src="./images/search.png" alt="">
-                    </div>
-                    <h3 class="text-[#009FCF] font-semibold">Connect</h3>
-                    <div class="w-[15vmax]  h-fit bg-gradient-to-t from-sky-200 to-white p-3">
-                        <p class="text-black text-sm font-light text-center">
-                            Search on your needs whatever service you want from your helping hand
-                        </p>
-                    </div>
-                </div>
-                <div class="specialWork w-fit h-fit flex flex-col gap-6 items-center">
-                    <div class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md">
-                        <img src="./images/oriental.png" alt="">
-                    </div>
-                    <h3 class="text-[#009FCF] font-semibold">Discussion</h3>
-                    <div class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3">
-                        <p class="text-black text-sm font-light text-center">
-                            Booking after you searched your requirement and confirm there availability with a chat.
-                        </p>
-                    </div>
-                </div>
-                <div class="specialWork w-fit h-fit flex flex-col gap-6 items-center">
-                    <div class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md">
-                        <img src="./images/result.png" alt="">
-                    </div>
-                    <h3 class="text-[#009FCF] font-semibold">Results</h3>
-                    <div class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3">
-                        <p class="text-black text-sm font-light text-center">
-                            After completion of work and getting satisfaction rate your helping hand on the platform.
-                        </p>
-                    </div>
-                </div>
+      </div>
+      <!--Fifth Screen-->
+      <div class="w-full h-screen bg-[#F7F7F7] pt-15 servicefift">
+        <h1 class="text-center text-3xl font-semibold text-[#515854] headingm">
+          Our <span class="text-[#009FCF]">Services</span>
+        </h1>
+        <div
+          class="w-full h-[80%] flex items-center gap-14 justify-center"
+          id="services-container"
+        ></div>
+        <div
+          class="flex items-center justify-center w-full px-2 py-0 servicebtnscr"
+        >
+          <a href="Service.html">
+            <button
+              class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium text-center"
+            >
+              View All Services
+            </button>
+          </a>
+        </div>
+      </div>
+      <!--Sixth Screen-->
+      <div class="w-full h-fit py-10 flex flex-col gap-10 sixthscr">
+        <h1 class="text-center text-3xl font-semibold text-[#515854]">
+          Why Choose <span class="text-[#009FCF]">Oriental Detective ?</span>
+        </h1>
+        <div class="w-full flex justify-center">
+          <p class="w-[60%] text-medium font-light leading-8 paraofsix">
+            Our investigations are built for thoroughness, accuracy, and
+            confidentiality. With meticulous attention to detail, we uncover the
+            truth and provide you with the answers you seek. Start with the case
+            - understand the details and solve the mystery. Our investigations
+            are built for thoroughness, accuracy, and confidentiality. With
+            meticulous attention to detail, we uncover the truth and provide you
+            with the answers you seek. Start with the case - understand the
+            details and solve the mystery. understand the details and solve the
+            mystery. Our investigations are built for thoroughness, accuracy,
+            and confidentiality. With meticulous attention to detail, we uncover
+            the truth and provide you with the answers you seek. Start with the
+            case - understand the details and solve the mystery. With meticulous
+            attention to detail, we uncover the truth and provide you with the
+            answers you seek. Start with the case - understand the details and
+            solve the mystery. With meticulous attention to detail, we uncover
+            the truth and provide you with the answers you seek. Start with the
+            case - understand the details and solve the mystery.
+          </p>
+        </div>
+      </div>
+      <!--Seventh Screen-->
+      <div class="w-full h-fit bg-[#F7F7F7] py-10">
+        <h1 class="text-center text-3xl font-semibold text-[#515854]">
+          How We <span class="text-[#009FCF]">Work ?</span>
+        </h1>
+        <div class="w-full flex justify-center">
+          <div
+            class="w-[80%] px-5 flex justify-center items-center gap-10 mt-10 sevenscr"
+          >
+            <div
+              class="specialWork w-fit h-fit flex flex-col gap-6 items-center"
+            >
+              <div
+                class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md"
+              >
+                <img src="./images/search.png" alt="" />
+              </div>
+              <h3 class="text-[#009FCF] font-semibold">Connect</h3>
+              <div
+                class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3"
+              >
+                <p class="text-black text-sm font-light text-center">
+                  Search on your needs whatever service you want from your
+                  helping hand
+                </p>
+              </div>
             </div>
-           </div>
+            <div
+              class="specialWork w-fit h-fit flex flex-col gap-6 items-center"
+            >
+              <div
+                class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md"
+              >
+                <img src="./images/oriental.png" alt="" />
+              </div>
+              <h3 class="text-[#009FCF] font-semibold">Discussion</h3>
+              <div
+                class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3"
+              >
+                <p class="text-black text-sm font-light text-center">
+                  Booking after you searched your requirement and confirm there
+                  availability with a chat.
+                </p>
+              </div>
+            </div>
+            <div
+              class="specialWork w-fit h-fit flex flex-col gap-6 items-center"
+            >
+              <div
+                class="w-18 h-18 rounded-full bg-gradient-to-t from-sky-200 to-white shadow-md"
+              >
+                <img src="./images/result.png" alt="" />
+              </div>
+              <h3 class="text-[#009FCF] font-semibold">Results</h3>
+              <div
+                class="w-[15vmax] h-fit bg-gradient-to-t from-sky-200 to-white p-3"
+              >
+                <p class="text-black text-sm font-light text-center">
+                  After completion of work and getting satisfaction rate your
+                  helping hand on the platform.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!--Eight screen-->
-        <div class="w-full py-20">
-            <div class="bg-[#009FCF] flex py-10 px-20 eightscr">
-                <div class="w-[40%] text-center  px-20 eightscrfirst">
-                    <h3 class="text-white text-xl font-thin tracking-wide ">We are served since <b>20 years</b> to our
-                        customer with trust and we are happy</h3>
-                    <button class="bg-white mt-8 text-[#009FCF] px-3 py-2 rounded text-xs font-medium">Get In
-                        Touch</button>
-                </div>
-                <div class="w-[20%] text-center px-10 eightscrfirst">
-                    <h3 class="text-white text-xl font-thin tracking-wide ">Total Investigation Case Completion</h3>
-                    <h1 class="text-[3vmax] font-bold text-white mt-4 counter" data-target="50">00K+</h1>
-                </div>
-                <div class="w-[20%] text-center px-10 eightscrfirst">
-                    <h3 class="text-white text-xl font-thin tracking-wide ">Total Customers Satisfied</h3>
-                    <h1 class="text-[3vmax] font-bold text-white mt-4 counter" data-target="200">000+</h1>
-                </div>
-                <div class="w-[20%] text-center px-10 eightscrfirst">
-                    <h3 class="text-white text-xl font-thin tracking-wide ">Total Bookings Completed</h3>
-                    <h1 class="text-[3vmax] font-bold text-white mt-4 counter" data-target="800">000+</h1>
-                </div>
-            </div>
+      <!--Eight screen-->
+      <div class="w-full py-20">
+        <div class="bg-[#009FCF] flex py-10 px-20 eightscr">
+          <div class="w-[40%] text-center px-20 eightscrfirst">
+            <h3 class="text-white text-xl font-thin tracking-wide">
+              We are served since <b>20 years</b> to our customer with trust and
+              we are happy
+            </h3>
+            <button
+              class="bg-white mt-8 text-[#009FCF] px-3 py-2 rounded text-xs font-medium"
+            >
+              Get In Touch
+            </button>
+          </div>
+          <div class="w-[20%] text-center px-10 eightscrfirst">
+            <h3 class="text-white text-xl font-thin tracking-wide">
+              Total Investigation Case Completion
+            </h3>
+            <h1
+              class="text-[3vmax] font-bold text-white mt-4 counter"
+              data-target="50"
+            >
+              00K+
+            </h1>
+          </div>
+          <div class="w-[20%] text-center px-10 eightscrfirst">
+            <h3 class="text-white text-xl font-thin tracking-wide">
+              Total Customers Satisfied
+            </h3>
+            <h1
+              class="text-[3vmax] font-bold text-white mt-4 counter"
+              data-target="200"
+            >
+              000+
+            </h1>
+          </div>
+          <div class="w-[20%] text-center px-10 eightscrfirst">
+            <h3 class="text-white text-xl font-thin tracking-wide">
+              Total Bookings Completed
+            </h3>
+            <h1
+              class="text-[3vmax] font-bold text-white mt-4 counter"
+              data-target="800"
+            >
+              000+
+            </h1>
+          </div>
         </div>
-        <!--Ninth Screen-->
-        <div class="w-full h-fit">
-            <h1 class="text-center text-3xl font-semibold text-[#515854]">Our <span
-                    class="text-[#009FCF]">Testimonials</span></h1>
-            <div class="w-full ">
-                <div class="testimonial-slider">
-                    <div class="slider-container">
-                        <button class="slider-arrow prev-arrow">
-                            <i class="ri-arrow-left-line"></i>
-                        </button>
-                        <div class="slider-content">
-                            <!-- Images will be inserted here by JavaScript -->
-                        </div>
-                        <button class="slider-arrow next-arrow">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div>
+      </div>
+      <!--Ninth Screen-->
+      <div class="w-full h-fit">
+        <h1 class="text-center text-3xl font-semibold text-[#515854]">
+          Our <span class="text-[#009FCF]">Testimonials</span>
+        </h1>
+        <div class="w-full">
+          <div class="testimonial-slider">
+            <div class="slider-container">
+              <button class="slider-arrow prev-arrow">
+                <i class="ri-arrow-left-line"></i>
+              </button>
+              <div class="slider-content">
+                <!-- Images will be inserted here by JavaScript -->
+              </div>
+              <button class="slider-arrow next-arrow">
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
+        <div class="w-[80%]">
+          <footer class="pt-10 w-full mt-10">
+            <div class="mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div>
+                <h2 class="text-lg font-bold flex justify-center">
+                  <img src="./images/Logo-removebg-preview.png" alt="" />
+                </h2>
+                <p class="font-light text-sm text-[#515854] mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id
+                  consectetur in integer ullamcorper.
+                </p>
+                <div class="flex space-x-3 mt-4">
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-twitter-fill"></i
+                  ></a>
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-linkedin-fill"></i
+                  ></a>
+                  <a href="#" class="text-[#009FCF] text-xl"
+                    ><i class="ri-instagram-fill"></i
+                  ></a>
                 </div>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Services</h3>
+                <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
+                  <li>Private Investigation</li>
+                  <li>Corporate Investigation</li>
+                  <li>Marital Investigation</li>
+                  <li>Legal Investigation</li>
+                  <li>Criminal Investigation</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Quick Links</h3>
+                <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>Blogs</li>
+                  <li>Contact Us</li>
+                  <li>Testimonials</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Contact Info</h3>
+                <p class="font-light text-sm text-[#515854] mt-2">
+                  <strong>Email:</strong> orientaldetective@gmail.com
+                </p>
+                <p class="font-light text-sm text-[#515854]">
+                  <strong>Phone:</strong> +910000000000
+                </p>
+                <p class="font-light text-sm text-[#515854]">
+                  <strong>Address:</strong> Shanti Nagar Mira Road, Mumbai
+                </p>
+                <button class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded">
+                  Contact us
+                </button>
+              </div>
             </div>
-        </div>
-        <!--footer-->
-        <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
-            <div class="w-[80%]">
-                <footer class=" pt-10 w-full mt-10">
-                    <div class=" mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div>
-                            <h2 class="text-lg font-bold  flex justify-center">
-                                <img src="./images/Logo-removebg-preview.png" alt="">
-                            </h2>
-                            <p class="font-light text-sm text-[#515854] mt-2">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Ut id consectetur in integer ullamcorper.</p>
-                            <div class="flex space-x-3 mt-4">
-                                <a href="#" class="text-[#009FCF] text-xl"><i class="ri-twitter-fill"></i></a>
-                                <a href="#" class="text-[#009FCF] text-xl"><i class="ri-linkedin-fill"></i></a>
-                                <a href="#" class="text-[#009FCF] text-xl"><i class="ri-instagram-fill"></i></a>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Services</h3>
-                            <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
-                                <li>Private Investigation</li>
-                                <li>Corporate Investigation</li>
-                                <li>Marital Investigation</li>
-                                <li>Legal Investigation</li>
-                                <li>Criminal Investigation</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Quick Links</h3>
-                            <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
-                                <li>About Us</li>
-                                <li>Services</li>
-                                <li>Blogs</li>
-                                <li>Contact Us</li>
-                                <li>Testimonials</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold">Contact Info</h3>
-                            <p class="font-light text-sm text-[#515854] mt-2"><strong>Email:</strong>
-                                orientaldetective@gmail.com</p>
-                            <p class="font-light text-sm text-[#515854]"><strong>Phone:</strong> +910000000000</p>
-                            <p class="font-light text-sm text-[#515854]"><strong>Address:</strong> Shanti Nagar Mira
-                                Road, Mumbai</p>
-                            <button class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded">Contact us</button>
-                        </div>
-                    </div>
-                    <div
-                        class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 blendlast">
-                        2025 @All rights reserved Oriental Detective | <a href="#" class="">Terms and Conditions</a> |
-                        <a href="#" class="">Privacy Policy</a> | <a href="#" class="">Legal Notice</a>
-                    </div>
-                </footer>
+            <div
+              class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 blendlast"
+            >
+              2025 @All rights reserved Oriental Detective |
+              <a href="#" class="">Terms and Conditions</a> |
+              <a href="#" class="">Privacy Policy</a> |
+              <a href="#" class="">Legal Notice</a>
             </div>
+          </footer>
         </div>
+      </div>
     </div>
 
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
-        integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
-
-
-</body>
-
+  </body>
 </html>
