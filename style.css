@@ -245,7 +245,7 @@ body {
 
 .title {
   color: #111827;
-  font-size: 1.125rem;
+  font-size: 1.500rem;
   line-height: 1.75rem;
   font-weight: 600;
   text-align: center;
@@ -443,7 +443,9 @@ body {
   }
 }
 .testi {
-  box-shadow: 2px 3px 3px 4px #dadada;
+  -webkit-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
+-moz-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
+box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
 }
 
 /* Add/modify these responsive styles */
@@ -514,7 +516,7 @@ body {
   }
  
   .image {
-    height: 295px;
+    height: 282px;
   }
   .imganimatorabt{
     height: 20vh;
@@ -534,6 +536,7 @@ body {
   }
   .testi {
     width: 100%;
+    
   }
   /* .headingm {
     position: absolute;
@@ -724,4 +727,14 @@ footer .grid-cols-4 {
 
 .scrollontop {
   transform: translateY(0px);
+}
+@media screen and (max-width:414px) {
+  .imgcntnr{
+    margin-top: 9vh;
+  }
+}
+@media screen and (max-width:430px) {
+  .imgcntnr{
+    margin-top: 9vh;
+  }
 }

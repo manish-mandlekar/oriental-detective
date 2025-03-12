@@ -55,7 +55,7 @@ html,body{
     /* background-color: green; */
     height: 40%;
     display: flex;
-    width: 75%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     /* padding: 20px; */
@@ -67,8 +67,14 @@ html,body{
     gap: 20px;
     padding: 10px 20px;
 }
+.first-services p{
+    font-weight: 200;
+    color: #515854;
+    line-height: 30px;
+}
 .ser h1{
-    font-size: 25px;
+    margin-top: 1vmax;
+    font-size: 34px;
     color: rgba(32, 30, 30, 0.795);
     font-weight: bold;
 }
@@ -108,15 +114,18 @@ html,body{
     align-items: center;
     justify-content: center;
     /* justify-content: left; */
-    font-size: 15px;
+  color: #515854;
     width: 80%;
     height: 40%;
     gap: 20px;
+    padding-left: 28px;
     /* padding: 20px 80px; */
-    margin: 20px 40px;
+    line-height: 30px;
+    font-weight: 200;
+    /* margin: 20px 40px; */
 }
-.our-services p{
-    margin: 0 10px;
+.our-services>p{
+    margin-left: 23px;
 }
 
 .our-services h1{
@@ -138,19 +147,25 @@ html,body{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-left: 28px;
+    padding-left: 13px;
+    width: 80%;
   
     
 }
 .why-choose h1{
 font-size: 20px;
+margin-top: 2vmax;
 font-weight: bold;
 color: rgba(42, 37, 37, 0.908);
 
 }
 .us{
-    width: 70%;
-    
-    
+    width: 80%;
+    font-weight: 200;
+    line-height: 30px;
+    color: #515854;
+    font-size: 16px;
 }
 .us-cont span{
    font-size: 15px;
@@ -160,7 +175,11 @@ color: rgba(42, 37, 37, 0.908);
 }
 .happens{
     padding:  40px 0;
-    width: 70%;
+    width: 80%;
+    font-weight: 200;
+    line-height: 30px;
+    color: #515854;
+    font-size: 16px;
     /* margin: 20px 40px; */
 }
 .hpn-top{
@@ -196,10 +215,41 @@ font-weight: bold;
     .why-choose{
         width: 100%;
         padding: 0;
+        margin: 0;
     }
+    .spouse-services{
+        margin-top: -14vh;
+    }
+
+.ser{
+   width: 100%;
+   padding: 23px;
+}
+.our-services{
+   width: 100%;
+   margin: 0;
+   padding: 23px;
+}
+.our-services>p{
+    margin: 0;
+    padding: 0;
+}
+.us{
+    width: 100%;
+    padding: 23px;
+    font-weight: 200;
+    line-height: 30px;
+    color: #515854;
+    font-size: 16px;
+}
+.happens{
+   padding: 23px;
+   font-size: 16px;
+    width: 100%;
+}
 }
 @media (max-width: 430px) {
-    
+       
     .second-picture {
         /* display: flex;
         justify-content: center;
@@ -212,10 +262,45 @@ font-weight: bold;
         width: 125%;
         margin-top: -14vh;
     }
+    .our-services>p{
+        margin: 0;
+        padding: 0;
+    }
     .ser h1 {
         font-size: 22px;
     }
     .first-services {
         padding: 0;
     }
+    .why-choose{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .spouse-services{
+        margin-top: -14vh;
+    }
+
+.ser{
+   width: 100%;
+   padding: 23px;
+}
+.our-services{
+   width: 100%;
+   margin: 0;
+   padding: 23px;
+}
+.us{
+    width: 100%;
+    padding: 23px;
+    font-weight: 200;
+    line-height: 30px;
+    color: #515854;
+    font-size: 16px;
+}
+.happens{
+   padding: 23px;
+   font-size: 16px;
+    width: 100%;
+}
 }
