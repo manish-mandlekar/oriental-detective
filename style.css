@@ -370,7 +370,21 @@ body {
 .slider-arrow:hover {
   background: #0084ac;
 }
+.slide{
+  transition: transform 0.5s ease-in-out;
+  animation: slideShow infinite linear;
+}
 
+@keyframes slideShow {
+  from {
+    transform: translateX(100%) scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
 @media (max-width: 768px) {
   .slider-container {
     height: 400px;
@@ -497,7 +511,22 @@ body {
     display: none;
   }
   .cardscr {
-    margin-top: -30vh;
+    margin-top: -76vh;
+  }
+ 
+  .image {
+    height: 295px;
+  }
+  .imganimatorabt{
+    height: 20vh;
+    margin-top: -12vh;
+    
+  }
+  .imganimator{
+    height: 20vh;
+  }
+  .imganimatormain{
+    padding: 0 10px;
   }
   .testiscr {
     width: 100%;
@@ -563,6 +592,7 @@ body {
   .firstimg h2 {
     font-size: 1.5rem !important;
     padding: 0 15px;
+   
   }
 
   .firstimg p {

@@ -290,8 +290,11 @@ height: 100%;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    margin-top: -131%;
+    margin-top: -162%;
   }
+.imganimatorabt{
+  margin-top: -24%;
+}
 
   .right-part {
     width: 100%;

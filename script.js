@@ -63,45 +63,60 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-let currentIndex = 0;
 const slider = document.getElementById("slider");
-const totalSlides = slider?.children?.length;
-const slideButtons = document.querySelectorAll(".slide-btn");
+const slides = document.querySelectorAll(".slide");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
 
-document.getElementById("next")?.addEventListener("click", function () {
-  if (currentIndex < totalSlides - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0;
-  }
-  updateSlider();
-});
+let index = 0;
+const delay = 6000; // Auto-slide delay
 
-document.getElementById("prev")?.addEventListener("click", function () {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = totalSlides - 1;
-  }
-  updateSlider();
-});
-
-function goToSlide(index) {
-  currentIndex = index;
-  updateSlider();
-}
-
-function updateSlider() {
-  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-  slideButtons.forEach((btn, index) => {
-    btn.classList.remove("bg-white");
-    btn.classList.add("bg-gray-400");
-    if (index === currentIndex) {
-      btn.classList.remove("bg-gray-400");
-      btn.classList.add("bg-white");
+function updateSlide() {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
     }
   });
+
+  slider.style.transform = `translateX(-${index * 100}%)`;
 }
+
+// Next Slide
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  updateSlide();
+}
+
+// Previous Slide
+function prevSlide() {
+  index = index - 1 < 0 ? slides.length - 1 : index - 1;
+  updateSlide();
+}
+
+// Auto Slide
+let autoSlide = setInterval(nextSlide, delay);
+
+// Reset Auto Slide Timer
+function resetAutoSlide() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(nextSlide, delay);
+}
+
+// Click Events
+nextBtn.addEventListener("click", () => {
+  nextSlide();
+  resetAutoSlide();
+});
+
+prevBtn.addEventListener("click", () => {
+  prevSlide();
+  resetAutoSlide();
+});
+
+// Initial Call
+updateSlide();
+
 
 function animateCounters() {
   const counters = document.querySelectorAll(".counter");
@@ -289,3 +304,5 @@ function initScrollToTop() {
 
 // Initialize after DOM content is loaded
 document.addEventListener("DOMContentLoaded", initScrollToTop);
+
+
