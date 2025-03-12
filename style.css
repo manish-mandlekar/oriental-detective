@@ -699,7 +699,7 @@ footer .grid-cols-4 {
 
 /* Update slider z-index */
 .imgcnt {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   position: relative;
   z-index: 1;
 }
