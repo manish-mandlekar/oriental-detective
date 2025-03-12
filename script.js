@@ -72,7 +72,8 @@ let index = 0;
 const delay = 6000; // Auto-slide delay
 
 function updateSlide() {
-  slides.forEach((slide, i) => {
+  if(!slider || !slides) return;
+  slides?.forEach((slide, i) => {
     slide.classList.remove("active");
     if (i === index) {
       slide.classList.add("active");
@@ -104,12 +105,12 @@ function resetAutoSlide() {
 }
 
 // Click Events
-nextBtn.addEventListener("click", () => {
+nextBtn?.addEventListener("click", () => {
   nextSlide();
   resetAutoSlide();
 });
 
-prevBtn.addEventListener("click", () => {
+prevBtn?.addEventListener("click", () => {
   prevSlide();
   resetAutoSlide();
 });
