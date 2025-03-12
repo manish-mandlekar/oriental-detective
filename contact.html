@@ -33,11 +33,13 @@
         >
           <div class="subNav w-fit flex items-center justify-center">
             <!-- Logo (Left Side) -->
-            <img
-              class="w-[180px] sm:w-[180px]"
-              src="./images/Logo.jpg"
-              alt="Logo"
-            />
+            <a href="./index.html">
+              <img
+                class="w-[210px] sm:w-[180px]"
+                src="./images/Logo.jpg"
+                alt="Logo"
+              />
+            </a>
 
             <!-- Hamburger Menu Button (Right Side) -->
             <button
@@ -45,9 +47,9 @@
               class="block md:hidden text-black focus:outline-none"
             >
               <svg
-                class="w-6 h-6 open"
+                class="w-8 h-8 open"
                 fill="none"
-                stroke="currentColor"
+                stroke="#1a9dce"
                 stroke-width="2"
                 viewBox="0 0 24 24"
               >
@@ -57,7 +59,7 @@
                   d="M4 6h16M4 12h16m-7 6h7"
                 ></path>
               </svg>
-              <svg
+              <!-- <svg
                 class="w-6 h-6 close"
                 fill="none"
                 stroke="currentColor"
@@ -69,7 +71,7 @@
                   stroke-linejoin="round"
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
-              </svg>
+              </svg> -->
             </button>
           </div>
 
@@ -357,9 +359,8 @@
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.0228145029287!2d72.8555240753308!3d19.281374045492818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b04e603b8b0d%3A0xa18dc22491387!2sMira%20Road%20Station%20(E)!5e0!3m2!1sen!2sin!4v1741692973205!5m2!1sen!2sin"
-          width="980"
-          height="450"
-          style="border: 0;border-radius: 10px;"
+          class="w-full h-[40vmax] mt-10 rounded-lg"
+          style="border: 0; border-radius: 10px"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
