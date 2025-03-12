@@ -572,7 +572,7 @@ box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
   }
   #menu.active {
     position: fixed;
-    top: 73px;
+    top: 70px;
     left: 200px;
     width: 106%;
     height: auto;
@@ -734,7 +734,7 @@ footer .grid-cols-4 {
   }
   #menu.active {
     position: fixed;
-    top: 73px;
+    top: 70px;
     left: 200px;
     width: 106%;
     height: auto;
@@ -753,7 +753,7 @@ footer .grid-cols-4 {
   }
   #menu.active {
     position: fixed;
-    top: 73px;
+    top: 70px;
     left: 200px;
     width: 106%;
     height: auto;
