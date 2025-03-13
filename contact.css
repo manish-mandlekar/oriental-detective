@@ -67,3 +67,35 @@ body {
   background-color: rgb(70, 70, 84);
   width: 60%;
 }
+.big-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #515854;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(35%, 35%);
+}
+.small-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-10%, -10%);
+}
+@media screen and (max-width: 520px) {
+  .big-circle {
+    width: 150px;
+    height: 150px;
+    transform: translate(45%, 25%);
+  }
+  .small-circle {
+    width: 70px;
+    height: 70px;
+    transform: translate(-5%, -5%);
+  }
+}

@@ -113,18 +113,18 @@ body {
 }
 
 .btnxui:hover {
-  color: #009FCF;
+  color: #009fcf;
 }
 
 .btnxui:active {
   filter: brightness(0.8);
 }
-.btnxui2{
+.btnxui2 {
   --color: #ffffff;
 }
 
 .btnxui2:hover {
-  color: #009FCF;
+  color: #009fcf;
 }
 
 .btw {
@@ -369,7 +369,7 @@ body {
 .slider-arrow:hover {
   background: #0084ac;
 }
-.slide{
+.slide {
   transition: transform 0.5s ease-in-out;
   animation: slideShow infinite linear;
 }
@@ -429,11 +429,10 @@ body {
   filter: blur(3px);
 }
 
-
 .testi {
-  -webkit-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
--moz-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
+  -webkit-box-shadow: 0px 0px 2px 1.4px rgba(218, 218, 218, 1);
+  -moz-box-shadow: 0px 0px 2px 1.4px rgba(218, 218, 218, 1);
+  box-shadow: 0px 0px 2px 1.4px rgba(218, 218, 218, 1);
 }
 
 /* Add/modify these responsive styles */
@@ -456,7 +455,6 @@ footer .grid-cols-4 {
 }
 
 /* Add general responsive utilities */
-
 
 /* Add this to your existing CSS */
 .secondNavbar {
@@ -536,7 +534,7 @@ footer .grid-cols-4 {
   .orientalMain {
     overflow: hidden;
   }
-  
+
   .sndpage {
     flex-direction: column;
     width: 100%;
@@ -577,7 +575,7 @@ footer .grid-cols-4 {
     width: 100%;
     align-items: center;
   }
-  .abtcntnr{
+  .abtcntnr {
     margin-top: 0;
   }
   .eightscrfirst {
@@ -589,20 +587,16 @@ footer .grid-cols-4 {
   .cardscr {
     margin-top: -76vh;
   }
- 
+
   .image {
-    height: 248px;
+    /* height: 248px; */
   }
-  .imganimatorabt{
+  .imganimatorabt {
     height: 20vh;
     margin-top: -12vh;
-    
   }
-  .imganimator{
+  .imganimator {
     height: 20vh;
-  }
-  .imganimatormain{
-    padding: 0 10px;
   }
   .testiscr {
     width: 100%;
@@ -611,11 +605,10 @@ footer .grid-cols-4 {
   }
   .testi {
     width: 100%;
-    
   }
   .headingm {
-   font-size:4vmax;
-   margin: 0;
+    font-size: 4vmax;
+    margin: 0;
   }
   .thrdscr {
     height: 117vh;
@@ -656,7 +649,7 @@ footer .grid-cols-4 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  } 
+  }
   .marqueeeee {
     margin-top: 0vh;
   }
@@ -669,7 +662,6 @@ footer .grid-cols-4 {
   .firstimg h2 {
     font-size: 1.5rem !important;
     padding: 0 15px;
-   
   }
 
   .firstimg p {
@@ -680,7 +672,7 @@ footer .grid-cols-4 {
   #services-container {
     flex-direction: column;
     gap: 30px;
-    padding:0px 20px;
+    padding: 0px 20px;
     margin-top: -3vh;
   }
 
@@ -731,8 +723,8 @@ footer .grid-cols-4 {
     flex-direction: column;
     gap: 30px; */
 }
-@media screen and (max-width:430px) {
-  .imgcntnr{
+@media screen and (max-width: 430px) {
+  .imgcntnr {
     margin-top: 9vh;
   }
   #menu.active {
@@ -750,8 +742,8 @@ footer .grid-cols-4 {
     gap: 20px;
   }
 }
-@media screen and (max-width:414px) {
-  .imgcntnr{
+@media screen and (max-width: 414px) {
+  .imgcntnr {
     margin-top: 9vh;
   }
   #menu.active {
@@ -770,7 +762,7 @@ footer .grid-cols-4 {
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
   #menu.active {
     position: fixed;
     top: 73px;
@@ -785,13 +777,13 @@ footer .grid-cols-4 {
     flex-direction: column;
     gap: 20px;
   }
-  .imgcntnr{
+  .imgcntnr {
     margin-top: 12vh;
   }
-.imgcntnrser{
-  margin-top: 8vh;
-}
-.imgcntnrtestimonial{
-  margin-top: 8vh;
-}
+  .imgcntnrser {
+    margin-top: 8vh;
+  }
+  .imgcntnrtestimonial {
+    margin-top: 8vh;
+  }
 }
