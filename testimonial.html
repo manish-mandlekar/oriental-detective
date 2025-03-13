@@ -33,11 +33,13 @@
         >
           <div class="subNav w-fit flex items-center justify-center">
             <!-- Logo (Left Side) -->
-            <img
-              class="w-[180px] sm:w-[180px]"
-              src="./images/Logo.jpg"
-              alt="Logo"
-            />
+            <a href="./index.html">
+              <img
+                class="w-[210px] sm:w-[180px]"
+                src="./images/Logo.jpg"
+                alt="Logo"
+              />
+            </a>
 
             <!-- Hamburger Menu Button (Right Side) -->
             <button
@@ -45,9 +47,9 @@
               class="block md:hidden text-black focus:outline-none"
             >
               <svg
-                class="w-6 h-6 open"
+                class="w-8 h-8 open"
                 fill="none"
-                stroke="currentColor"
+                stroke="#1a9dce"
                 stroke-width="2"
                 viewBox="0 0 24 24"
               >
@@ -57,7 +59,7 @@
                   d="M4 6h16M4 12h16m-7 6h7"
                 ></path>
               </svg>
-              <svg
+              <!-- <svg
                 class="w-6 h-6 close"
                 fill="none"
                 stroke="currentColor"
@@ -69,7 +71,7 @@
                   stroke-linejoin="round"
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
-              </svg>
+              </svg> -->
             </button>
           </div>
 
@@ -113,15 +115,15 @@
         <div
           class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar"
         >
-          <div class="btw px-2 py-0">
-            <a href="Service.html">
+          <a class="cursor-pointer" href="Service.html">
+            <div class="btw px-2 py-0">
               <button
                 class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium"
               >
                 All Services
-              </button></a
-            >
-          </div>
+              </button>
+            </div>
+          </a>
           <div
             class="relative inline-block border-r-1 border-[#109ec9] text-left"
           >
@@ -212,9 +214,7 @@
               </ul>
             </div>
           </div>
-          <div
-            class="relative inline-block border-r-1 border-[#109ec9] text-left"
-          >
+          <div class="relative inline-block text-left">
             <!-- Dropdown Button -->
             <button
               id="dropdownButton"
@@ -243,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="px-3">
+        <div class="px-3 imgcntnrtestimonial">
           <div
             class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center mt-10 rounded-2xl imganimatormain"
           >
