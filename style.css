@@ -754,7 +754,7 @@ footer .grid-cols-4 {
   }
   #menu.active {
     position: fixed;
-    top: 73px;
+    top: 70px;
     left: 200px;
     width: 106%;
     height: auto;
@@ -770,34 +770,6 @@ footer .grid-cols-4 {
 @media screen and (max-width:430px) {
   .imgcntnr{
     margin-top: 9vh;
-  }
-  #menu.active {
-    position: fixed;
-    top: 73px;
-    left: 200px;
-    width: 106%;
-    height: auto;
-    background: white;
-    z-index: 999;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-@media screen and (max-width:432px) {
-  .imgcntnr{
-    margin-top: 12vh;
-  }
-  .imgcntnrabt{
-    margin-top: 8vh;
-  }
-  .imgcntnrser{
-    margin-top: 8vh;
-  }
-  .imgcntnrtestimonial{
-    margin-top: 8vh;
   }
   #menu.active {
     position: fixed;
