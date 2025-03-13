@@ -3,7 +3,7 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
-document.getElementById("menu-btn").addEventListener("click", function () {
+document.getElementById("menu-btn")?.addEventListener("click", function () {
   const menu = document.getElementById("menu");
   const navbar = document.querySelector(".navbar");
 
@@ -22,9 +22,9 @@ document.addEventListener("click", function (event) {
   const menuBtn = document.getElementById("menu-btn");
 
   if (
-    !menu.contains(event.target) &&
-    !menuBtn.contains(event.target) &&
-    menu.classList.contains("active")
+    !menu?.contains(event.target) &&
+    !menuBtn?.contains(event.target) &&
+    menu?.classList.contains("active")
   ) {
     menu.classList.remove("active");
     menuBtn.classList.remove("active");
@@ -168,95 +168,6 @@ function animateCounters() {
 
 // Remove the DOMContentLoaded event listener since we'll use Intersection Observer
 animateCounters();
-
-function initializeSlider() {
-  const testimonials = [
-    {
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
-      name: "John Smith",
-      designation: "Corporate Client",
-    },
-    {
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
-      name: "Sarah Johnson",
-      designation: "Private Client",
-    },
-    {
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien. Et vitae augue integer at arcu, hac a.Nun c facilisis vitae erat in nam eu at consectetur nec erat. Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc or per ut in. Suspendisse et amet faucibus a duis sapien Lorem ipsum dolor sit amet, consectetur adipis cin gelit. Ut id consectetur in integer ullamc ",
-      name: "Michael Brown",
-      designation: "Business Owner",
-    },
-  ];
-
-  let currentIndex = 1;
-  const sliderContent = document.querySelector(".slider-content");
-
-  function updateSlider() {
-    if (!sliderContent) return;
-    sliderContent.innerHTML = "";
-
-    // Previous card
-    const prevCard = createTestimonialCard(
-      testimonials[
-        (currentIndex - 1 + testimonials.length) % testimonials.length
-      ],
-      "slider-card left"
-    );
-    sliderContent.appendChild(prevCard);
-
-    // Current card
-    const currentCard = createTestimonialCard(
-      testimonials[currentIndex],
-      "slider-card center"
-    );
-    sliderContent.appendChild(currentCard);
-
-    // Next card
-    const nextCard = createTestimonialCard(
-      testimonials[(currentIndex + 1) % testimonials.length],
-      "slider-card right"
-    );
-    sliderContent.appendChild(nextCard);
-  }
-
-  function createTestimonialCard(testimonial, className) {
-    const card = document.createElement("div");
-    card.className = className;
-    card.innerHTML = `
-        <div class="bg-white rounded-lg p-6 shadow-lg">
-          <div class="min-h-[150px] mb-6 text-gray-600">
-            "${testimonial.content}"
-          </div>
-          <div class="mt-auto">
-            <h3 class="font-bold text-xl text-center text-[#515854]">${testimonial.name}</h3>
-            <p class="text-[#009FCF] text-center mt-1">${testimonial.designation}</p>
-          </div>
-        </div>
-      `;
-    return card;
-  }
-
-  // Initialize slider
-  updateSlider();
-
-  // Add event listeners for arrows
-  document.querySelector(".next-arrow")?.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    updateSlider();
-  });
-
-  document.querySelector(".prev-arrow")?.addEventListener("click", () => {
-    currentIndex =
-      (currentIndex - 1 + testimonials.length) % testimonials.length;
-    updateSlider();
-  });
-}
-
-// Initialize when DOM is loaded
-document.addEventListener("DOMContentLoaded", initializeSlider);
 
 // Call function on page load
 
