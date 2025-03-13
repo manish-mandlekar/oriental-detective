@@ -174,16 +174,13 @@ animateCounters();
 // Add to your existing code
 const scrollToTopButton = document.querySelector('.wtparrow img[src*="arrow"]');
 
-scrollToTopButton.addEventListener("click", () => {
+scrollToTopButton?.addEventListener("click", () => {
   // Using Locomotive Scroll
   scroll.scrollTo(0, {
     duration: 1000,
     easing: [0.25, 0.1, 0.25, 1],
   });
 });
-
-// Make the button cursor pointer
-scrollToTopButton.style.cursor = "pointer";
 
 // Add scroll to top functionality
 function initScrollToTop() {
@@ -212,4 +209,4 @@ function initScrollToTop() {
 }
 
 // Initialize after DOM content is loaded
-document.addEventListener("DOMContentLoaded", initScrollToTop);
+initScrollToTop();
