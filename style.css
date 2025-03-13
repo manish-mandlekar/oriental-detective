@@ -429,7 +429,78 @@ body {
   filter: blur(3px);
 }
 
-@media (max-width: 768px) {
+
+.testi {
+  -webkit-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
+-moz-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
+box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
+}
+
+/* Add/modify these responsive styles */
+
+*/ .specialWork {
+  width: 100%;
+}
+.specialWork {
+  background: linear-gradient(transparent, #69b9e40f, #69b9e469);
+}
+
+/* Footer */
+footer .grid-cols-4 {
+  grid-template-columns: 1fr !important;
+}
+
+/* General text adjustments */
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+/* Add general responsive utilities */
+
+
+/* Add this to your existing CSS */
+.secondNavbar {
+  position: relative;
+  z-index: 100;
+}
+
+#dropdownMenu {
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  margin-top: 0.5rem;
+}
+
+/* Update slider z-index */
+.imgcnt {
+  /* padding-top: 30px; */
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure dropdown button maintains proper stacking */
+.relative.inline-block {
+  position: relative;
+  z-index: 100;
+}
+
+.scrollontop {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  pointer-events: all;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.wtparrow {
+  pointer-events: none; /* Allow clicks only on the image */
+}
+
+.scrollontop {
+  transform: translateY(0px);
+}
+@media screen and (max-width: 768px) {
   .slider-card {
     width: 300px;
   }
@@ -442,13 +513,16 @@ body {
     transform: translate(20%, -50%) scale(0.8);
   }
 }
-.testi {
-  -webkit-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
--moz-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
-box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
-}
+@media screen and (max-width: 768px) {
+  /* .w-[80%] {
+    width: 95% !important;
+  } */
 
-/* Add/modify these responsive styles */
+  .px-20 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
 @media screen and (max-width: 514px) {
   /* Navbar fixes */
   .navbar {
@@ -462,9 +536,7 @@ box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
   .orientalMain {
     overflow: hidden;
   }
-  .wtparrow {
-    /* margin-top: -14vh; */
-  }
+  
   .sndpage {
     flex-direction: column;
     width: 100%;
@@ -659,81 +731,13 @@ box-shadow: 0px 0px 2px 1.4px rgba(218,218,218,1);
     flex-direction: column;
     gap: 30px; */
 }
-*/ .specialWork {
-  width: 100%;
-}
-.specialWork {
-  background: linear-gradient(transparent, #69b9e40f, #69b9e469);
-}
-
-/* Footer */
-footer .grid-cols-4 {
-  grid-template-columns: 1fr !important;
-}
-
-/* General text adjustments */
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-/* Add general responsive utilities */
-@media screen and (max-width: 768px) {
-  /* .w-[80%] {
-    width: 95% !important;
-  } */
-
-  .px-20 {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+@media screen and (max-width:430px) {
+  .imgcntnr{
+    margin-top: 9vh;
   }
-}
-
-/* Add this to your existing CSS */
-.secondNavbar {
-  position: relative;
-  z-index: 100;
-}
-
-#dropdownMenu {
-  position: absolute;
-  left: 0;
-  z-index: 1000;
-  background: white;
-  margin-top: 0.5rem;
-}
-
-/* Update slider z-index */
-.imgcnt {
-  /* padding-top: 30px; */
-  position: relative;
-  z-index: 1;
-}
-
-/* Ensure dropdown button maintains proper stacking */
-.relative.inline-block {
-  position: relative;
-  z-index: 100;
-}
-
-.scrollontop {
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  pointer-events: all;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-.wtparrow {
-  pointer-events: none; /* Allow clicks only on the image */
-}
-
-.scrollontop {
-  transform: translateY(0px);
-}
-@media screen and (max-width:375px) {
   #menu.active {
     position: fixed;
-    top: 73px;
+    top: 70px;
     left: 200px;
     width: 106%;
     height: auto;
@@ -745,9 +749,7 @@ footer .grid-cols-4 {
     flex-direction: column;
     gap: 20px;
   }
-
 }
-
 @media screen and (max-width:414px) {
   .imgcntnr{
     margin-top: 9vh;
@@ -767,13 +769,11 @@ footer .grid-cols-4 {
     gap: 20px;
   }
 }
-@media screen and (max-width:430px) {
-  .imgcntnr{
-    margin-top: 9vh;
-  }
+
+@media screen and (max-width:375px) {
   #menu.active {
     position: fixed;
-    top: 70px;
+    top: 73px;
     left: 200px;
     width: 106%;
     height: auto;
@@ -785,4 +785,13 @@ footer .grid-cols-4 {
     flex-direction: column;
     gap: 20px;
   }
+  .imgcntnr{
+    margin-top: 12vh;
+  }
+.imgcntnrser{
+  margin-top: 8vh;
+}
+.imgcntnrtestimonial{
+  margin-top: 8vh;
+}
 }

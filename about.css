@@ -186,6 +186,206 @@ height: 100%;
 .desc-1 p {
   display: inline;
 }
+
+@media screen and (max-width: 514px) {
+  .partition {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: -131%;
+  }
+.imgcnt{
+  margin-top: 6vh;
+  
+}
+  .right-part {
+    width: 100%;
+    height: 600px; /* Increased height to accommodate all images */
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: visible; /* Allow images to overflow */
+  }
+
+  .right-part .img-1 img {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  .right-part .img-2 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  .right-part>.img-3>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .img-3 {
+    position: absolute;
+  
+    top: 30%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+  }
+  .left-part {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left-part h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .left-part p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+  }
+  .cards-part {
+    flex-direction: column;
+    gap: 4vmax;
+    padding: 4vmax;
+  }
+  .left-card {
+    width: 100%;
+  }
+  
+  .about-desc{
+    width: 100%;
+    margin: 0;
+    padding: 4vmax;
+  }
+  
+  
+  .right-card {
+  width: 100%;
+  }
+ 
+
+}
+@media screen and (max-width: 430px) {
+  .partition {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: -162%;
+  }
+.imganimatorabt{
+  margin-top: -24%;
+}
+
+  .right-part {
+    width: 100%;
+    height: 600px; /* Increased height to accommodate all images */
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: visible; /* Allow images to overflow */
+  }
+
+  .right-part .img-1 img {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  .right-part .img-2 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  .right-part>.img-3>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .img-3 {
+    position: absolute;
+  
+    top: 30%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+  }
+  .left-part {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left-part h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .left-part p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+  }
+  .cards-part {
+    flex-direction: column;
+    gap: 4vmax;
+    padding: 4vmax;
+  }
+  .left-card {
+    width: 100%;
+  }
+  
+  .about-desc{
+    width: 100%;
+    margin: 0;
+    padding: 4vmax;
+  }
+  
+  .right-card {
+  width: 100%;
+  }
+  
+
+}
 @media screen and (max-width: 414px) {
   #menu.active {
     position: fixed;
@@ -296,202 +496,10 @@ height: 100%;
   
 
 }
-@media screen and (max-width: 430px) {
-  .partition {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    margin-top: -162%;
-  }
-.imganimatorabt{
-  margin-top: -24%;
-}
-
-  .right-part {
-    width: 100%;
-    height: 600px; /* Increased height to accommodate all images */
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    overflow: visible; /* Allow images to overflow */
-  }
-
-  .right-part .img-1 img {
-    height: 150px;
-    width: 150px;
-    border-radius: 15px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    z-index: 3;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-  }
-
-  .right-part .img-2 img {
-    height: 200px;
-    width: 200px;
-    border-radius: 15px;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-  }
-
-  .right-part>.img-3>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .img-3 {
-    position: absolute;
-  
-    top: 30%;
-    right: 5%;
-    width: 200px;
-    height: 200px;
-  }
-  .left-part {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .left-part h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .left-part p {
-    font-size: 14px;
-    line-height: 24px;
-    text-align: justify;
-  }
-  .cards-part {
-    flex-direction: column;
-    gap: 4vmax;
-    padding: 4vmax;
-  }
-  .left-card {
-    width: 100%;
-  }
-  
-  .about-desc{
-    width: 100%;
-    margin: 0;
-    padding: 4vmax;
-  }
-  
-  .right-card {
-  width: 100%;
-  }
-  
+@media screen and (max-width: 375px) {
+ .imgcntnrabt{
+  margin-top: 8vh;
+ }  
 
 }
-@media screen and (max-width: 514px) {
-  .partition {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    margin-top: -131%;
-  }
-.imgcnt{
-  margin-top: 6vh;
-  
-}
-  .right-part {
-    width: 100%;
-    height: 600px; /* Increased height to accommodate all images */
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    overflow: visible; /* Allow images to overflow */
-  }
 
-  .right-part .img-1 img {
-    height: 150px;
-    width: 150px;
-    border-radius: 15px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    z-index: 3;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-  }
-
-  .right-part .img-2 img {
-    height: 200px;
-    width: 200px;
-    border-radius: 15px;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-  }
-
-  .right-part>.img-3>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .img-3 {
-    position: absolute;
-  
-    top: 30%;
-    right: 5%;
-    width: 200px;
-    height: 200px;
-  }
-  .left-part {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .left-part h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .left-part p {
-    font-size: 14px;
-    line-height: 24px;
-    text-align: justify;
-  }
-  .cards-part {
-    flex-direction: column;
-    gap: 4vmax;
-    padding: 4vmax;
-  }
-  .left-card {
-    width: 100%;
-  }
-  
-  .about-desc{
-    width: 100%;
-    margin: 0;
-    padding: 4vmax;
-  }
-  
-  
-  .right-card {
-  width: 100%;
-  }
- 
-
-}
