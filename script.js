@@ -196,6 +196,7 @@ function initializeSlider() {
   const sliderContent = document.querySelector(".slider-content");
 
   function updateSlider() {
+    if(!sliderContent) return;
     sliderContent.innerHTML = "";
 
     // Previous card
@@ -243,12 +244,12 @@ function initializeSlider() {
   updateSlider();
 
   // Add event listeners for arrows
-  document.querySelector(".next-arrow").addEventListener("click", () => {
+  document.querySelector(".next-arrow")?.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % testimonials.length;
     updateSlider();
   });
 
-  document.querySelector(".prev-arrow").addEventListener("click", () => {
+  document.querySelector(".prev-arrow")?.addEventListener("click", () => {
     currentIndex =
       (currentIndex - 1 + testimonials.length) % testimonials.length;
     updateSlider();
