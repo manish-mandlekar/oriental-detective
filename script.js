@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 const slider = document.getElementById("slider");
 const slides = document.querySelectorAll(".slide");
 const prevBtn = document.getElementById("prev");
@@ -73,7 +72,7 @@ let index = 0;
 const delay = 6000; // Auto-slide delay
 
 function updateSlide() {
-  if(!slider || !slides) return;
+  if (!slider || !slides) return;
   slides?.forEach((slide, i) => {
     slide.classList.remove("active");
     if (i === index) {
@@ -118,7 +117,6 @@ prevBtn?.addEventListener("click", () => {
 
 // Initial Call
 updateSlide();
-
 
 function animateCounters() {
   const counters = document.querySelectorAll(".counter");
@@ -197,7 +195,7 @@ function initializeSlider() {
   const sliderContent = document.querySelector(".slider-content");
 
   function updateSlider() {
-    if(!sliderContent) return;
+    if (!sliderContent) return;
     sliderContent.innerHTML = "";
 
     // Previous card
@@ -260,9 +258,6 @@ function initializeSlider() {
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", initializeSlider);
 
-
-
-
 // Call function on page load
 
 // Add to your existing code
@@ -307,5 +302,3 @@ function initScrollToTop() {
 
 // Initialize after DOM content is loaded
 document.addEventListener("DOMContentLoaded", initScrollToTop);
-
-

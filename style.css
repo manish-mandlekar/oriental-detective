@@ -466,6 +466,7 @@ footer .grid-cols-4 {
 
 #dropdownMenu {
   position: absolute;
+  width: 100vw;
   left: 0;
   z-index: 1000;
   background: white;
