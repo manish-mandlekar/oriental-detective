@@ -260,10 +260,10 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 0px;
-    margin-top: -121%;
+    /* margin-top: -121%; */
   }
   .imgcnt {
-    margin-top: 6vh;
+    /* margin-top: 6vh; */
   }
   .right-part {
     width: 100%;
@@ -352,7 +352,7 @@ body {
     flex-direction: column;
     gap: 20px;
     /* padding: 20px; */
-    margin-top: -132%;
+    /* margin-top: -132%; */
   }
   .imganimatorabt {
     margin-top: -24%;
@@ -458,7 +458,7 @@ body {
     flex-direction: column;
     gap: 20px;
     /* padding: 20px; */
-    margin-top: -149%;
+    /* margin-top: -149%; */
   }
 
   .right-part {
@@ -539,14 +539,24 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 425px) {
+  .imgcntnrabt {
+    margin-top: 190px;
+  }
+}
 @media screen and (max-width: 375px) {
   .imgcntnrabt {
-    margin-top: 8vh;
+    margin-top: 175px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .imgcntnrabt {
+    margin-top: 160px;
   }
 }
 
 @media screen and (max-width: 335px) {
   .partition {
-    margin-top: -170%;
+    /* margin-top: -170%; */
   }
 }

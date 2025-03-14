@@ -23,229 +23,616 @@
       class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow"
     >
       <img src="./images/whatsap.png" class="w-16" alt="" />
-      <img
+      <div class="scrollontop">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="currentColor"
+        >
+          <path
+            d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"
+          ></path>
+        </svg>
+      </div>
+      <!-- <img
         src="./images/arrow-removebg-preview.png"
         class="w-14 scrollontop"
         alt=""
-      />
+      /> -->
     </div>
     <div class="w-full h-fit orientalMain" data-scroll-container>
       <div class="w-full">
         <nav
-        class="navbar w-full px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
-      >
-        <div class="subNav w-fit flex items-center justify-center">
-          <!-- Logo (Left Side) -->
-          <a href="./index.html">
-            <img
-              class="w-[210px] sm:w-[180px]"
-              src="./images/Logo.jpg"
-              alt="Logo"
-            />
+          class="navbar w-full px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
+        >
+          <div class="subNav w-fit flex items-center justify-center">
+            <!-- Logo (Left Side) -->
+            <a href="./index.html">
+              <img
+                class="w-[210px] sm:w-[180px]"
+                src="./images/Logo.jpg"
+                alt="Logo"
+              />
+            </a>
+
+            <!-- Hamburger Menu Button (Right Side) -->
+            <button
+              id="menu-btn"
+              class="block md:hidden text-black focus:outline-none"
+            >
+              <svg
+                class="w-8 h-8 open"
+                fill="none"
+                stroke="#1a9dce"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+              <!-- <svg
+                class="w-6 h-6 close"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg> -->
+            </button>
+          </div>
+
+          <!-- Navigation Links -->
+          <div id="menu" class="hidden md:flex items-center gap-6 w-fit">
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="about.html"
+              >About us</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="Service.html"
+              >Services</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="testimonial.html"
+              >Testimonials</a
+            >
+            <a
+              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              href="contact.html"
+              >Contact us</a
+            >
+          </div>
+
+          <!-- Contact Info -->
+          <div
+            class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit"
+          >
+            <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
+            <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
+          </div>
+        </nav>
+        <div
+          class="w-full relative shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar relative"
+        >
+          <a class="cursor-pointer" href="Service.html">
+            <div class="btw px-2 py-0">
+              <button
+                class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium"
+              >
+                All Services
+              </button>
+            </div>
           </a>
-
-          <!-- Hamburger Menu Button (Right Side) -->
-          <button
-            id="menu-btn"
-            class="block md:hidden text-black focus:outline-none"
-          >
-            <svg
-              class="w-8 h-8 open"
-              fill="none"
-              stroke="#1a9dce"
-              stroke-width="2"
-              viewBox="0 0 24 24"
+          <div class="inline-block border-r-1 border-[#109ec9] text-left">
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none cursor-pointer"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-            <!-- <svg
-              class="w-6 h-6 close"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
+              Personal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute flex justify-center gap-10 h-[40vh] p-[30px] left-0 mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg> -->
-          </button>
-        </div>
+              <div class="w-48 h-full p-5">
+                <h1 class="text-center mb-2">Marital Investigation</h1>
+                <p class="text-xs font-extralight">
+                  Our investigations are built for thoroughness, accuracy, and
+                  confidentiality. Our investigations are built for
+                  thoroughness, accuracy, and confidentiality.Our investigations
+                  are built for thoroughness, accuracy, and confidentiality.Our
+                  investigations are built for thoroughness.
+                </p>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
 
-        <!-- Navigation Links -->
-        <div id="menu" class="hidden md:flex items-center gap-6 w-fit">
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href="index.html"
-            >Home</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href="about.html"
-            >About us</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href="Service.html"
-            >Services</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href="testimonial.html"
-            >Testimonials</a
-          >
-          <a
-            class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href="contact.html"
-            >Contact us</a
-          >
-        </div>
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
 
-        <!-- Contact Info -->
-        <div
-          class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit"
-        >
-          <h3><i class="ri-phone-fill"></i> +91 7089369114</h3>
-          <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
-        </div>
-      </nav>
-      <div
-      class="w-full shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar"
-    >
-      <a class="cursor-pointer" href="Service.html">
-        <div class="btw px-2 py-0">
-          <button
-            class="bg-[#009FCF] text-white px-3 py-2 rounded text-xs font-medium"
-          >
-            All Services
-          </button>
-        </div>
-      </a>
-      <div
-        class="relative inline-block border-r-1 border-[#109ec9] text-left"
-      >
-        <!-- Dropdown Button -->
-        <button
-          id="dropdownButton"
-          class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
-        >
-          Personal Investigation
-          <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-        </button>
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
 
-        <!-- Dropdown Menu -->
-        <div
-          id="dropdownMenu"
-          class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
-        >
-          <ul class="py-2">
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Background Check
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Surveillance
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Missing Person
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="relative inline-block border-r-1 border-[#109ec9] text-left"
-      >
-        <!-- Dropdown Button -->
-        <button
-          id="dropdownButton"
-          class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
-        >
-          Corporate & Business Investigation
-          <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-        </button>
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
 
-        <!-- Dropdown Menu -->
-        <div
-          id="dropdownMenu"
-          class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
-        >
-          <ul class="py-2">
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Background Check
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Surveillance
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Missing Person
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="relative inline-block border-r-1 border-[#109ec9] text-left"
-      >
-        <!-- Dropdown Button -->
-        <button
-          id="dropdownButton"
-          class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none"
-        >
-          Legal & Criminal Investigation
-          <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-        </button>
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
 
-        <!-- Dropdown Menu -->
-        <div
-          id="dropdownMenu"
-          class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
-        >
-          <ul class="py-2">
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Background Check
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Surveillance
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Missing Person
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="relative inline-block text-left">
-        <!-- Dropdown Button -->
-        <button
-          id="dropdownButton"
-          class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none"
-        >
-          Specialized & High Profile Investigation
-          <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
-        </button>
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
 
-        <!-- Dropdown Menu -->
-        <div
-          id="dropdownMenu"
-          class="hidden absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
-        >
-          <ul class="py-2">
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Background Check
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Surveillance
-            </li>
-            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-              Missing Person
-            </li>
-          </ul>
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-block border-r-1 border-[#109ec9] text-left">
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none cursor-pointer"
+            >
+              Corporate & Business Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute flex justify-center gap-10 h-[40vh] p-[30px] left-0 mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <div class="w-48 h-full p-5">
+                <h1 class="text-center mb-2">Marital Investigation</h1>
+                <p class="text-xs font-extralight">
+                  Our investigations are built for thoroughness, accuracy, and
+                  confidentiality. Our investigations are built for
+                  thoroughness, accuracy, and confidentiality.Our investigations
+                  are built for thoroughness, accuracy, and confidentiality.Our
+                  investigations are built for thoroughness.
+                </p>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-block border-r-1 border-[#109ec9] text-left">
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-xs text-[#009FCF] hover:text-[#009FCF] focus:outline-none cursor-pointer"
+            >
+              Legal & Criminal Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute flex justify-center gap-10 h-[40vh] p-[30px] left-0 mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <div class="w-48 h-full p-5">
+                <h1 class="text-center mb-2">Marital Investigation</h1>
+                <p class="text-xs font-extralight">
+                  Our investigations are built for thoroughness, accuracy, and
+                  confidentiality. Our investigations are built for
+                  thoroughness, accuracy, and confidentiality.Our investigations
+                  are built for thoroughness, accuracy, and confidentiality.Our
+                  investigations are built for thoroughness.
+                </p>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-block text-left">
+            <!-- Dropdown Button -->
+            <button
+              id="dropdownButton"
+              class="flex items-center px-0 py-0 text-[#009FCF] text-xs hover:text-[#009FCF] focus:outline-none cursor-pointer"
+            >
+              Specialized & High Profile Investigation
+              <i class="ri-arrow-drop-down-fill text-2xl ml-1"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              id="dropdownMenu"
+              class="hidden absolute flex justify-center gap-10 h-[40vh] p-[30px] left-0 mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg"
+            >
+              <div class="w-48 h-full p-5">
+                <h1 class="text-center mb-2">Marital Investigation</h1>
+                <p class="text-xs font-extralight">
+                  Our investigations are built for thoroughness, accuracy, and
+                  confidentiality. Our investigations are built for
+                  thoroughness, accuracy, and confidentiality.Our investigations
+                  are built for thoroughness, accuracy, and confidentiality.Our
+                  investigations are built for thoroughness.
+                </p>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1633266841047-719b5f737149?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </div>
+                <div class="content">
+                  <a href="#">
+                    <span class="title"> Private Investigator </span>
+                  </a>
+
+                  <p class="desc">
+                    Our investigations are built for thoroughness, accuracy, and
+                    confidentiality.
+                  </p>
+
+                  <a class="action" href="./spouse.html">
+                    Know More
+                    <span aria-hidden="true"> → </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
         <div class="px-3 ">
           <div
             class="imgcnt w-full  h-[40vmax] overflow-hidden flex items-center justify-center mt-10 rounded-2xl imganimatormain"
