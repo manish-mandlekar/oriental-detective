@@ -53,14 +53,7 @@ body {
   font-weight: bold;
 }
 .left-part h1 span {
-  color: rgb(7, 172, 238);
-}
-.left-part p {
-  font-size: 14px;
-  /* font-weight: ; */
-  justify-content: left;
-  letter-spacing: 0.5px;
-  line-height: 28px;
+  color: #009fcf;
 }
 .right-part {
   height: 100%;
@@ -171,7 +164,7 @@ body {
 }
 .about-desc {
   width: 60%;
-  margin: 20px 250px;
+  margin: 0 250px 50px 250px;
 }
 .desc-1 {
   /* line-height: 0px; */
@@ -185,7 +178,7 @@ body {
 }
 
 .container {
-  margin: 25px auto;
+  margin: 50px auto;
   width: 90%;
   font-weight: bold;
 }
@@ -218,7 +211,7 @@ body {
   color: white;
   font-size: 24px;
 }
-.feature-icon img{
+.feature-icon img {
   width: 70%;
   height: 70%;
   object-fit: cover;
@@ -246,11 +239,11 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
   }
   .feature-icon {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   .feature-subtitle {
     color: rgba(60, 58, 58, 0.79);
@@ -331,10 +324,6 @@ body {
     margin-bottom: 15px;
   }
 
-  .left-part p {
-    font-size: 14px;
-    line-height: 24px;
-  }
   .cards-part {
     flex-direction: column;
     gap: 4vmax;
@@ -347,7 +336,8 @@ body {
   .about-desc {
     width: 100%;
     margin: 0;
-    padding: 4vmax;
+    padding-bottom: 50px;
+    /* padding: 4vmax; */
   }
 
   .right-card {
@@ -427,10 +417,6 @@ body {
     margin-bottom: 15px;
   }
 
-  .left-part p {
-    font-size: 14px;
-    line-height: 24px;
-  }
   .cards-part {
     flex-direction: column;
     gap: 4vmax;
@@ -443,7 +429,7 @@ body {
   .about-desc {
     width: 100%;
     margin: 0;
-    padding: 4vmax;
+    /* padding: 4vmax; */
   }
 
   .right-card {
@@ -534,10 +520,6 @@ body {
     margin-bottom: 15px;
   }
 
-  .left-part p {
-    font-size: 14px;
-    line-height: 24px;
-  }
   .cards-part {
     flex-direction: column;
     gap: 4vmax;
@@ -550,7 +532,7 @@ body {
   .about-desc {
     width: 100%;
     margin: 0;
-    padding: 4vmax;
+    /* padding: 4vmax; */
   }
 
   .right-card {

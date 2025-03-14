@@ -89,13 +89,13 @@ body {
 }
 @media screen and (max-width: 520px) {
   .big-circle {
-    width: 150px;
-    height: 150px;
-    transform: translate(45%, 25%);
+    width: 140px;
+    height: 140px;
+    transform: translate(55%, 35%);
   }
   .small-circle {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     transform: translate(-5%, -5%);
   }
 }

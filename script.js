@@ -210,3 +210,15 @@ function initScrollToTop() {
 
 // Initialize after DOM content is loaded
 initScrollToTop();
+
+window.addEventListener("scroll", () => {
+  const scrollToTopButton = document.querySelector(".scrollontop");
+
+  if (scrollToTopButton) {
+    if (window.scrollY > 200) {
+      scrollToTopButton.style.opacity = "1";
+    } else {
+      scrollToTopButton.style.opacity = "0";
+    }
+  }
+});

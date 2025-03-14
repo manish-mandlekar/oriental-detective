@@ -421,6 +421,7 @@ footer .grid-cols-4 {
 }
 
 .scrollontop {
+  opacity: 0;
   transition: transform 0.3s ease;
   cursor: pointer;
   pointer-events: all;
@@ -436,6 +437,7 @@ footer .grid-cols-4 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
 }
 
 .wtparrow {
