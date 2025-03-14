@@ -1,7 +1,4 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
-});
+
 
 document.getElementById("menu-btn")?.addEventListener("click", function () {
   const menu = document.getElementById("menu");
@@ -33,8 +30,8 @@ document.addEventListener("click", function (event) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const dropdownButtons = document.querySelectorAll('[id^="dropdownButton"]');
-  const dropdownMenus = document.querySelectorAll('[id^="dropdownMenu"]');
+  const dropdownButtons = document.querySelectorAll('[id^="dropdopebutton"]');
+  const dropdownMenus = document.querySelectorAll('[id^="dropdopemenu"]');
 
   // Handle button clicks
   dropdownButtons.forEach((button, index) => {
@@ -44,12 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
       // Close all other dropdowns
       dropdownMenus.forEach((menu, menuIndex) => {
         if (menuIndex !== index) {
-          menu.classList.add("hidden");
+          menu.classList.remove('active');
+          // Add hidden class after animation
+          setTimeout(() => menu.classList.add('hidden'), 300);
         }
       });
 
       // Toggle current dropdown
-      dropdownMenus[index].classList.toggle("hidden");
+      if (dropdownMenus[index].classList.contains('hidden')) {
+        dropdownMenus[index].classList.remove('hidden');
+        // Wait a frame to ensure removal of hidden is processed
+        requestAnimationFrame(() => {
+          dropdownMenus[index].classList.add('active');
+        });
+      } else {
+        dropdownMenus[index].classList.remove('active');
+        setTimeout(() => dropdownMenus[index].classList.add('hidden'), 300);
+      }
     });
   });
 
@@ -57,11 +65,13 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".relative.inline-block")) {
       dropdownMenus.forEach((menu) => {
-        menu.classList.add("hidden");
+        menu.classList.remove('active');
+        setTimeout(() => menu.classList.add('hidden'), 300);
       });
     }
   });
 });
+
 
 const slider = document.getElementById("slider");
 const slides = document.querySelectorAll(".slide");
