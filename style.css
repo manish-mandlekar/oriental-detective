@@ -98,6 +98,34 @@ body {
   pointer-events: auto;
 }
 
+/* Add these styles for the dropdown animation */
+#chuparustam {
+  transition: all 0.3s ease-in-out;
+}
+
+#chuparustam.active {
+  max-height: 12rem;
+  opacity: 1;
+}
+
+.ri-arrow-drop-down-line {
+
+  transition: transform 0.3s ease;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+/* Add these styles to your existing CSS */
+/* .ri-arrow-drop-down-line {
+  display: none;
+} */
+
+.dbdropbtn{
+  display: block;
+}
+
 /* Button css */
 /* From Uiverse.io by nikk7007 */
 .btnxui {
@@ -719,6 +747,7 @@ footer .grid-cols-4 {
   .card {
     width: 100%;
     max-width: none;
+    
   }
 
   /* Testimonial slider */
@@ -772,6 +801,18 @@ footer .grid-cols-4 {
   .imgcntnr {
     margin-top: 9vh;
   }
+  .dbdropbtn{
+    
+    display: active;
+  }
+ 
+  .group:hover .services-dropdown {
+    display: block;
+  }
+  
+  .services-dropdown {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -784,4 +825,5 @@ footer .grid-cols-4 {
   .imgcntnrtestimonial {
     margin-top: 8vh;
   }
+  
 }

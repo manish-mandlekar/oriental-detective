@@ -91,7 +91,7 @@
           </div>
 
           <!-- Navigation Links -->
-          <div id="menu" class="hidden md:flex text-left gap-6 w-fit ml-20 font-semibold text-xl">
+          <div id="menu" class="hidden md:flex items-center gap-6 w-fit text-[#515854] text-sm">
             <a
               class="relative   text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               href="index.html"
@@ -103,11 +103,42 @@
               >About us</a
             >
           <div>
-            <a
-            class="relative  text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-            href="Service.html"
-            >Services </a>
-            <i class="ri-arrow-drop-down-line"></i>
+            <div class="relative group">
+              <div class="flex items-center gap-1 cursor-pointer">
+                <a class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+                  Services
+                </a>
+                <i class="ri-arrow-drop-down-line text-[#515854] group-hover:text-[#009FCF] transition-colors dbdropbtn"></i>
+              </div>
+              
+              <!-- Add the new dropdown menu -->
+              <div class="services-dropdown  hidden  text-[#009FCF] top-full left-0 w-full bg-white rounded-md mt-1 py-2 z-50">
+                <a href="#" id="anotherdropdown" class="block px-4 py-2 text-sm transition-colors flex items-center justify-between w-full hover:bg-red-400">
+                  Personal Investigation 
+                  <i class="ri-arrow-drop-down-line transition-transform  "></i>
+                </a>
+                <!--adding a new dropdown-->
+                <div id="chuparustam" class="w-full bg-white  overflow-hidden transition-all duration-300 opacity-0 max-h-0">
+                  <div class="p-4 pr-10">
+                    <h4 class="text-black font-light">Personal Investigation</h4>
+                    <p class="text-xs text-[#515854] font-thin pr-10">
+                      Our investigations are built for thoroughness, accuracy, and confidentiality. Our investigations are built for thoroughness, accuracy, and confidentiality. Our investigations are built for thoroughness, accuracy, and confidentiality. Our investigations are built for thoroughness.
+                    </p>
+                  </div>
+                 
+                </div>
+                <a href="#" class="block px-4 py-2 text-sm  transition-colors">
+                  Corporate Investigation <i class="ri-arrow-drop-down-line"></i>
+                </a>
+                
+                <a href="#" class="block px-4 py-2 text-sm   ">
+                  Legal Investigation <i class="ri-arrow-drop-down-line"></i>
+                </a>
+                <a href="#" class="block px-4 py-2 text-sm   transition-colors">
+                  Criminal Investigation <i class="ri-arrow-drop-down-line"></i>
+                </a>
+              </div>
+            </div>
           </div>
             <a
               class="relative  text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"

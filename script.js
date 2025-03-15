@@ -1,5 +1,3 @@
-
-
 document.getElementById("menu-btn")?.addEventListener("click", function () {
   const menu = document.getElementById("menu");
   const navbar = document.querySelector(".navbar");
@@ -14,6 +12,8 @@ document.getElementById("menu-btn")?.addEventListener("click", function () {
     document.body.style.overflow = "";
   }
 });
+
+
 document.addEventListener("click", function (event) {
   const menu = document.getElementById("menu");
   const menuBtn = document.getElementById("menu-btn");
@@ -68,6 +68,28 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.remove('active');
         setTimeout(() => menu.classList.add('hidden'), 300);
       });
+    }
+  });
+
+  const dropdownButton = document.getElementById('anotherdropdown');
+  const dropdownContent = document.getElementById('chuparustam');
+  const dropdownArrow = dropdownButton.querySelector('.ri-arrow-drop-down-line');
+
+  dropdownButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Toggle the dropdown content
+    dropdownContent.classList.toggle('active');
+    
+    // Rotate the arrow
+    dropdownArrow.classList.toggle('rotate-arrow');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!dropdownButton.contains(e.target) && !dropdownContent.contains(e.target)) {
+      dropdownContent.classList.remove('active');
+      dropdownArrow.classList.remove('rotate-arrow');
     }
   });
 });
