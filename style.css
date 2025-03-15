@@ -635,7 +635,7 @@ footer .grid-cols-4 {
     width: 100% !important;
   }
   .blendlast {
-    display: none;
+    display: none !important;
   }
   .cardscr {
     margin-top: -76vh;
