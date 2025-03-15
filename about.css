@@ -38,8 +38,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0vmax 10vmax;
-  /* height: 100vh; */
+  height: 120vh;
+  padding: 3vmax 10vmax;
 }
 .left-part {
   height: fit-content;
