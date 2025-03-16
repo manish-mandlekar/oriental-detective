@@ -184,59 +184,9 @@ body {
   color: rgba(33, 30, 30, 0.945);
   font-weight: bold;
 }
-@media (max-width: 414px) {
-  .second-picture {
-    /* display: flex;
-        justify-content: center;
-        align-items: center; */
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding: 10px;
-    height: 100%;
-    width: 125%;
-    margin-top: -14vh;
-  }
-  .ser h1 {
-    font-size: 22px;
-  }
-  .first-services {
-    padding: 0;
-  }
-  .why-choose {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .spouse-services {
-    margin-top: -14vh;
-  }
-
-  .ser {
-    width: 100%;
-    padding: 23px;
-  }
-  .our-services {
-    width: 100%;
-    margin: 0;
-    padding: 23px;
-  }
-  .our-services > p {
-    margin: 0;
-    padding: 0;
-  }
-  .us {
-    width: 100%;
-    padding: 23px;
-    font-weight: 200;
-    line-height: 30px;
-    color: #515854;
-    font-size: 16px;
-  }
-  .happens {
-    padding: 23px;
-    font-size: 16px;
-    width: 100%;
+@media (max-width: 500px) {
+  .imgcnt{
+    margin-top: 14vh;
   }
 }
 @media (max-width: 430px) {
@@ -284,6 +234,69 @@ body {
   .us {
     width: 100%;
     padding: 0 23px;
+    font-weight: 200;
+    line-height: 30px;
+    color: #515854;
+    font-size: 16px;
+  }
+  .happens {
+    padding: 23px;
+    font-size: 16px;
+    width: 100%;
+  }
+ .imgcnt{
+ margin-top: 0;
+
+ }
+ .imgslidercntr{
+  height: 50%;
+  margin-top: 10px;
+ }
+}
+@media (max-width: 414px) {
+  .second-picture {
+    /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 100%;
+    width: 125%;
+    margin-top: -14vh;
+  }
+  .ser h1 {
+    font-size: 22px;
+  }
+  .first-services {
+    padding: 0;
+  }
+  .why-choose {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .spouse-services {
+    margin-top: -14vh;
+  }
+
+  .ser {
+    width: 100%;
+    padding: 23px;
+  }
+  .our-services {
+    width: 100%;
+    margin: 0;
+    padding: 23px;
+  }
+  .our-services > p {
+    margin: 0;
+    padding: 0;
+  }
+  .us {
+    width: 100%;
+    padding: 23px;
     font-weight: 200;
     line-height: 30px;
     color: #515854;

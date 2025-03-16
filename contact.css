@@ -98,4 +98,7 @@ body {
     height: 50px;
     transform: translate(-5%, -5%);
   }
+  .contactmaindiv{
+    margin-top: -14vmax;
+  }
 }
