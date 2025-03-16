@@ -73,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const dropdownButton = document.getElementById('anotherdropdown');
   const dropdownContent = document.getElementById('chuparustam');
-  const dropdownArrow = dropdownButton.querySelector('.ri-arrow-drop-down-line');
+  const dropdownArrow = document.querySelector('.ri-arrow-drop-down-line');
 
-  dropdownButton.addEventListener('click', function(e) {
+  dropdownButton?.addEventListener('click', function(e) {
     e.preventDefault();
     
     // Toggle the dropdown content

@@ -91,62 +91,86 @@
           </div>
 
           <!-- Navigation Links -->
-          <div id="menu" class="hidden md:flex items-center gap-6 w-fit text-[#515854] text-sm">
+          <div
+            id="menu"
+            class="hidden md:flex gap-6 w-fit text-[#515854] text-xs"
+          >
             <a
-              class="relative   text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               href="index.html"
               >Home</a
             >
             <a
-              class="relative   text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               href="about.html"
               >About us</a
             >
-          <div>
-            <div class="relative group">
-              <div class="flex items-center gap-1 cursor-pointer">
-                <a class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                  Services
-                </a>
-                <i class="ri-arrow-drop-down-line text-[#515854] group-hover:text-[#009FCF] transition-colors dbdropbtn"></i>
-              </div>
-              
-              <!-- Add the new dropdown menu -->
-              <div class="services-dropdown  hidden  text-[#009FCF] top-full left-0 w-full bg-white rounded-md mt-1 py-2 z-50">
-                <a href="#" id="anotherdropdown" class="block px-4 py-2 text-sm transition-colors flex items-center justify-between w-full hover:bg-red-400">
-                  Personal Investigation 
-                  <i class="ri-arrow-drop-down-line transition-transform  "></i>
-                </a>
-                <!--adding a new dropdown-->
-                <div id="chuparustam" class="w-full bg-white  overflow-hidden transition-all duration-300 opacity-0 max-h-0">
-                  <div class="p-4 pr-10">
-                    <h4 class="text-black font-light">Personal Investigation</h4>
-                    <p class="text-xs text-[#515854] font-thin pr-10">
-                      Our investigations are built for thoroughness, accuracy, and confidentiality. Our investigations are built for thoroughness, accuracy, and confidentiality. Our investigations are built for thoroughness, accuracy, and confidentiality. Our investigations are built for thoroughness.
-                    </p>
-                  </div>
-                 
+            <div>
+              <div class="relative group">
+                <div class="flex items-center gap-1 cursor-pointer">
+                  <a
+                    class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                  >
+                    Services
+                  </a>
+                  <i
+                    class="ri-arrow-drop-down-line text-[#515854] group-hover:text-[#009FCF] transition-colors dbdropbtn"
+                  ></i>
                 </div>
-                <a href="#" class="block px-4 py-2 text-sm  transition-colors">
-                  Corporate Investigation <i class="ri-arrow-drop-down-line"></i>
-                </a>
-                
-                <a href="#" class="block px-4 py-2 text-sm   ">
-                  Legal Investigation <i class="ri-arrow-drop-down-line"></i>
-                </a>
-                <a href="#" class="block px-4 py-2 text-sm   transition-colors">
-                  Criminal Investigation <i class="ri-arrow-drop-down-line"></i>
-                </a>
+
+                <!-- Add the new dropdown menu -->
+                <div
+                  class="services-dropdown hidden text-[#009FCF] top-full left-0 w-full bg-white rounded-md mt-1 py-2 z-50"
+                >
+                  <a
+                    href="#"
+                    id="anotherdropdown"
+                    class="block px-4 py-2 text-sm transition-colors flex items-center justify-between w-full hover:bg-red-400"
+                  >
+                    Personal Investigation
+                    <i class="ri-arrow-drop-down-line transition-transform"></i>
+                  </a>
+                  <!--adding a new dropdown-->
+                  <div
+                    id="chuparustam"
+                    class="w-full bg-white overflow-hidden transition-all duration-300 opacity-0 max-h-0"
+                  >
+                    <div class="p-4 pr-10">
+                      <h4 class="text-black font-light">
+                        Personal Investigation
+                      </h4>
+                      <p class="text-xs text-[#515854] font-thin pr-10">
+                        Our investigations are built for thoroughness, accuracy,
+                        and confidentiality. Our investigations are built for
+                        thoroughness, accuracy, and confidentiality. Our
+                        investigations are built for thoroughness, accuracy, and
+                        confidentiality. Our investigations are built for
+                        thoroughness.
+                      </p>
+                    </div>
+                  </div>
+                  <a href="#" class="block px-4 py-2 text-sm transition-colors">
+                    Corporate Investigation
+                    <i class="ri-arrow-drop-down-line"></i>
+                  </a>
+
+                  <a href="#" class="block px-4 py-2 text-sm">
+                    Legal Investigation <i class="ri-arrow-drop-down-line"></i>
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-sm transition-colors">
+                    Criminal Investigation
+                    <i class="ri-arrow-drop-down-line"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
             <a
-              class="relative  text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               href="testimonial.html"
               >Testimonials</a
             >
             <a
-              class="relative  text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               href="contact.html"
               >Contact us</a
             >
@@ -667,10 +691,10 @@
         </div>
         <div class="lg:px-3 imgcntnr">
           <div
-            class="imgcnt w-full overflow-hidden flex items-center justify-center mt-14 rounded-lg imganimatormain"
+            class="imgcnt w-full overflow-hidden flex items-center justify-center mt-10 rounded-2xl imganimatormain"
           >
             <div
-              class="relative w-full h-[65vh] overflow-hidden shadow-lg imganimator"
+              class="relative w-full h-[73vh] overflow-hidden shadow-lg imganimator"
             >
               <!--enquiry button-->
 
@@ -813,10 +837,12 @@
         </div>
       </div>
       <!--Our mission and our vission screen-->
-      <div class="w-full min-h-screen flex justify-center my-20">
-        <div class="w-[80%] max-lg:w-[100%] h-full flex items-center justify-between sndpage">
+      <div class="w-full flex justify-center my-20">
+        <div
+          class="w-[80%] max-lg:w-[100%] h-full flex items-center justify-between sndpage"
+        >
           <div
-            class="w-[49%] max-lg:w-full mission gap-1 border-r-1 border-[#009FCF]"
+            class="w-[50%] max-lg:w-full mission gap-1 border-r-1 border-[#009FCF]"
           >
             <img
               src="./images/mission.png"
@@ -842,9 +868,7 @@
               the details and solve the mystery.
             </p>
           </div>
-          <div
-            class="w-[49%] max-lg:w-full vision gap-1 "
-          >
+          <div class="w-[50%] max-lg:w-full vision gap-1">
             <img
               src="./images/vision.png"
               class="w-12 text-center lg:w-18"
@@ -960,7 +984,7 @@
             <div class="w-[50%] h-full flex items-start justify-end abtuspta">
               <img
                 src="./images/OD About us Image.svg"
-                class="lg:w-[35vmax] w-full object-cover"
+                class="max-lg:w-[35vmax] w-full object-cover"
               />
             </div>
             <div class="py-5 w-[50%] flex flex-col gap-6 abtuspta">
@@ -1015,7 +1039,9 @@
         >
           Our <span class="text-[#009FCF]">Services</span>
         </h1>
-        <div class="w-full flex items-center gap-14 justify-center flex-wrap">
+        <div
+          class="w-full flex items-center gap-[6vw] justify-center flex-wrap max-lg:gap-10"
+        >
           <div class="service-card">
             <div class="img">
               <img src="./images/private investigator.png" alt="" />
@@ -1074,7 +1100,10 @@
           Why Choose <span class="text-[#009FCF]">Oriental Detective ?</span>
         </h1>
         <div class="w-full flex justify-center px-4">
-          <p class="w-[60%] text-medium font-light leading-8 paraofsix">
+          <!-- align text justify -->
+          <p
+            class="w-[80%] text-medium font-light leading-8 paraofsix text-justify"
+          >
             Our investigations are built for thoroughness, accuracy, and
             confidentiality. With meticulous attention to detail, we uncover the
             truth and provide you with the answers you seek. Start with the case
@@ -1389,8 +1418,8 @@
       <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
         <div class="w-[80%]">
           <footer class="py-10 w-full mt-10">
-            <div class="mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div>
+            <div class="mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+              <div class="mr-10">
                 <h2 class="text-lg font-bold flex justify-center">
                   <img src="./images/Logo-removebg-preview.png" alt="" />
                 </h2>
@@ -1449,12 +1478,14 @@
               </div>
             </div>
             <div
-              class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 blendlast"
+              class="w-full border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-between text-sm mb-5 blendlast"
             >
-              2025 @All rights reserved Oriental Detective |
-              <a href="#" class="">Terms and Conditions</a> |
-              <a href="#" class="">Privacy Policy</a> |
-              <a href="#" class="">Legal Notice</a>
+              2025 @All rights reserved Oriental Detective
+              <div class="flex gap-14">
+                <a href="#" class="">Terms and Conditions</a>
+                <a href="#" class="">Privacy Policy</a>
+                <a href="#" class="">Legal Notice</a>
+              </div>
             </div>
           </footer>
         </div>
