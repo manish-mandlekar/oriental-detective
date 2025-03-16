@@ -285,7 +285,7 @@ body {
   padding: 20px 30px;
 }
 .sndpage > div:nth-child(1) {
-  border-right: 1px solid #5cd1f4;
+  border-right: 1px solid #009fcf; 
 }
 @keyframes anim {
   0% {
@@ -541,7 +541,7 @@ footer .grid-cols-4 {
     position: fixed;
     top: 70px;
     /* left: 200px; */
-    width: 120%;
+    width: 100%;
     height: auto;
     background: white;
     z-index: 999;
