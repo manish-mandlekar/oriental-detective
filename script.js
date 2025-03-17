@@ -222,9 +222,9 @@ function initScrollToTop() {
     scrollToTopButton.addEventListener("click", (e) => {
       e.preventDefault();
 
-      // Check if Locomotive Scroll is initialized
-      if (scroll) {
-        scroll.scrollTo("top", {
+      // Check if Locomotive Scroll is initialized and available globally
+      if (typeof locomotiveScroll !== 'undefined' && locomotiveScroll) {
+        locomotiveScroll.scrollTo("top", {
           duration: 1000,
           easing: [0.25, 0.1, 0.25, 1],
           disableLerp: true,
