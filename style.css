@@ -285,7 +285,7 @@ body {
   padding: 20px 30px;
 }
 .sndpage > div:nth-child(1) {
-  border-right: 1px solid #009fcf; 
+  border-right: 1px solid #009fcf;
 }
 @keyframes anim {
   0% {
