@@ -75,7 +75,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(35%, 35%);
+  transform: translate(120px, 90px);
 }
 .small-circle {
   width: 110px;
@@ -98,7 +98,7 @@ body {
     height: 50px;
     transform: translate(-5%, -5%);
   }
-  .contactmaindiv{
+  .contactmaindiv {
     margin-top: -14vmax;
   }
 }

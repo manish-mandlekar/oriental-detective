@@ -183,11 +183,11 @@ body {
   filter: brightness(0.8);
 }
 .btnxui2 {
-  --color: #ffffff;
+  --color: #ffffff !important;
 }
 
 .btnxui2:hover {
-  color: #009fcf;
+  color: #009fcf !important;
 }
 
 .btw {
