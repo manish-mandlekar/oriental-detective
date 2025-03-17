@@ -32,10 +32,12 @@ document.addEventListener("click", function (event) {
 document.addEventListener("DOMContentLoaded", function () {
   const dropdownButtons = document.querySelectorAll('[id^="dropdopebutton"]');
   const dropdownMenus = document.querySelectorAll('[id^="dropdopemenu"]');
-
+  
   // Handle button clicks
   dropdownButtons.forEach((button, index) => {
+
     button.addEventListener("click", (e) => {
+     
       e.stopPropagation();
 
       // Close all other dropdowns
@@ -49,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Toggle current dropdown
       if (dropdownMenus[index].classList.contains('hidden')) {
+        
         dropdownMenus[index].classList.remove('hidden');
         // Wait a frame to ensure removal of hidden is processed
         requestAnimationFrame(() => {
@@ -64,8 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Close dropdowns when clicking outside
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".relative.inline-block")) {
+      
       dropdownMenus.forEach((menu) => {
         menu.classList.remove('active');
+     
         setTimeout(() => menu.classList.add('hidden'), 300);
       });
     }
@@ -87,8 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Close dropdown when clicking outside
   document.addEventListener('click', function(e) {
+    
     if (!dropdownButton.contains(e.target) && !dropdownContent.contains(e.target)) {
       dropdownContent.classList.remove('active');
+     
       dropdownArrow.classList.remove('rotate-arrow');
     }
   });
