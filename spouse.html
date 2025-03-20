@@ -828,9 +828,9 @@
       <!--footer-->
       <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
         <div class="w-[80%]">
-          <footer class="pt-10 w-full mt-10">
-            <div class="mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div>
+          <footer class="py-10 w-full mt-10">
+            <div class="flex w-full justify-between">
+              <div class="mr-28 w-1/4">
                 <h2 class="text-lg font-bold flex justify-center">
                   <img src="./images/Logo-removebg-preview.png" alt="" />
                 </h2>
@@ -850,7 +850,7 @@
                   ></a>
                 </div>
               </div>
-              <div>
+              <div class="w-1/4 mr-10">
                 <h3 class="text-lg font-bold">Services</h3>
                 <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
                   <li>Private Investigation</li>
@@ -860,17 +860,17 @@
                   <li>Criminal Investigation</li>
                 </ul>
               </div>
-              <div>
+              <div class="w-1/4">
                 <h3 class="text-lg font-bold">Quick Links</h3>
                 <ul class="font-light text-sm text-[#515854] mt-2 space-y-2">
-                  <li>About Us</li>
-                  <li>Services</li>
-                  <li>Blogs</li>
-                  <li>Contact Us</li>
-                  <li>Testimonials</li>
+                  <li><a class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300" href="about.html">About Us</a></li>
+                  <li><a class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300" href="Service.html">Services</a></li>
+                  <li><a class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300" href="index.html">Blogs</a></li>
+                  <li><a class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300" href="contact.html">Contact Us</a></li>
+                  <li><a class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300" href="testimonial.html">Testimonials</a></li>
                 </ul>
               </div>
-              <div>
+              <div class="flex flex-col gap-2 w-1/4">
                 <h3 class="text-lg font-bold">Contact Info</h3>
                 <p class="font-light text-sm text-[#515854] mt-2">
                   <strong>Email:</strong> orientaldetective@gmail.com
@@ -881,18 +881,24 @@
                 <p class="font-light text-sm text-[#515854]">
                   <strong>Address:</strong> Shanti Nagar Mira Road, Mumbai
                 </p>
-                <button class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded">
-                  Contact us
-                </button>
+              <a href="contact.html" class="flex w-full">
+                <button
+                class="mt-4 bg-[#009FCF] text-white px-4 py-2 rounded btnxui sm:text-xl max-lg:text-sm w-full"
+              >
+                Contact us
+              </button>
+              </a>
               </div>
             </div>
             <div
-              class="border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-center text-sm mb-5 blendlast"
+              class="w-full border-t mt-8 pt-4 text-center font-light text-sm text-black flex gap-10 justify-between text-sm mb-5 blendlast"
             >
-              2025 @All rights reserved Oriental Detective |
-              <a href="#" class="">Terms and Conditions</a> |
-              <a href="#" class="">Privacy Policy</a> |
-              <a href="#" class="">Legal Notice</a>
+              2025 @All rights reserved Oriental Detective
+              <div class="flex gap-14">
+                <a href="#" class="">Terms and Conditions</a>
+                <a href="#" class="">Privacy Policy</a>
+                <a href="#" class="">Legal Notice</a>
+              </div>
             </div>
           </footer>
         </div>
