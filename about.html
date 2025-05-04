@@ -42,90 +42,88 @@
     <div class="w-full h-fit orientalMain">
       <div class="w-full h-fit">
         <nav
-          class="navbar w-full px-6 py-4 bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
-        >
-          <div class="subNav w-fit flex items-center justify-center">
-            <!-- Logo (Left Side) -->
-            <a href="./index.html">
-              <img
-                class="w-[210px] sm:w-[180px]"
-                src="./images/Logo.jpg"
-                alt="Logo"
-              />
-            </a>
-
-            <!-- Hamburger Menu Button (Right Side) -->
-            <button
-              id="menu-btn"
-              class="block md:hidden text-black focus:outline-none"
-            >
-              <svg
-                class="w-8 h-8 open"
-                fill="none"
-                stroke="#1a9dce"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-              <!-- <svg
-                class="w-6 h-6 close"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg> -->
-            </button>
-          </div>
-
-          <!-- Navigation Links -->
-          <div id="menu" class="hidden md:flex items-center gap-6 w-fit">
-            <a
-              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-              href="index.html"
-              >Home</a
-            >
-            <a
-              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-              href="about.html"
-              >About us</a
-            >
-            <a
-              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-              href="Service.html"
-              >Services</a
-            >
-            <a
-              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-              href="testimonial.html"
-              >Testimonials</a
-            >
-            <a
-              class="relative text-xs font-medium text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-              href="contact.html"
-              >Contact us</a
-            >
-          </div>
-
-          <!-- Contact Info -->
-          <div
-            class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit"
-          >
-            <h3><i class="ri-phone-fill"></i> +91 0000000000</h3>
-            <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
-          </div>
-        </nav>
+        class="navbar w-full bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
+      >
         <div
+          class="subNav w-fit flex items-center justify-between max-lg:w-full"
+        >
+          <!-- Logo (Left Side) -->
+          <a href="./index.html" class="w-[210px] sm:w-[180px]">
+            <img src="./images/Logo.jpg" alt="Logo" />
+          </a>
+
+          <!-- Hamburger Menu Button (Right Side) -->
+          <button id="menu-btn" class="block text-black focus:outline-none">
+            <svg
+              class="w-8 h-8 open"
+              fill="none"
+              stroke="#1a9dce"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+            <svg
+              class="w-6 h-6 close"
+              fill="none"
+              stroke="#1a9dce"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          id="menu"
+          class="hidden md:flex gap-6 w-fit text-[#515854] text-xs"
+        >
+          <a
+            class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            href="about.html"
+            >About us</a
+          >
+          <a
+            class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            href="Service.html"
+            >Services</a
+          >
+          <a
+            class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            href="testimonial.html"
+            >Testimonials</a
+          >
+          <a
+            class="relative text-[#515854] hover:text-[#009FCF] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#009FCF] after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            href="contact.html"
+            >Contact us</a
+          >
+        </div>
+
+        <!-- Contact Info -->
+        <div
+          class="md:flex flex-col md:flex-row md:items-center gap-6 text-[#009FCF] text-sm font-semibold w-fit nav-contact"
+        >
+          <h3><i class="ri-phone-fill"></i> +91 0000000000</h3>
+          <h3><i class="ri-mail-line"></i> orientaldetective@gmail.com</h3>
+        </div>
+      </nav>
+      <div
         class="w-full relative shadow-md h-fit flex items-center justify-center px-6 py-4 gap-4 secondNavbar"
       >
         <a class="cursor-pointer" href="Service.html">
@@ -180,7 +178,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=1">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -204,7 +202,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=2">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -228,7 +226,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=3">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -252,7 +250,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=4">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -303,7 +301,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=5">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -327,7 +325,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=6">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -353,7 +351,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=7">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -379,7 +377,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=8">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -423,7 +421,7 @@
               <div class="contentofnav">
                 <a href="#">
                   <span class="titleofnav"
-                    >Criminal Défense Investigations
+                    >Criminal Defense Investigations
                   </span>
                 </a>
 
@@ -432,7 +430,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=9">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -456,7 +454,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=10">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -480,7 +478,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=11">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -506,7 +504,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=12">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -559,7 +557,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=13">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -585,7 +583,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=14">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -611,7 +609,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=15">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -637,7 +635,7 @@
                   confidentiality.
                 </p>
 
-                <a class="actionofnav" href="./spouse.html">
+                <a class="actionofnav" href="spouse.html?page=16">
                   Know More
                   <span aria-hidden="true"> → </span>
                 </a>
@@ -646,6 +644,7 @@
           </div>
         </div>
       </div>
+
         <div class="px-3 imgcntnrser">
           <div
             class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center justify-center mt-10 rounded-2xl imganimatormain"
