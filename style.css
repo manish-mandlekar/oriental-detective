@@ -19,7 +19,7 @@ body {
   font-size: 2.5vmax;
 }
 .cardofnav {
-  width: 170px;
+  width: 200px;
   height: 19vmax;
   border-radius: 0.5rem;
   padding: 5px;
@@ -35,6 +35,10 @@ body {
 
 .contentofnav {
   height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
 
@@ -49,7 +53,7 @@ body {
 .titleofnav {
   color: #111827;
   font-size: 1vmax;
-  line-height: 1.75rem;
+  /* line-height: 1.75rem; */
   font-weight: 600;
   text-align: center;
 }
@@ -62,6 +66,7 @@ body {
 
 .actionofnav {
   display: inline-flex;
+  width: 60%;
   margin-top: 1rem;
   color: #ffffff;
   font-size: 14px;
