@@ -143,9 +143,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-left: 28px;
+  /* margin-left: 28px;
   padding-left: 13px;
-  width: 80%;
+  width: 80%; */
 }
 .why-choose h1 {
   font-size: 25px;
@@ -185,7 +185,7 @@ body {
   font-weight: bold;
 }
 @media (max-width: 500px) {
-  .imgcnt{
+  .imgcnt {
     margin-top: 14vh;
   }
 }
@@ -244,14 +244,13 @@ body {
     font-size: 16px;
     width: 100%;
   }
- .imgcnt{
- margin-top: 0;
-
- }
- .imgslidercntr{
-  height: 50%;
-  margin-top: 10px;
- }
+  .imgcnt {
+    margin-top: 0;
+  }
+  .imgslidercntr {
+    height: 50%;
+    margin-top: 10px;
+  }
 }
 @media (max-width: 414px) {
   .second-picture {
