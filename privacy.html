@@ -3,20 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="page-title">spouse</title>
+    <title>Document</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <script src="backup.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="testimonial.css" />
+    <style>
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background: white;
+      }
 
-    <link rel="stylesheet" href="spouse.css" />
+      h1 {
+        font-size: 25px !important;
+        margin-bottom: 20px;
+        color: #2a2a2a;
+      }
+
+      h2 {
+        font-size: 20px !important;
+        margin-top: 30px !important;
+        margin-bottom: 10px;
+        color: #004c91;
+      }
+
+      p,
+      li {
+        line-height: 1.7;
+        font-size: 1rem;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      strong {
+        color: #000;
+      }
+    </style>
   </head>
+
   <body>
+    <div class="enquiry">Enquiry Now</div>
     <div
       class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow"
     >
@@ -36,7 +76,8 @@
       </div>
     </div>
     <div class="w-full h-fit orientalMain">
-      <div class="w-full">
+      <div class="w-full white">
+        <!-- qwertyui -->
         <nav
           class="navbar w-full bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
         >
@@ -640,174 +681,69 @@
             </div>
           </div>
         </div>
-        <div class="px-3 h-auto">
-          <div
-            class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center mt-10 justify-center rounded-2xl imganimatormain"
-          >
-            <div
-              class="relative w-full h-full flex-shrink-0 rounded-lg overflow-hidden imgslidercntr"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg"
-              >
-                <h2 id="main-heading" class="text-[5vmax] font-bold">
-                  Spouse Investigation
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div class="spouse-services">
-        <div class="ser">
-          <h1>Our Services</h1>
-          <div class="first-services">
-            <p>
-              At Oriental Detective, we offer expert Missing Persons
-              Investigation Services designed to bring resolution and closure to
-              families and loved ones dealing with the distressing situation of
-              a missing person. Whether it's a case of a runaway teenager, a
-              missing loved one, or a suspected abduction, our team of
-              experienced detectives utilizes a range of sophisticated tools and
-              methodologies to locate individuals as quickly and efficiently as
-              possible.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="our-services">
-        <p>
-          We conduct thorough investigations tailored to your unique situation,
-          ensuring complete confidentiality throughout the process.
-        </p>
-        <div class="our-first">
-          <h4>Infidelity & Cheating Partner Investigation</h4>
-          <p>
-            We discreetly monitor your partner’s activities to determine if they
-            are involved in an extramarital affair. Our methods include
-          </p>
-          <br />
-          <div class="right-our">
-            <div class="right">
-              ✅ Covert surveillance (photo & video evidence)
-            </div>
-            <div class="right">
-              ✅ Tracking suspicious meetings or locations
-            </div>
-            <div class="right">
-              ✅ Identifying unknown contacts or secret relationships
-            </div>
-          </div>
-        </div>
-        <div class="our-first">
-          <h4>Infidelity & Cheating Partner Investigation</h4>
-          <p>
-            We discreetly monitor your partner’s activities to determine if they
-            are involved in an extramarital affair. Our methods include
-          </p>
-          <br />
-          <div class="right-our">
-            <div class="right">
-              ✅ Covert surveillance (photo & video evidence)
-            </div>
-            <div class="right">
-              ✅ Tracking suspicious meetings or locations
-            </div>
-            <div class="right">
-              ✅ Identifying unknown contacts or secret relationships
-            </div>
-          </div>
-        </div>
-        <div class="our-first">
-          <h4>Infidelity & Cheating Partner Investigation</h4>
-          <p>
-            We discreetly monitor your partner’s activities to determine if they
-            are involved in an extramarital affair. Our methods include
-          </p>
-          <br />
-          <div class="right-our">
-            <div class="right">
-              ✅ Covert surveillance (photo & video evidence)
-            </div>
-            <div class="right">
-              ✅ Tracking suspicious meetings or locations
-            </div>
-            <div class="right">
-              ✅ Identifying unknown contacts or secret relationships
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="why-choose whatwedo mb-6">
-        <h1>What We Do?</h1>
-        <div class="us">
-          <div class="us-cont">
-            <span>Detailed Investigative Protocols: </span>We initiate an
-            organized, multi-step investigation for missing persons. This
-            includes gathering critical information about the missing
-            individual’s daily habits, recent interactions, and lifestyle. We
-            also take into account their digital footprint—social media
-            activity, phone records, and location tracking—which can be crucial
-            in piecing together their movements leading up to the disappearance.
-          </div>
-          <div class="us-cont">
-            <span>Detailed Investigative Protocols: </span>We initiate an
-            organized, multi-step investigation for missing persons. This
-            includes gathering critical information about the missing
-            individual’s daily habits, recent interactions, and lifestyle. We
-            also take into account their digital footprint—social media
-            activity, phone records, and location tracking—which can be crucial
-            in piecing together their movements leading up to the disappearance.
-          </div>
-        </div>
-      </div>
-      <div class="why-choose whentocontact mb-6">
-        <h1>When To Contact Us</h1>
-        <ul class="us">
-          <li class="us-cont">
-            ✔ When a loved one has suddenly gone missing and you suspect foul
-            play or a potential threat to their safety.
-          </li>
-          <li class="us-cont">
-            ✔ If the individual has been missing for an extended period and all
-            leads have run cold.
-          </li>
-          <li class="us-cont">
-            ✔ When you believe the person may be intentionally hiding, using
-            false identities, or involved in criminal activity.
-          </li>
-          <li class="us-cont">
-            ✔ If you suspect a case of abduction or human trafficking.
-          </li>
+      
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>At Oriental Detective, we are committed to protecting and respecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you visit our website or use our services.</p>
+    
+        <h2>1. Information We Collect</h2>
+        <p>We may collect the following types of information:</p>
+        <ul>
+          <li><strong>Personal Identification Information:</strong> Name, email, phone number, and other details you provide.</li>
+          <li><strong>Service-Specific Information:</strong> Address, ID details, background information.</li>
+          <li><strong>Usage Data:</strong> IP address, browser type, pages visited, and similar technical data collected via cookies.</li>
         </ul>
-      </div>
-      <div class="why-choose whychoose mb-12">
-        <h1>Why Choose Us?</h1>
-        <div class="us">
-          <div class="us-cont">
-            <span> Expert investigators </span>with decades of experience in
-            solving missing persons cases.
-          </div>
-          <div class="us-cont">
-            <span>Cutting-edge forensic technology </span> to aid in locating
-            and tracking missing individuals.
-          </div>
-          <div class="us-cont">
-            <span>Discretion and sensitivity</span> to protect your privacy and
-            emotional well-being during a difficult time.
-          </div>
-          <div class="us-cont">
-            <span>Global reach</span> to investigate missing persons across
-            national borders.
-          </div>
+    
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+          <li>To provide and manage our investigative services</li>
+          <li>To improve our website functionality and content</li>
+          <li>To communicate with you regarding your inquiry or service status</li>
+          <li>To comply with legal obligations</li>
+        </ul>
+    
+        <h2>3. Data Security</h2>
+        <p>We implement security measures like encryption, secure servers, and restricted access. However, no system is 100% secure.</p>
+    
+        <h2>4. Sharing Your Information</h2>
+        <ul>
+          <li>With trusted service providers under confidentiality agreements</li>
+          <li>When required by law or in legal processes</li>
+          <li>In the event of a business transfer or acquisition</li>
+        </ul>
+    
+        <h2>5. Cookies and Tracking Technologies</h2>
+        <p>We use cookies to enhance functionality, analyze usage, and improve marketing. You may disable cookies in your browser settings.</p>
+    
+        <h2>6. Your Rights</h2>
+        <ul>
+          <li>Access and request a copy of your data</li>
+          <li>Request corrections or deletions</li>
+          <li>Opt out of marketing communications</li>
+          <li>Withdraw your consent for data processing</li>
+        </ul>
+    
+        <h2>7. Children’s Privacy</h2>
+        <p>We do not knowingly collect personal information from anyone under 18. If discovered, such data will be deleted promptly.</p>
+    
+        <h2>8. External Links</h2>
+        <p>Our website may contain third-party links. We are not responsible for their privacy practices or content.</p>
+    
+        <h2>9. International Data Transfers</h2>
+        <p>By using our services, you consent to the transfer of your data to jurisdictions where privacy laws may differ.</p>
+    
+        <h2>10. Changes to this Privacy Policy</h2>
+        <p>We may update this Privacy Policy occasionally. Revisions will be posted on this page with a new “Last Updated” date.</p>
+    
+        <h2>11. Contact Us</h2>
+        <div class="contact-info">
+          <p><strong>Oriental Detective</strong></p>
+          <p>[Insert Address]</p>
+          <p>[Insert Phone Number]</p>
+          <p>[Insert Email Address]</p>
         </div>
       </div>
-
       <!--footer-->
       <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
         <div class="w-[80%]">
@@ -818,7 +754,9 @@
                   <img src="./images/Logo-removebg-preview.png" alt="" />
                 </h2>
                 <p class="font-light text-sm text-[#515854] mt-2">
-                  At Oriental Detective, we specialize in delivering high-precision, confidential investigative services tailored to both individuals and organizations.
+                  At Oriental Detective, we specialize in delivering
+                  high-precision, confidential investigative services tailored
+                  to both individuals and organizations.
                 </p>
                 <div class="flex space-x-3 mt-4">
                   <a href="#" class="text-[#009FCF] text-xl"
@@ -928,8 +866,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script type="module" src="render.js"></script>
+    <script src="testimonial.js"></script>
     <script src="script.js"></script>
-    <!-- <script src="data.js"></script> -->
   </body>
 </html>

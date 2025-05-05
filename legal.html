@@ -3,20 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="page-title">spouse</title>
+    <title>Document</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <script src="backup.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="testimonial.css" />
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #e74c3c;
+        --accent-color: #f39c12;
+        --text-color: #333;
+        --light-bg: #f8f9fa;
+        --border-color: #ddd;
+      }
+      .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
 
-    <link rel="stylesheet" href="spouse.css" />
+      .subtitle {
+        font-size: 1rem;
+        opacity: 0.8;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--accent-color);
+      }
+
+      .last-updated {
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 2rem;
+        font-style: italic;
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      .highlight {
+        background-color: rgba(243, 156, 18, 0.1);
+        padding: 1rem;
+        border-left: 4px solid var(--accent-color);
+        margin: 1rem 0;
+      }
+
+      .contact-info {
+        margin-top: 1rem;
+      }
+
+      .contact-info p {
+        margin-bottom: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+          margin: 1rem;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+
+      .toc {
+        background-color: var(--light-bg);
+        padding: 1.5rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+      }
+
+      .toc h3 {
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+      }
+
+      .toc ul {
+        list-style-type: none;
+      }
+
+      .toc li {
+        margin-bottom: 0.5rem;
+      }
+
+      .toc a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .toc a:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+      }
+
+      .back-to-top {
+        display: block;
+        text-align: right;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      .back-to-top:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+      }
+    </style>
   </head>
+
   <body>
+    <div class="enquiry">Enquiry Now</div>
     <div
       class="w-full h-[5vmax] fixed top-[90%] z-[10000000] flex justify-between items-center px-3 wtparrow"
     >
@@ -36,7 +172,8 @@
       </div>
     </div>
     <div class="w-full h-fit orientalMain">
-      <div class="w-full">
+      <div class="w-full white">
+        <!-- qwertyui -->
         <nav
           class="navbar w-full bg-white gap-6 rounded-lg flex flex-col md:flex-row items-center justify-center"
         >
@@ -640,174 +777,199 @@
             </div>
           </div>
         </div>
-        <div class="px-3 h-auto">
-          <div
-            class="imgcnt w-full h-[40vmax] overflow-hidden flex items-center mt-10 justify-center rounded-2xl imganimatormain"
-          >
-            <div
-              class="relative w-full h-full flex-shrink-0 rounded-lg overflow-hidden imgslidercntr"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="absolute inset-0 flex flex-col justify-center items-center text-white text-center firstimg"
-              >
-                <h2 id="main-heading" class="text-[5vmax] font-bold">
-                  Spouse Investigation
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+      <div class="container">
+        <h1>Terms and Conditions</h1>
+        <p class="last-updated">Last Updated: May 5, 2025</p>
 
-      <div class="spouse-services">
-        <div class="ser">
-          <h1>Our Services</h1>
-          <div class="first-services">
+        <div class="toc">
+          <h3>Table of Contents</h3>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#ownership">1. Ownership and Copyright</a></li>
+            <li><a href="#usage">2. Website Usage</a></li>
+            <li>
+              <a href="#disclaimers"
+                >3. Disclaimers and Limitation of Liability</a
+              >
+            </li>
+            <li>
+              <a href="#third-party">4. Third-Party Websites and Links</a>
+            </li>
+            <li><a href="#privacy">5. Privacy Policy</a></li>
+            <li><a href="#indemnity">6. Indemnity</a></li>
+            <li>
+              <a href="#modifications"
+                >7. Modifications to the Website and Services</a
+              >
+            </li>
+            <li>
+              <a href="#governing-law">8. Governing Law and Jurisdiction</a>
+            </li>
+            <li><a href="#updates">9. Terms and Conditions Updates</a></li>
+            <li><a href="#contact">10. Contact Information</a></li>
+          </ul>
+        </div>
+
+        <div class="section" id="introduction">
+          <p>
+            This website is owned and operated by Oriental Detective. By
+            accessing and using this website, you agree to comply with the
+            following terms and conditions, as well as any applicable laws and
+            regulations. If you do not agree with these terms, you must
+            immediately cease using this website.
+          </p>
+        </div>
+
+        <div class="section" id="ownership">
+          <h2>1. Ownership and Copyright</h2>
+          <p>
+            All content, including but not limited to text, images, graphics,
+            logos, audio clips, video clips, data compilations, and software
+            (collectively, the "Content") on this website is the property of
+            Oriental Detective, its affiliates, or its licensors, and is
+            protected by copyright, trademark, and other intellectual property
+            laws. Unauthorized use of any Content on this website is strictly
+            prohibited.
+          </p>
+          <p>
+            You are granted a limited, non-exclusive, non-transferable license
+            to access and use this website for personal, non-commercial
+            purposes. This license does not allow you to reproduce, distribute,
+            modify, or exploit the Content without prior written permission from
+            Oriental Detective.
+          </p>
+        </div>
+
+        <div class="section" id="usage">
+          <h2>2. Website Usage</h2>
+          <p>
+            You agree to use this website for lawful purposes only. You are
+            prohibited from using this website in any manner that could damage,
+            disable, overburden, or impair the website or interfere with any
+            other party's use of the website. You must not attempt to gain
+            unauthorized access to the website's systems or networks, or any
+            accounts, computer systems, or networks connected to the website,
+            through hacking, password mining, or any other means.
+          </p>
+        </div>
+
+        <div class="section" id="disclaimers">
+          <h2>3. Disclaimers and Limitation of Liability</h2>
+          <p>
+            The information provided on this website is for general
+            informational purposes only. Oriental Detective makes no warranties
+            or representations regarding the accuracy, completeness,
+            reliability, or timeliness of the information on this website.
+          </p>
+          <p>
+            We do not guarantee any specific results from the use of our
+            services. The outcomes of investigations may vary depending on the
+            nature of the case and the available information. Oriental Detective
+            is not liable for any damages, loss of data, loss of profit, or
+            other consequences arising from the use of or inability to use this
+            website or our services.
+          </p>
+          <div class="highlight">
             <p>
-              At Oriental Detective, we offer expert Missing Persons
-              Investigation Services designed to bring resolution and closure to
-              families and loved ones dealing with the distressing situation of
-              a missing person. Whether it's a case of a runaway teenager, a
-              missing loved one, or a suspected abduction, our team of
-              experienced detectives utilizes a range of sophisticated tools and
-              methodologies to locate individuals as quickly and efficiently as
-              possible.
+              In no event shall Oriental Detective, its directors, officers,
+              employees, or affiliates be held liable for any direct, indirect,
+              incidental, special, or consequential damages, including but not
+              limited to any loss of data, income, or profit, arising from the
+              use of or inability to use this website.
             </p>
           </div>
         </div>
-      </div>
-      <!-- <div class="our-services">
-        <p>
-          We conduct thorough investigations tailored to your unique situation,
-          ensuring complete confidentiality throughout the process.
-        </p>
-        <div class="our-first">
-          <h4>Infidelity & Cheating Partner Investigation</h4>
-          <p>
-            We discreetly monitor your partner’s activities to determine if they
-            are involved in an extramarital affair. Our methods include
-          </p>
-          <br />
-          <div class="right-our">
-            <div class="right">
-              ✅ Covert surveillance (photo & video evidence)
-            </div>
-            <div class="right">
-              ✅ Tracking suspicious meetings or locations
-            </div>
-            <div class="right">
-              ✅ Identifying unknown contacts or secret relationships
-            </div>
-          </div>
-        </div>
-        <div class="our-first">
-          <h4>Infidelity & Cheating Partner Investigation</h4>
-          <p>
-            We discreetly monitor your partner’s activities to determine if they
-            are involved in an extramarital affair. Our methods include
-          </p>
-          <br />
-          <div class="right-our">
-            <div class="right">
-              ✅ Covert surveillance (photo & video evidence)
-            </div>
-            <div class="right">
-              ✅ Tracking suspicious meetings or locations
-            </div>
-            <div class="right">
-              ✅ Identifying unknown contacts or secret relationships
-            </div>
-          </div>
-        </div>
-        <div class="our-first">
-          <h4>Infidelity & Cheating Partner Investigation</h4>
-          <p>
-            We discreetly monitor your partner’s activities to determine if they
-            are involved in an extramarital affair. Our methods include
-          </p>
-          <br />
-          <div class="right-our">
-            <div class="right">
-              ✅ Covert surveillance (photo & video evidence)
-            </div>
-            <div class="right">
-              ✅ Tracking suspicious meetings or locations
-            </div>
-            <div class="right">
-              ✅ Identifying unknown contacts or secret relationships
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="why-choose whatwedo mb-6">
-        <h1>What We Do?</h1>
-        <div class="us">
-          <div class="us-cont">
-            <span>Detailed Investigative Protocols: </span>We initiate an
-            organized, multi-step investigation for missing persons. This
-            includes gathering critical information about the missing
-            individual’s daily habits, recent interactions, and lifestyle. We
-            also take into account their digital footprint—social media
-            activity, phone records, and location tracking—which can be crucial
-            in piecing together their movements leading up to the disappearance.
-          </div>
-          <div class="us-cont">
-            <span>Detailed Investigative Protocols: </span>We initiate an
-            organized, multi-step investigation for missing persons. This
-            includes gathering critical information about the missing
-            individual’s daily habits, recent interactions, and lifestyle. We
-            also take into account their digital footprint—social media
-            activity, phone records, and location tracking—which can be crucial
-            in piecing together their movements leading up to the disappearance.
-          </div>
-        </div>
-      </div>
-      <div class="why-choose whentocontact mb-6">
-        <h1>When To Contact Us</h1>
-        <ul class="us">
-          <li class="us-cont">
-            ✔ When a loved one has suddenly gone missing and you suspect foul
-            play or a potential threat to their safety.
-          </li>
-          <li class="us-cont">
-            ✔ If the individual has been missing for an extended period and all
-            leads have run cold.
-          </li>
-          <li class="us-cont">
-            ✔ When you believe the person may be intentionally hiding, using
-            false identities, or involved in criminal activity.
-          </li>
-          <li class="us-cont">
-            ✔ If you suspect a case of abduction or human trafficking.
-          </li>
-        </ul>
-      </div>
-      <div class="why-choose whychoose mb-12">
-        <h1>Why Choose Us?</h1>
-        <div class="us">
-          <div class="us-cont">
-            <span> Expert investigators </span>with decades of experience in
-            solving missing persons cases.
-          </div>
-          <div class="us-cont">
-            <span>Cutting-edge forensic technology </span> to aid in locating
-            and tracking missing individuals.
-          </div>
-          <div class="us-cont">
-            <span>Discretion and sensitivity</span> to protect your privacy and
-            emotional well-being during a difficult time.
-          </div>
-          <div class="us-cont">
-            <span>Global reach</span> to investigate missing persons across
-            national borders.
-          </div>
-        </div>
-      </div>
 
+        <div class="section" id="third-party">
+          <h2>4. Third-Party Websites and Links</h2>
+          <p>
+            Our website may contain links to third-party websites that are not
+            owned or controlled by Oriental Detective. We are not responsible
+            for the content, privacy practices, or policies of these external
+            websites. We encourage you to review the terms of use and privacy
+            policies of any third-party websites you visit through links on our
+            site.
+          </p>
+          <p>
+            Oriental Detective does not endorse or take responsibility for the
+            content of third-party websites, and you access these sites at your
+            own risk.
+          </p>
+        </div>
+
+        <div class="section" id="privacy">
+          <h2>5. Privacy Policy</h2>
+          <p>
+            Your use of this website is also governed by our Privacy Policy,
+            which can be accessed separately on this website. The Privacy Policy
+            explains how we collect, use, and protect your personal data when
+            you use our website and services.
+          </p>
+        </div>
+
+        <div class="section" id="indemnity">
+          <h2>6. Indemnity</h2>
+          <p>
+            You agree to indemnify and hold harmless Oriental Detective, its
+            affiliates, directors, officers, employees, and agents from and
+            against any and all claims, losses, damages, costs, and expenses
+            (including legal fees) arising from your use of this website, your
+            violation of these terms, or your violation of any rights of another
+            party.
+          </p>
+        </div>
+
+        <div class="section" id="modifications">
+          <h2>7. Modifications to the Website and Services</h2>
+          <p>
+            Oriental Detective reserves the right to modify, update, or remove
+            content from this website at any time without notice. We may also
+            suspend or discontinue certain services provided through the
+            website. We are not responsible for any interruptions or errors that
+            may occur as a result of these changes.
+          </p>
+        </div>
+
+        <div class="section" id="governing-law">
+          <h2>8. Governing Law and Jurisdiction</h2>
+          <p>
+            These terms and conditions are governed by and construed in
+            accordance with the laws of the jurisdiction where Oriental
+            Detective operates. You agree to submit to the exclusive
+            jurisdiction of the courts located in this jurisdiction to resolve
+            any disputes that arise out of or in connection with the use of this
+            website.
+          </p>
+        </div>
+
+        <div class="section" id="updates">
+          <h2>9. Terms and Conditions Updates</h2>
+          <p>
+            Oriental Detective reserves the right to update or revise these
+            terms and conditions at any time. All changes will be posted on this
+            page, and the date of the most recent update will be indicated at
+            the top of this page. Your continued use of the website after any
+            such changes constitutes your acceptance of the new terms.
+          </p>
+        </div>
+
+        <div class="section" id="contact">
+          <h2>10. Contact Information</h2>
+          <p>
+            For any questions or concerns regarding these terms or any other
+            matters related to this website, please contact us at:
+          </p>
+          <div class="contact-info">
+            <p>Oriental Detective</p>
+            <p>[Insert Address]</p>
+            <p>[Insert Phone Number]</p>
+            <p>[Insert Email Address]</p>
+          </div>
+        </div>
+
+        <a href="#" class="back-to-top">Back to Top</a>
+      </div>
       <!--footer-->
       <div class="w-full h-fit bg-[#F7F7F7] flex justify-center">
         <div class="w-[80%]">
@@ -818,7 +980,9 @@
                   <img src="./images/Logo-removebg-preview.png" alt="" />
                 </h2>
                 <p class="font-light text-sm text-[#515854] mt-2">
-                  At Oriental Detective, we specialize in delivering high-precision, confidential investigative services tailored to both individuals and organizations.
+                  At Oriental Detective, we specialize in delivering
+                  high-precision, confidential investigative services tailored
+                  to both individuals and organizations.
                 </p>
                 <div class="flex space-x-3 mt-4">
                   <a href="#" class="text-[#009FCF] text-xl"
@@ -928,8 +1092,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script type="module" src="render.js"></script>
+    <script src="testimonial.js"></script>
     <script src="script.js"></script>
-    <!-- <script src="data.js"></script> -->
   </body>
 </html>
