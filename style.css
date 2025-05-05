@@ -349,7 +349,7 @@ body {
 
 .testimonial-slider {
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   padding: 4rem 0;
   overflow: hidden;
   display: flex;
