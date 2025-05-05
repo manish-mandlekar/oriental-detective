@@ -802,12 +802,12 @@ footer .grid-cols-4 {
 }
 @media screen and (max-width: 767px) {
   .imgcntnr {
-    margin-top: 9vh;
+    margin-top: 12vh;
   }
 }
 @media screen and (max-width: 414px) {
   .imgcntnr {
-    margin-top: 9vh;
+    margin-top: 12vh;
   }
   .dbdropbtn {
     display: active;
