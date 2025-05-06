@@ -77,7 +77,7 @@
 
 @media screen and (max-width: 425px) {
   .testimonial-card {
-    width: 100%;
+    width: 75%;
   }
   .testimonial-content {
     font-size: 12px;

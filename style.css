@@ -579,7 +579,7 @@ footer .grid-cols-4 {
 
 @media screen and (max-width: 768px) {
   .slider-container {
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
     padding: 0 25px;
   }
@@ -644,7 +644,7 @@ footer .grid-cols-4 {
     /* line-height: 10px; */
   }
   .abtus {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100% !important;
   }
   .abtuspta {
@@ -765,7 +765,7 @@ footer .grid-cols-4 {
 
   /* Testimonial slider */
   .slider-container {
-    height: 500px;
+    /* height: 500px; */
   }
 
   .slider-card {
