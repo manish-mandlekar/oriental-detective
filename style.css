@@ -675,6 +675,9 @@ footer .grid-cols-4 {
     display: none !important;
   }
   .cardscr {
+    margin-top: -25vh;
+  }
+  .cardscr2{
     margin-top: -76vh;
   }
 
