@@ -329,7 +329,8 @@ body {
   margin-top: 10px;
 }
 .service-card .head {
-  font-size: 23px;
+  text-align: center;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
