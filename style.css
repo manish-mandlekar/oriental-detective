@@ -446,7 +446,7 @@ body {
   width: 100%;
 }
 .specialWork {
-  background: linear-gradient(transparent, #69b9e40f, #69b9e469);
+  background: linear-gradient(transparent, #69b9e40f, #e4696969);
 }
 
 /* Footer */
@@ -635,6 +635,9 @@ footer .grid-cols-4 {
   }
   .sndpage > div {
     border-radius: 0;
+  }
+  .sndpage > div:nth-child(1) {
+    border-right: none;
   }
   .mission {
     padding: 0;
