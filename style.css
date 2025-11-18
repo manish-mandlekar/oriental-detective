@@ -22,7 +22,7 @@ body {
 }
 .cardofnav {
   width: 200px;
-  height: 19vmax;
+  /* height: 19vmax; */
   border-radius: 0.5rem;
   padding: 5px;
   background-color: #fff;
